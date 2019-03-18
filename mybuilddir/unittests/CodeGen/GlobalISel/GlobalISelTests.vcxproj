@@ -1,0 +1,1111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DA7D47A5-4A7C-35DA-910C-A8B5DAC483AA}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>GlobalISelTests</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\tetsLLVM\llvm\mybuilddir\unittests\CodeGen\GlobalISel\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GlobalISelTests.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GlobalISelTests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\tetsLLVM\llvm\mybuilddir\unittests\CodeGen\GlobalISel\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GlobalISelTests.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GlobalISelTests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\tetsLLVM\llvm\mybuilddir\unittests\CodeGen\GlobalISel\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">GlobalISelTests.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">GlobalISelTests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\tetsLLVM\llvm\mybuilddir\unittests\CodeGen\GlobalISel\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">GlobalISelTests.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">GlobalISelTests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\utils\unittest\googletest\include;C:\tetsLLVM\llvm\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\utils\unittest\googletest\include;C:\tetsLLVM\llvm\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\utils\unittest\googletest\include;C:\tetsLLVM\llvm\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\Debug\lib\LLVMAArch64CodeGen.lib;..\..\..\Debug\lib\LLVMAArch64AsmParser.lib;..\..\..\Debug\lib\LLVMAArch64AsmPrinter.lib;..\..\..\Debug\lib\LLVMAArch64Desc.lib;..\..\..\Debug\lib\LLVMAArch64Disassembler.lib;..\..\..\Debug\lib\LLVMAArch64Info.lib;..\..\..\Debug\lib\LLVMAArch64Utils.lib;..\..\..\Debug\lib\LLVMAMDGPUCodeGen.lib;..\..\..\Debug\lib\LLVMAMDGPUAsmParser.lib;..\..\..\Debug\lib\LLVMAMDGPUAsmPrinter.lib;..\..\..\Debug\lib\LLVMAMDGPUDesc.lib;..\..\..\Debug\lib\LLVMAMDGPUDisassembler.lib;..\..\..\Debug\lib\LLVMAMDGPUInfo.lib;..\..\..\Debug\lib\LLVMAMDGPUUtils.lib;..\..\..\Debug\lib\LLVMARMCodeGen.lib;..\..\..\Debug\lib\LLVMARMAsmParser.lib;..\..\..\Debug\lib\LLVMARMAsmPrinter.lib;..\..\..\Debug\lib\LLVMARMDesc.lib;..\..\..\Debug\lib\LLVMARMDisassembler.lib;..\..\..\Debug\lib\LLVMARMInfo.lib;..\..\..\Debug\lib\LLVMARMUtils.lib;..\..\..\Debug\lib\LLVMBPFCodeGen.lib;..\..\..\Debug\lib\LLVMBPFAsmParser.lib;..\..\..\Debug\lib\LLVMBPFAsmPrinter.lib;..\..\..\Debug\lib\LLVMBPFDesc.lib;..\..\..\Debug\lib\LLVMBPFDisassembler.lib;..\..\..\Debug\lib\LLVMBPFInfo.lib;..\..\..\Debug\lib\LLVMHexagonCodeGen.lib;..\..\..\Debug\lib\LLVMHexagonAsmParser.lib;..\..\..\Debug\lib\LLVMHexagonDesc.lib;..\..\..\Debug\lib\LLVMHexagonDisassembler.lib;..\..\..\Debug\lib\LLVMHexagonInfo.lib;..\..\..\Debug\lib\LLVMLanaiCodeGen.lib;..\..\..\Debug\lib\LLVMLanaiAsmParser.lib;..\..\..\Debug\lib\LLVMLanaiAsmPrinter.lib;..\..\..\Debug\lib\LLVMLanaiDesc.lib;..\..\..\Debug\lib\LLVMLanaiDisassembler.lib;..\..\..\Debug\lib\LLVMLanaiInfo.lib;..\..\..\Debug\lib\LLVMMipsCodeGen.lib;..\..\..\Debug\lib\LLVMMipsAsmParser.lib;..\..\..\Debug\lib\LLVMMipsAsmPrinter.lib;..\..\..\Debug\lib\LLVMMipsDesc.lib;..\..\..\Debug\lib\LLVMMipsDisassembler.lib;..\..\..\Debug\lib\LLVMMipsInfo.lib;..\..\..\Debug\lib\LLVMMSP430CodeGen.lib;..\..\..\Debug\lib\LLVMMSP430AsmParser.lib;..\..\..\Debug\lib\LLVMMSP430AsmPrinter.lib;..\..\..\Debug\lib\LLVMMSP430Desc.lib;..\..\..\Debug\lib\LLVMMSP430Disassembler.lib;..\..\..\Debug\lib\LLVMMSP430Info.lib;..\..\..\Debug\lib\LLVMNVPTXCodeGen.lib;..\..\..\Debug\lib\LLVMNVPTXAsmPrinter.lib;..\..\..\Debug\lib\LLVMNVPTXDesc.lib;..\..\..\Debug\lib\LLVMNVPTXInfo.lib;..\..\..\Debug\lib\LLVMPowerPCCodeGen.lib;..\..\..\Debug\lib\LLVMPowerPCAsmParser.lib;..\..\..\Debug\lib\LLVMPowerPCAsmPrinter.lib;..\..\..\Debug\lib\LLVMPowerPCDesc.lib;..\..\..\Debug\lib\LLVMPowerPCDisassembler.lib;..\..\..\Debug\lib\LLVMPowerPCInfo.lib;..\..\..\Debug\lib\LLVMSparcCodeGen.lib;..\..\..\Debug\lib\LLVMSparcAsmParser.lib;..\..\..\Debug\lib\LLVMSparcAsmPrinter.lib;..\..\..\Debug\lib\LLVMSparcDesc.lib;..\..\..\Debug\lib\LLVMSparcDisassembler.lib;..\..\..\Debug\lib\LLVMSparcInfo.lib;..\..\..\Debug\lib\LLVMSystemZCodeGen.lib;..\..\..\Debug\lib\LLVMSystemZAsmParser.lib;..\..\..\Debug\lib\LLVMSystemZAsmPrinter.lib;..\..\..\Debug\lib\LLVMSystemZDesc.lib;..\..\..\Debug\lib\LLVMSystemZDisassembler.lib;..\..\..\Debug\lib\LLVMSystemZInfo.lib;..\..\..\Debug\lib\LLVMWebAssemblyCodeGen.lib;..\..\..\Debug\lib\LLVMWebAssemblyAsmParser.lib;..\..\..\Debug\lib\LLVMWebAssemblyAsmPrinter.lib;..\..\..\Debug\lib\LLVMWebAssemblyDesc.lib;..\..\..\Debug\lib\LLVMWebAssemblyDisassembler.lib;..\..\..\Debug\lib\LLVMWebAssemblyInfo.lib;..\..\..\Debug\lib\LLVMX86CodeGen.lib;..\..\..\Debug\lib\LLVMX86AsmParser.lib;..\..\..\Debug\lib\LLVMX86AsmPrinter.lib;..\..\..\Debug\lib\LLVMX86Desc.lib;..\..\..\Debug\lib\LLVMX86Disassembler.lib;..\..\..\Debug\lib\LLVMX86Info.lib;..\..\..\Debug\lib\LLVMX86Utils.lib;..\..\..\Debug\lib\LLVMXCoreCodeGen.lib;..\..\..\Debug\lib\LLVMXCoreAsmPrinter.lib;..\..\..\Debug\lib\LLVMXCoreDesc.lib;..\..\..\Debug\lib\LLVMXCoreDisassembler.lib;..\..\..\Debug\lib\LLVMXCoreInfo.lib;..\..\..\Debug\lib\LLVMCodeGen.lib;..\..\..\Debug\lib\LLVMCore.lib;..\..\..\Debug\lib\LLVMGlobalISel.lib;..\..\..\Debug\lib\LLVMMC.lib;..\..\..\Debug\lib\LLVMMIRParser.lib;..\..\..\Debug\lib\LLVMSupport.lib;..\..\..\Debug\lib\LLVMTarget.lib;..\..\..\Debug\lib\LLVMSupport.lib;..\..\..\Debug\lib\gtest_main.lib;..\..\..\Debug\lib\gtest.lib;..\..\..\Debug\lib\LLVMAArch64Desc.lib;..\..\..\Debug\lib\LLVMAArch64AsmPrinter.lib;..\..\..\Debug\lib\LLVMAArch64Info.lib;..\..\..\Debug\lib\LLVMAArch64Utils.lib;..\..\..\Debug\lib\LLVMAMDGPUDesc.lib;..\..\..\Debug\lib\LLVMAMDGPUAsmPrinter.lib;..\..\..\Debug\lib\LLVMAMDGPUInfo.lib;..\..\..\Debug\lib\LLVMAMDGPUUtils.lib;..\..\..\Debug\lib\LLVMARMDesc.lib;..\..\..\Debug\lib\LLVMARMAsmPrinter.lib;..\..\..\Debug\lib\LLVMARMInfo.lib;..\..\..\Debug\lib\LLVMARMUtils.lib;..\..\..\Debug\lib\LLVMBPFAsmPrinter.lib;..\..\..\Debug\lib\LLVMHexagonDesc.lib;..\..\..\Debug\lib\LLVMHexagonInfo.lib;..\..\..\Debug\lib\LLVMLanaiDesc.lib;..\..\..\Debug\lib\LLVMLanaiAsmPrinter.lib;..\..\..\Debug\lib\LLVMLanaiInfo.lib;..\..\..\Debug\lib\LLVMMipsAsmPrinter.lib;..\..\..\Debug\lib\LLVMMSP430AsmPrinter.lib;..\..\..\Debug\lib\LLVMNVPTXAsmPrinter.lib;..\..\..\Debug\lib\LLVMipo.lib;..\..\..\Debug\lib\LLVMVectorize.lib;..\..\..\Debug\lib\LLVMIRReader.lib;..\..\..\Debug\lib\LLVMInstrumentation.lib;..\..\..\Debug\lib\LLVMLinker.lib;..\..\..\Debug\lib\LLVMPowerPCAsmPrinter.lib;..\..\..\Debug\lib\LLVMSparcAsmPrinter.lib;..\..\..\Debug\lib\LLVMSystemZDesc.lib;..\..\..\Debug\lib\LLVMSystemZAsmPrinter.lib;..\..\..\Debug\lib\LLVMSystemZInfo.lib;..\..\..\Debug\lib\LLVMWebAssemblyAsmPrinter.lib;..\..\..\Debug\lib\LLVMX86AsmPrinter.lib;..\..\..\Debug\lib\LLVMX86Utils.lib;..\..\..\Debug\lib\LLVMXCoreAsmPrinter.lib;..\..\..\Debug\lib\LLVMAsmPrinter.lib;..\..\..\Debug\lib\LLVMSelectionDAG.lib;..\..\..\Debug\lib\LLVMMCDisassembler.lib;..\..\..\Debug\lib\LLVMCodeGen.lib;..\..\..\Debug\lib\LLVMScalarOpts.lib;..\..\..\Debug\lib\LLVMAggressiveInstCombine.lib;..\..\..\Debug\lib\LLVMInstCombine.lib;..\..\..\Debug\lib\LLVMTransformUtils.lib;..\..\..\Debug\lib\LLVMBitWriter.lib;..\..\..\Debug\lib\LLVMTarget.lib;..\..\..\Debug\lib\LLVMAnalysis.lib;..\..\..\Debug\lib\LLVMProfileData.lib;..\..\..\Debug\lib\LLVMObject.lib;..\..\..\Debug\lib\LLVMMCParser.lib;..\..\..\Debug\lib\LLVMMC.lib;..\..\..\Debug\lib\LLVMDebugInfoCodeView.lib;..\..\..\Debug\lib\LLVMDebugInfoMSF.lib;..\..\..\Debug\lib\LLVMBitReader.lib;..\..\..\Debug\lib\LLVMAsmParser.lib;..\..\..\Debug\lib\LLVMCore.lib;..\..\..\Debug\lib\LLVMBinaryFormat.lib;..\..\..\Debug\lib\LLVMSupport.lib;psapi.lib;shell32.lib;ole32.lib;uuid.lib;advapi32.lib;delayimp.lib;-delayload:shell32.dll;-delayload:ole32.dll;..\..\..\Debug\lib\LLVMDemangle.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/tetsLLVM/llvm/mybuilddir/unittests/CodeGen/GlobalISel/Debug/GlobalISelTests.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/tetsLLVM/llvm/mybuilddir/unittests/CodeGen/GlobalISel/Debug/GlobalISelTests.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\utils\unittest\googletest\include;C:\tetsLLVM\llvm\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\utils\unittest\googletest\include;C:\tetsLLVM\llvm\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\utils\unittest\googletest\include;C:\tetsLLVM\llvm\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\Release\lib\LLVMAArch64CodeGen.lib;..\..\..\Release\lib\LLVMAArch64AsmParser.lib;..\..\..\Release\lib\LLVMAArch64AsmPrinter.lib;..\..\..\Release\lib\LLVMAArch64Desc.lib;..\..\..\Release\lib\LLVMAArch64Disassembler.lib;..\..\..\Release\lib\LLVMAArch64Info.lib;..\..\..\Release\lib\LLVMAArch64Utils.lib;..\..\..\Release\lib\LLVMAMDGPUCodeGen.lib;..\..\..\Release\lib\LLVMAMDGPUAsmParser.lib;..\..\..\Release\lib\LLVMAMDGPUAsmPrinter.lib;..\..\..\Release\lib\LLVMAMDGPUDesc.lib;..\..\..\Release\lib\LLVMAMDGPUDisassembler.lib;..\..\..\Release\lib\LLVMAMDGPUInfo.lib;..\..\..\Release\lib\LLVMAMDGPUUtils.lib;..\..\..\Release\lib\LLVMARMCodeGen.lib;..\..\..\Release\lib\LLVMARMAsmParser.lib;..\..\..\Release\lib\LLVMARMAsmPrinter.lib;..\..\..\Release\lib\LLVMARMDesc.lib;..\..\..\Release\lib\LLVMARMDisassembler.lib;..\..\..\Release\lib\LLVMARMInfo.lib;..\..\..\Release\lib\LLVMARMUtils.lib;..\..\..\Release\lib\LLVMBPFCodeGen.lib;..\..\..\Release\lib\LLVMBPFAsmParser.lib;..\..\..\Release\lib\LLVMBPFAsmPrinter.lib;..\..\..\Release\lib\LLVMBPFDesc.lib;..\..\..\Release\lib\LLVMBPFDisassembler.lib;..\..\..\Release\lib\LLVMBPFInfo.lib;..\..\..\Release\lib\LLVMHexagonCodeGen.lib;..\..\..\Release\lib\LLVMHexagonAsmParser.lib;..\..\..\Release\lib\LLVMHexagonDesc.lib;..\..\..\Release\lib\LLVMHexagonDisassembler.lib;..\..\..\Release\lib\LLVMHexagonInfo.lib;..\..\..\Release\lib\LLVMLanaiCodeGen.lib;..\..\..\Release\lib\LLVMLanaiAsmParser.lib;..\..\..\Release\lib\LLVMLanaiAsmPrinter.lib;..\..\..\Release\lib\LLVMLanaiDesc.lib;..\..\..\Release\lib\LLVMLanaiDisassembler.lib;..\..\..\Release\lib\LLVMLanaiInfo.lib;..\..\..\Release\lib\LLVMMipsCodeGen.lib;..\..\..\Release\lib\LLVMMipsAsmParser.lib;..\..\..\Release\lib\LLVMMipsAsmPrinter.lib;..\..\..\Release\lib\LLVMMipsDesc.lib;..\..\..\Release\lib\LLVMMipsDisassembler.lib;..\..\..\Release\lib\LLVMMipsInfo.lib;..\..\..\Release\lib\LLVMMSP430CodeGen.lib;..\..\..\Release\lib\LLVMMSP430AsmParser.lib;..\..\..\Release\lib\LLVMMSP430AsmPrinter.lib;..\..\..\Release\lib\LLVMMSP430Desc.lib;..\..\..\Release\lib\LLVMMSP430Disassembler.lib;..\..\..\Release\lib\LLVMMSP430Info.lib;..\..\..\Release\lib\LLVMNVPTXCodeGen.lib;..\..\..\Release\lib\LLVMNVPTXAsmPrinter.lib;..\..\..\Release\lib\LLVMNVPTXDesc.lib;..\..\..\Release\lib\LLVMNVPTXInfo.lib;..\..\..\Release\lib\LLVMPowerPCCodeGen.lib;..\..\..\Release\lib\LLVMPowerPCAsmParser.lib;..\..\..\Release\lib\LLVMPowerPCAsmPrinter.lib;..\..\..\Release\lib\LLVMPowerPCDesc.lib;..\..\..\Release\lib\LLVMPowerPCDisassembler.lib;..\..\..\Release\lib\LLVMPowerPCInfo.lib;..\..\..\Release\lib\LLVMSparcCodeGen.lib;..\..\..\Release\lib\LLVMSparcAsmParser.lib;..\..\..\Release\lib\LLVMSparcAsmPrinter.lib;..\..\..\Release\lib\LLVMSparcDesc.lib;..\..\..\Release\lib\LLVMSparcDisassembler.lib;..\..\..\Release\lib\LLVMSparcInfo.lib;..\..\..\Release\lib\LLVMSystemZCodeGen.lib;..\..\..\Release\lib\LLVMSystemZAsmParser.lib;..\..\..\Release\lib\LLVMSystemZAsmPrinter.lib;..\..\..\Release\lib\LLVMSystemZDesc.lib;..\..\..\Release\lib\LLVMSystemZDisassembler.lib;..\..\..\Release\lib\LLVMSystemZInfo.lib;..\..\..\Release\lib\LLVMWebAssemblyCodeGen.lib;..\..\..\Release\lib\LLVMWebAssemblyAsmParser.lib;..\..\..\Release\lib\LLVMWebAssemblyAsmPrinter.lib;..\..\..\Release\lib\LLVMWebAssemblyDesc.lib;..\..\..\Release\lib\LLVMWebAssemblyDisassembler.lib;..\..\..\Release\lib\LLVMWebAssemblyInfo.lib;..\..\..\Release\lib\LLVMX86CodeGen.lib;..\..\..\Release\lib\LLVMX86AsmParser.lib;..\..\..\Release\lib\LLVMX86AsmPrinter.lib;..\..\..\Release\lib\LLVMX86Desc.lib;..\..\..\Release\lib\LLVMX86Disassembler.lib;..\..\..\Release\lib\LLVMX86Info.lib;..\..\..\Release\lib\LLVMX86Utils.lib;..\..\..\Release\lib\LLVMXCoreCodeGen.lib;..\..\..\Release\lib\LLVMXCoreAsmPrinter.lib;..\..\..\Release\lib\LLVMXCoreDesc.lib;..\..\..\Release\lib\LLVMXCoreDisassembler.lib;..\..\..\Release\lib\LLVMXCoreInfo.lib;..\..\..\Release\lib\LLVMCodeGen.lib;..\..\..\Release\lib\LLVMCore.lib;..\..\..\Release\lib\LLVMGlobalISel.lib;..\..\..\Release\lib\LLVMMC.lib;..\..\..\Release\lib\LLVMMIRParser.lib;..\..\..\Release\lib\LLVMSupport.lib;..\..\..\Release\lib\LLVMTarget.lib;..\..\..\Release\lib\LLVMSupport.lib;..\..\..\Release\lib\gtest_main.lib;..\..\..\Release\lib\gtest.lib;..\..\..\Release\lib\LLVMAArch64Desc.lib;..\..\..\Release\lib\LLVMAArch64AsmPrinter.lib;..\..\..\Release\lib\LLVMAArch64Info.lib;..\..\..\Release\lib\LLVMAArch64Utils.lib;..\..\..\Release\lib\LLVMAMDGPUDesc.lib;..\..\..\Release\lib\LLVMAMDGPUAsmPrinter.lib;..\..\..\Release\lib\LLVMAMDGPUInfo.lib;..\..\..\Release\lib\LLVMAMDGPUUtils.lib;..\..\..\Release\lib\LLVMARMDesc.lib;..\..\..\Release\lib\LLVMARMAsmPrinter.lib;..\..\..\Release\lib\LLVMARMInfo.lib;..\..\..\Release\lib\LLVMARMUtils.lib;..\..\..\Release\lib\LLVMBPFAsmPrinter.lib;..\..\..\Release\lib\LLVMHexagonDesc.lib;..\..\..\Release\lib\LLVMHexagonInfo.lib;..\..\..\Release\lib\LLVMLanaiDesc.lib;..\..\..\Release\lib\LLVMLanaiAsmPrinter.lib;..\..\..\Release\lib\LLVMLanaiInfo.lib;..\..\..\Release\lib\LLVMMipsAsmPrinter.lib;..\..\..\Release\lib\LLVMMSP430AsmPrinter.lib;..\..\..\Release\lib\LLVMNVPTXAsmPrinter.lib;..\..\..\Release\lib\LLVMipo.lib;..\..\..\Release\lib\LLVMVectorize.lib;..\..\..\Release\lib\LLVMIRReader.lib;..\..\..\Release\lib\LLVMInstrumentation.lib;..\..\..\Release\lib\LLVMLinker.lib;..\..\..\Release\lib\LLVMPowerPCAsmPrinter.lib;..\..\..\Release\lib\LLVMSparcAsmPrinter.lib;..\..\..\Release\lib\LLVMSystemZDesc.lib;..\..\..\Release\lib\LLVMSystemZAsmPrinter.lib;..\..\..\Release\lib\LLVMSystemZInfo.lib;..\..\..\Release\lib\LLVMWebAssemblyAsmPrinter.lib;..\..\..\Release\lib\LLVMX86AsmPrinter.lib;..\..\..\Release\lib\LLVMX86Utils.lib;..\..\..\Release\lib\LLVMXCoreAsmPrinter.lib;..\..\..\Release\lib\LLVMAsmPrinter.lib;..\..\..\Release\lib\LLVMSelectionDAG.lib;..\..\..\Release\lib\LLVMMCDisassembler.lib;..\..\..\Release\lib\LLVMCodeGen.lib;..\..\..\Release\lib\LLVMScalarOpts.lib;..\..\..\Release\lib\LLVMAggressiveInstCombine.lib;..\..\..\Release\lib\LLVMInstCombine.lib;..\..\..\Release\lib\LLVMTransformUtils.lib;..\..\..\Release\lib\LLVMBitWriter.lib;..\..\..\Release\lib\LLVMTarget.lib;..\..\..\Release\lib\LLVMAnalysis.lib;..\..\..\Release\lib\LLVMProfileData.lib;..\..\..\Release\lib\LLVMObject.lib;..\..\..\Release\lib\LLVMMCParser.lib;..\..\..\Release\lib\LLVMMC.lib;..\..\..\Release\lib\LLVMDebugInfoCodeView.lib;..\..\..\Release\lib\LLVMDebugInfoMSF.lib;..\..\..\Release\lib\LLVMBitReader.lib;..\..\..\Release\lib\LLVMAsmParser.lib;..\..\..\Release\lib\LLVMCore.lib;..\..\..\Release\lib\LLVMBinaryFormat.lib;..\..\..\Release\lib\LLVMSupport.lib;psapi.lib;shell32.lib;ole32.lib;uuid.lib;advapi32.lib;delayimp.lib;-delayload:shell32.dll;-delayload:ole32.dll;..\..\..\Release\lib\LLVMDemangle.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/tetsLLVM/llvm/mybuilddir/unittests/CodeGen/GlobalISel/Release/GlobalISelTests.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/tetsLLVM/llvm/mybuilddir/unittests/CodeGen/GlobalISel/Release/GlobalISelTests.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\utils\unittest\googletest\include;C:\tetsLLVM\llvm\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\utils\unittest\googletest\include;C:\tetsLLVM\llvm\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\utils\unittest\googletest\include;C:\tetsLLVM\llvm\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\MinSizeRel\lib\LLVMAArch64CodeGen.lib;..\..\..\MinSizeRel\lib\LLVMAArch64AsmParser.lib;..\..\..\MinSizeRel\lib\LLVMAArch64AsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMAArch64Desc.lib;..\..\..\MinSizeRel\lib\LLVMAArch64Disassembler.lib;..\..\..\MinSizeRel\lib\LLVMAArch64Info.lib;..\..\..\MinSizeRel\lib\LLVMAArch64Utils.lib;..\..\..\MinSizeRel\lib\LLVMAMDGPUCodeGen.lib;..\..\..\MinSizeRel\lib\LLVMAMDGPUAsmParser.lib;..\..\..\MinSizeRel\lib\LLVMAMDGPUAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMAMDGPUDesc.lib;..\..\..\MinSizeRel\lib\LLVMAMDGPUDisassembler.lib;..\..\..\MinSizeRel\lib\LLVMAMDGPUInfo.lib;..\..\..\MinSizeRel\lib\LLVMAMDGPUUtils.lib;..\..\..\MinSizeRel\lib\LLVMARMCodeGen.lib;..\..\..\MinSizeRel\lib\LLVMARMAsmParser.lib;..\..\..\MinSizeRel\lib\LLVMARMAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMARMDesc.lib;..\..\..\MinSizeRel\lib\LLVMARMDisassembler.lib;..\..\..\MinSizeRel\lib\LLVMARMInfo.lib;..\..\..\MinSizeRel\lib\LLVMARMUtils.lib;..\..\..\MinSizeRel\lib\LLVMBPFCodeGen.lib;..\..\..\MinSizeRel\lib\LLVMBPFAsmParser.lib;..\..\..\MinSizeRel\lib\LLVMBPFAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMBPFDesc.lib;..\..\..\MinSizeRel\lib\LLVMBPFDisassembler.lib;..\..\..\MinSizeRel\lib\LLVMBPFInfo.lib;..\..\..\MinSizeRel\lib\LLVMHexagonCodeGen.lib;..\..\..\MinSizeRel\lib\LLVMHexagonAsmParser.lib;..\..\..\MinSizeRel\lib\LLVMHexagonDesc.lib;..\..\..\MinSizeRel\lib\LLVMHexagonDisassembler.lib;..\..\..\MinSizeRel\lib\LLVMHexagonInfo.lib;..\..\..\MinSizeRel\lib\LLVMLanaiCodeGen.lib;..\..\..\MinSizeRel\lib\LLVMLanaiAsmParser.lib;..\..\..\MinSizeRel\lib\LLVMLanaiAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMLanaiDesc.lib;..\..\..\MinSizeRel\lib\LLVMLanaiDisassembler.lib;..\..\..\MinSizeRel\lib\LLVMLanaiInfo.lib;..\..\..\MinSizeRel\lib\LLVMMipsCodeGen.lib;..\..\..\MinSizeRel\lib\LLVMMipsAsmParser.lib;..\..\..\MinSizeRel\lib\LLVMMipsAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMMipsDesc.lib;..\..\..\MinSizeRel\lib\LLVMMipsDisassembler.lib;..\..\..\MinSizeRel\lib\LLVMMipsInfo.lib;..\..\..\MinSizeRel\lib\LLVMMSP430CodeGen.lib;..\..\..\MinSizeRel\lib\LLVMMSP430AsmParser.lib;..\..\..\MinSizeRel\lib\LLVMMSP430AsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMMSP430Desc.lib;..\..\..\MinSizeRel\lib\LLVMMSP430Disassembler.lib;..\..\..\MinSizeRel\lib\LLVMMSP430Info.lib;..\..\..\MinSizeRel\lib\LLVMNVPTXCodeGen.lib;..\..\..\MinSizeRel\lib\LLVMNVPTXAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMNVPTXDesc.lib;..\..\..\MinSizeRel\lib\LLVMNVPTXInfo.lib;..\..\..\MinSizeRel\lib\LLVMPowerPCCodeGen.lib;..\..\..\MinSizeRel\lib\LLVMPowerPCAsmParser.lib;..\..\..\MinSizeRel\lib\LLVMPowerPCAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMPowerPCDesc.lib;..\..\..\MinSizeRel\lib\LLVMPowerPCDisassembler.lib;..\..\..\MinSizeRel\lib\LLVMPowerPCInfo.lib;..\..\..\MinSizeRel\lib\LLVMSparcCodeGen.lib;..\..\..\MinSizeRel\lib\LLVMSparcAsmParser.lib;..\..\..\MinSizeRel\lib\LLVMSparcAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMSparcDesc.lib;..\..\..\MinSizeRel\lib\LLVMSparcDisassembler.lib;..\..\..\MinSizeRel\lib\LLVMSparcInfo.lib;..\..\..\MinSizeRel\lib\LLVMSystemZCodeGen.lib;..\..\..\MinSizeRel\lib\LLVMSystemZAsmParser.lib;..\..\..\MinSizeRel\lib\LLVMSystemZAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMSystemZDesc.lib;..\..\..\MinSizeRel\lib\LLVMSystemZDisassembler.lib;..\..\..\MinSizeRel\lib\LLVMSystemZInfo.lib;..\..\..\MinSizeRel\lib\LLVMWebAssemblyCodeGen.lib;..\..\..\MinSizeRel\lib\LLVMWebAssemblyAsmParser.lib;..\..\..\MinSizeRel\lib\LLVMWebAssemblyAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMWebAssemblyDesc.lib;..\..\..\MinSizeRel\lib\LLVMWebAssemblyDisassembler.lib;..\..\..\MinSizeRel\lib\LLVMWebAssemblyInfo.lib;..\..\..\MinSizeRel\lib\LLVMX86CodeGen.lib;..\..\..\MinSizeRel\lib\LLVMX86AsmParser.lib;..\..\..\MinSizeRel\lib\LLVMX86AsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMX86Desc.lib;..\..\..\MinSizeRel\lib\LLVMX86Disassembler.lib;..\..\..\MinSizeRel\lib\LLVMX86Info.lib;..\..\..\MinSizeRel\lib\LLVMX86Utils.lib;..\..\..\MinSizeRel\lib\LLVMXCoreCodeGen.lib;..\..\..\MinSizeRel\lib\LLVMXCoreAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMXCoreDesc.lib;..\..\..\MinSizeRel\lib\LLVMXCoreDisassembler.lib;..\..\..\MinSizeRel\lib\LLVMXCoreInfo.lib;..\..\..\MinSizeRel\lib\LLVMCodeGen.lib;..\..\..\MinSizeRel\lib\LLVMCore.lib;..\..\..\MinSizeRel\lib\LLVMGlobalISel.lib;..\..\..\MinSizeRel\lib\LLVMMC.lib;..\..\..\MinSizeRel\lib\LLVMMIRParser.lib;..\..\..\MinSizeRel\lib\LLVMSupport.lib;..\..\..\MinSizeRel\lib\LLVMTarget.lib;..\..\..\MinSizeRel\lib\LLVMSupport.lib;..\..\..\MinSizeRel\lib\gtest_main.lib;..\..\..\MinSizeRel\lib\gtest.lib;..\..\..\MinSizeRel\lib\LLVMAArch64Desc.lib;..\..\..\MinSizeRel\lib\LLVMAArch64AsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMAArch64Info.lib;..\..\..\MinSizeRel\lib\LLVMAArch64Utils.lib;..\..\..\MinSizeRel\lib\LLVMAMDGPUDesc.lib;..\..\..\MinSizeRel\lib\LLVMAMDGPUAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMAMDGPUInfo.lib;..\..\..\MinSizeRel\lib\LLVMAMDGPUUtils.lib;..\..\..\MinSizeRel\lib\LLVMARMDesc.lib;..\..\..\MinSizeRel\lib\LLVMARMAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMARMInfo.lib;..\..\..\MinSizeRel\lib\LLVMARMUtils.lib;..\..\..\MinSizeRel\lib\LLVMBPFAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMHexagonDesc.lib;..\..\..\MinSizeRel\lib\LLVMHexagonInfo.lib;..\..\..\MinSizeRel\lib\LLVMLanaiDesc.lib;..\..\..\MinSizeRel\lib\LLVMLanaiAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMLanaiInfo.lib;..\..\..\MinSizeRel\lib\LLVMMipsAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMMSP430AsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMNVPTXAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMipo.lib;..\..\..\MinSizeRel\lib\LLVMVectorize.lib;..\..\..\MinSizeRel\lib\LLVMIRReader.lib;..\..\..\MinSizeRel\lib\LLVMInstrumentation.lib;..\..\..\MinSizeRel\lib\LLVMLinker.lib;..\..\..\MinSizeRel\lib\LLVMPowerPCAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMSparcAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMSystemZDesc.lib;..\..\..\MinSizeRel\lib\LLVMSystemZAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMSystemZInfo.lib;..\..\..\MinSizeRel\lib\LLVMWebAssemblyAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMX86AsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMX86Utils.lib;..\..\..\MinSizeRel\lib\LLVMXCoreAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMAsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMSelectionDAG.lib;..\..\..\MinSizeRel\lib\LLVMMCDisassembler.lib;..\..\..\MinSizeRel\lib\LLVMCodeGen.lib;..\..\..\MinSizeRel\lib\LLVMScalarOpts.lib;..\..\..\MinSizeRel\lib\LLVMAggressiveInstCombine.lib;..\..\..\MinSizeRel\lib\LLVMInstCombine.lib;..\..\..\MinSizeRel\lib\LLVMTransformUtils.lib;..\..\..\MinSizeRel\lib\LLVMBitWriter.lib;..\..\..\MinSizeRel\lib\LLVMTarget.lib;..\..\..\MinSizeRel\lib\LLVMAnalysis.lib;..\..\..\MinSizeRel\lib\LLVMProfileData.lib;..\..\..\MinSizeRel\lib\LLVMObject.lib;..\..\..\MinSizeRel\lib\LLVMMCParser.lib;..\..\..\MinSizeRel\lib\LLVMMC.lib;..\..\..\MinSizeRel\lib\LLVMDebugInfoCodeView.lib;..\..\..\MinSizeRel\lib\LLVMDebugInfoMSF.lib;..\..\..\MinSizeRel\lib\LLVMBitReader.lib;..\..\..\MinSizeRel\lib\LLVMAsmParser.lib;..\..\..\MinSizeRel\lib\LLVMCore.lib;..\..\..\MinSizeRel\lib\LLVMBinaryFormat.lib;..\..\..\MinSizeRel\lib\LLVMSupport.lib;psapi.lib;shell32.lib;ole32.lib;uuid.lib;advapi32.lib;delayimp.lib;-delayload:shell32.dll;-delayload:ole32.dll;..\..\..\MinSizeRel\lib\LLVMDemangle.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/tetsLLVM/llvm/mybuilddir/unittests/CodeGen/GlobalISel/MinSizeRel/GlobalISelTests.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/tetsLLVM/llvm/mybuilddir/unittests/CodeGen/GlobalISel/MinSizeRel/GlobalISelTests.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\utils\unittest\googletest\include;C:\tetsLLVM\llvm\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\utils\unittest\googletest\include;C:\tetsLLVM\llvm\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\utils\unittest\googletest\include;C:\tetsLLVM\llvm\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\RelWithDebInfo\lib\LLVMAArch64CodeGen.lib;..\..\..\RelWithDebInfo\lib\LLVMAArch64AsmParser.lib;..\..\..\RelWithDebInfo\lib\LLVMAArch64AsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMAArch64Desc.lib;..\..\..\RelWithDebInfo\lib\LLVMAArch64Disassembler.lib;..\..\..\RelWithDebInfo\lib\LLVMAArch64Info.lib;..\..\..\RelWithDebInfo\lib\LLVMAArch64Utils.lib;..\..\..\RelWithDebInfo\lib\LLVMAMDGPUCodeGen.lib;..\..\..\RelWithDebInfo\lib\LLVMAMDGPUAsmParser.lib;..\..\..\RelWithDebInfo\lib\LLVMAMDGPUAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMAMDGPUDesc.lib;..\..\..\RelWithDebInfo\lib\LLVMAMDGPUDisassembler.lib;..\..\..\RelWithDebInfo\lib\LLVMAMDGPUInfo.lib;..\..\..\RelWithDebInfo\lib\LLVMAMDGPUUtils.lib;..\..\..\RelWithDebInfo\lib\LLVMARMCodeGen.lib;..\..\..\RelWithDebInfo\lib\LLVMARMAsmParser.lib;..\..\..\RelWithDebInfo\lib\LLVMARMAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMARMDesc.lib;..\..\..\RelWithDebInfo\lib\LLVMARMDisassembler.lib;..\..\..\RelWithDebInfo\lib\LLVMARMInfo.lib;..\..\..\RelWithDebInfo\lib\LLVMARMUtils.lib;..\..\..\RelWithDebInfo\lib\LLVMBPFCodeGen.lib;..\..\..\RelWithDebInfo\lib\LLVMBPFAsmParser.lib;..\..\..\RelWithDebInfo\lib\LLVMBPFAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMBPFDesc.lib;..\..\..\RelWithDebInfo\lib\LLVMBPFDisassembler.lib;..\..\..\RelWithDebInfo\lib\LLVMBPFInfo.lib;..\..\..\RelWithDebInfo\lib\LLVMHexagonCodeGen.lib;..\..\..\RelWithDebInfo\lib\LLVMHexagonAsmParser.lib;..\..\..\RelWithDebInfo\lib\LLVMHexagonDesc.lib;..\..\..\RelWithDebInfo\lib\LLVMHexagonDisassembler.lib;..\..\..\RelWithDebInfo\lib\LLVMHexagonInfo.lib;..\..\..\RelWithDebInfo\lib\LLVMLanaiCodeGen.lib;..\..\..\RelWithDebInfo\lib\LLVMLanaiAsmParser.lib;..\..\..\RelWithDebInfo\lib\LLVMLanaiAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMLanaiDesc.lib;..\..\..\RelWithDebInfo\lib\LLVMLanaiDisassembler.lib;..\..\..\RelWithDebInfo\lib\LLVMLanaiInfo.lib;..\..\..\RelWithDebInfo\lib\LLVMMipsCodeGen.lib;..\..\..\RelWithDebInfo\lib\LLVMMipsAsmParser.lib;..\..\..\RelWithDebInfo\lib\LLVMMipsAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMMipsDesc.lib;..\..\..\RelWithDebInfo\lib\LLVMMipsDisassembler.lib;..\..\..\RelWithDebInfo\lib\LLVMMipsInfo.lib;..\..\..\RelWithDebInfo\lib\LLVMMSP430CodeGen.lib;..\..\..\RelWithDebInfo\lib\LLVMMSP430AsmParser.lib;..\..\..\RelWithDebInfo\lib\LLVMMSP430AsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMMSP430Desc.lib;..\..\..\RelWithDebInfo\lib\LLVMMSP430Disassembler.lib;..\..\..\RelWithDebInfo\lib\LLVMMSP430Info.lib;..\..\..\RelWithDebInfo\lib\LLVMNVPTXCodeGen.lib;..\..\..\RelWithDebInfo\lib\LLVMNVPTXAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMNVPTXDesc.lib;..\..\..\RelWithDebInfo\lib\LLVMNVPTXInfo.lib;..\..\..\RelWithDebInfo\lib\LLVMPowerPCCodeGen.lib;..\..\..\RelWithDebInfo\lib\LLVMPowerPCAsmParser.lib;..\..\..\RelWithDebInfo\lib\LLVMPowerPCAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMPowerPCDesc.lib;..\..\..\RelWithDebInfo\lib\LLVMPowerPCDisassembler.lib;..\..\..\RelWithDebInfo\lib\LLVMPowerPCInfo.lib;..\..\..\RelWithDebInfo\lib\LLVMSparcCodeGen.lib;..\..\..\RelWithDebInfo\lib\LLVMSparcAsmParser.lib;..\..\..\RelWithDebInfo\lib\LLVMSparcAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMSparcDesc.lib;..\..\..\RelWithDebInfo\lib\LLVMSparcDisassembler.lib;..\..\..\RelWithDebInfo\lib\LLVMSparcInfo.lib;..\..\..\RelWithDebInfo\lib\LLVMSystemZCodeGen.lib;..\..\..\RelWithDebInfo\lib\LLVMSystemZAsmParser.lib;..\..\..\RelWithDebInfo\lib\LLVMSystemZAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMSystemZDesc.lib;..\..\..\RelWithDebInfo\lib\LLVMSystemZDisassembler.lib;..\..\..\RelWithDebInfo\lib\LLVMSystemZInfo.lib;..\..\..\RelWithDebInfo\lib\LLVMWebAssemblyCodeGen.lib;..\..\..\RelWithDebInfo\lib\LLVMWebAssemblyAsmParser.lib;..\..\..\RelWithDebInfo\lib\LLVMWebAssemblyAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMWebAssemblyDesc.lib;..\..\..\RelWithDebInfo\lib\LLVMWebAssemblyDisassembler.lib;..\..\..\RelWithDebInfo\lib\LLVMWebAssemblyInfo.lib;..\..\..\RelWithDebInfo\lib\LLVMX86CodeGen.lib;..\..\..\RelWithDebInfo\lib\LLVMX86AsmParser.lib;..\..\..\RelWithDebInfo\lib\LLVMX86AsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMX86Desc.lib;..\..\..\RelWithDebInfo\lib\LLVMX86Disassembler.lib;..\..\..\RelWithDebInfo\lib\LLVMX86Info.lib;..\..\..\RelWithDebInfo\lib\LLVMX86Utils.lib;..\..\..\RelWithDebInfo\lib\LLVMXCoreCodeGen.lib;..\..\..\RelWithDebInfo\lib\LLVMXCoreAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMXCoreDesc.lib;..\..\..\RelWithDebInfo\lib\LLVMXCoreDisassembler.lib;..\..\..\RelWithDebInfo\lib\LLVMXCoreInfo.lib;..\..\..\RelWithDebInfo\lib\LLVMCodeGen.lib;..\..\..\RelWithDebInfo\lib\LLVMCore.lib;..\..\..\RelWithDebInfo\lib\LLVMGlobalISel.lib;..\..\..\RelWithDebInfo\lib\LLVMMC.lib;..\..\..\RelWithDebInfo\lib\LLVMMIRParser.lib;..\..\..\RelWithDebInfo\lib\LLVMSupport.lib;..\..\..\RelWithDebInfo\lib\LLVMTarget.lib;..\..\..\RelWithDebInfo\lib\LLVMSupport.lib;..\..\..\RelWithDebInfo\lib\gtest_main.lib;..\..\..\RelWithDebInfo\lib\gtest.lib;..\..\..\RelWithDebInfo\lib\LLVMAArch64Desc.lib;..\..\..\RelWithDebInfo\lib\LLVMAArch64AsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMAArch64Info.lib;..\..\..\RelWithDebInfo\lib\LLVMAArch64Utils.lib;..\..\..\RelWithDebInfo\lib\LLVMAMDGPUDesc.lib;..\..\..\RelWithDebInfo\lib\LLVMAMDGPUAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMAMDGPUInfo.lib;..\..\..\RelWithDebInfo\lib\LLVMAMDGPUUtils.lib;..\..\..\RelWithDebInfo\lib\LLVMARMDesc.lib;..\..\..\RelWithDebInfo\lib\LLVMARMAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMARMInfo.lib;..\..\..\RelWithDebInfo\lib\LLVMARMUtils.lib;..\..\..\RelWithDebInfo\lib\LLVMBPFAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMHexagonDesc.lib;..\..\..\RelWithDebInfo\lib\LLVMHexagonInfo.lib;..\..\..\RelWithDebInfo\lib\LLVMLanaiDesc.lib;..\..\..\RelWithDebInfo\lib\LLVMLanaiAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMLanaiInfo.lib;..\..\..\RelWithDebInfo\lib\LLVMMipsAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMMSP430AsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMNVPTXAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMipo.lib;..\..\..\RelWithDebInfo\lib\LLVMVectorize.lib;..\..\..\RelWithDebInfo\lib\LLVMIRReader.lib;..\..\..\RelWithDebInfo\lib\LLVMInstrumentation.lib;..\..\..\RelWithDebInfo\lib\LLVMLinker.lib;..\..\..\RelWithDebInfo\lib\LLVMPowerPCAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMSparcAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMSystemZDesc.lib;..\..\..\RelWithDebInfo\lib\LLVMSystemZAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMSystemZInfo.lib;..\..\..\RelWithDebInfo\lib\LLVMWebAssemblyAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMX86AsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMX86Utils.lib;..\..\..\RelWithDebInfo\lib\LLVMXCoreAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMAsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMSelectionDAG.lib;..\..\..\RelWithDebInfo\lib\LLVMMCDisassembler.lib;..\..\..\RelWithDebInfo\lib\LLVMCodeGen.lib;..\..\..\RelWithDebInfo\lib\LLVMScalarOpts.lib;..\..\..\RelWithDebInfo\lib\LLVMAggressiveInstCombine.lib;..\..\..\RelWithDebInfo\lib\LLVMInstCombine.lib;..\..\..\RelWithDebInfo\lib\LLVMTransformUtils.lib;..\..\..\RelWithDebInfo\lib\LLVMBitWriter.lib;..\..\..\RelWithDebInfo\lib\LLVMTarget.lib;..\..\..\RelWithDebInfo\lib\LLVMAnalysis.lib;..\..\..\RelWithDebInfo\lib\LLVMProfileData.lib;..\..\..\RelWithDebInfo\lib\LLVMObject.lib;..\..\..\RelWithDebInfo\lib\LLVMMCParser.lib;..\..\..\RelWithDebInfo\lib\LLVMMC.lib;..\..\..\RelWithDebInfo\lib\LLVMDebugInfoCodeView.lib;..\..\..\RelWithDebInfo\lib\LLVMDebugInfoMSF.lib;..\..\..\RelWithDebInfo\lib\LLVMBitReader.lib;..\..\..\RelWithDebInfo\lib\LLVMAsmParser.lib;..\..\..\RelWithDebInfo\lib\LLVMCore.lib;..\..\..\RelWithDebInfo\lib\LLVMBinaryFormat.lib;..\..\..\RelWithDebInfo\lib\LLVMSupport.lib;psapi.lib;shell32.lib;ole32.lib;uuid.lib;advapi32.lib;delayimp.lib;-delayload:shell32.dll;-delayload:ole32.dll;..\..\..\RelWithDebInfo\lib\LLVMDemangle.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/tetsLLVM/llvm/mybuilddir/unittests/CodeGen/GlobalISel/RelWithDebInfo/GlobalISelTests.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/tetsLLVM/llvm/mybuilddir/unittests/CodeGen/GlobalISel/RelWithDebInfo/GlobalISelTests.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/tetsLLVM/llvm/unittests/CodeGen/GlobalISel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/tetsLLVM/llvm -BC:/tetsLLVM/llvm/mybuilddir --check-stamp-file C:/tetsLLVM/llvm/mybuilddir/unittests/CodeGen/GlobalISel/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/tetsLLVM/llvm/unittests/CodeGen/GlobalISel/CMakeLists.txt;C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel\CMakeLists.txt;C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\tetsLLVM\llvm\mybuilddir\unittests\CodeGen\GlobalISel\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/tetsLLVM/llvm/unittests/CodeGen/GlobalISel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/tetsLLVM/llvm -BC:/tetsLLVM/llvm/mybuilddir --check-stamp-file C:/tetsLLVM/llvm/mybuilddir/unittests/CodeGen/GlobalISel/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/tetsLLVM/llvm/unittests/CodeGen/GlobalISel/CMakeLists.txt;C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel\CMakeLists.txt;C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\tetsLLVM\llvm\mybuilddir\unittests\CodeGen\GlobalISel\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/tetsLLVM/llvm/unittests/CodeGen/GlobalISel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/tetsLLVM/llvm -BC:/tetsLLVM/llvm/mybuilddir --check-stamp-file C:/tetsLLVM/llvm/mybuilddir/unittests/CodeGen/GlobalISel/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/tetsLLVM/llvm/unittests/CodeGen/GlobalISel/CMakeLists.txt;C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel\CMakeLists.txt;C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\tetsLLVM\llvm\mybuilddir\unittests\CodeGen\GlobalISel\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/tetsLLVM/llvm/unittests/CodeGen/GlobalISel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/tetsLLVM/llvm -BC:/tetsLLVM/llvm/mybuilddir --check-stamp-file C:/tetsLLVM/llvm/mybuilddir/unittests/CodeGen/GlobalISel/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/tetsLLVM/llvm/unittests/CodeGen/GlobalISel/CMakeLists.txt;C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel\CMakeLists.txt;C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\tetsLLVM\llvm\mybuilddir\unittests\CodeGen\GlobalISel\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel\LegalizerInfoTest.cpp" />
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel\PatternMatchTest.cpp" />
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel\LegalizerHelperTest.cpp" />
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel\CSETest.cpp" />
+    <ClInclude Include="C:\tetsLLVM\llvm\unittests\CodeGen\GlobalISel\GISelMITest.h" />
+    <ResourceCompile Include="C:\tetsLLVM\llvm\resources\windows_version_resource.rc">
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</SuppressStartupBanner>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RC_VERSION_FIELD_1=8;RC_VERSION_FIELD_2=0;RC_VERSION_FIELD_3=0;RC_VERSION_FIELD_4=0;RC_FILE_VERSION=\"8.0.0\";RC_INTERNAL_NAME=\"GlobalISelTests\";RC_PRODUCT_NAME=\"LLVM\";RC_PRODUCT_VERSION=\"8.0.0\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</SuppressStartupBanner>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RC_VERSION_FIELD_1=8;RC_VERSION_FIELD_2=0;RC_VERSION_FIELD_3=0;RC_VERSION_FIELD_4=0;RC_FILE_VERSION=\"8.0.0\";RC_INTERNAL_NAME=\"GlobalISelTests\";RC_PRODUCT_NAME=\"LLVM\";RC_PRODUCT_VERSION=\"8.0.0\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</SuppressStartupBanner>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">RC_VERSION_FIELD_1=8;RC_VERSION_FIELD_2=0;RC_VERSION_FIELD_3=0;RC_VERSION_FIELD_4=0;RC_FILE_VERSION=\"8.0.0\";RC_INTERNAL_NAME=\"GlobalISelTests\";RC_PRODUCT_NAME=\"LLVM\";RC_PRODUCT_VERSION=\"8.0.0\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</SuppressStartupBanner>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">RC_VERSION_FIELD_1=8;RC_VERSION_FIELD_2=0;RC_VERSION_FIELD_3=0;RC_VERSION_FIELD_4=0;RC_FILE_VERSION=\"8.0.0\";RC_INTERNAL_NAME=\"GlobalISelTests\";RC_PRODUCT_NAME=\"LLVM\";RC_PRODUCT_VERSION=\"8.0.0\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\ZERO_CHECK.vcxproj">
+      <Project>{984D425B-D0AF-3E68-8EE1-923FA53F079C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64\AsmParser\LLVMAArch64AsmParser.vcxproj">
+      <Project>{67B2C805-C531-3024-BF67-2DCA4FC102F3}</Project>
+      <Name>LLVMAArch64AsmParser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64\InstPrinter\LLVMAArch64AsmPrinter.vcxproj">
+      <Project>{B149A469-AFFF-319B-8747-F7F7C8A6D6BE}</Project>
+      <Name>LLVMAArch64AsmPrinter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64\LLVMAArch64CodeGen.vcxproj">
+      <Project>{AE5D1884-41AC-3263-A376-A6D76B59CF4E}</Project>
+      <Name>LLVMAArch64CodeGen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64\MCTargetDesc\LLVMAArch64Desc.vcxproj">
+      <Project>{97B02140-256F-3DB3-941C-E117B32D3146}</Project>
+      <Name>LLVMAArch64Desc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64\Disassembler\LLVMAArch64Disassembler.vcxproj">
+      <Project>{B5FCBCF6-B69F-3B8F-873D-150A8924BD8D}</Project>
+      <Name>LLVMAArch64Disassembler</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64\TargetInfo\LLVMAArch64Info.vcxproj">
+      <Project>{38D5A945-1515-3E66-9923-D7AAEE669FA6}</Project>
+      <Name>LLVMAArch64Info</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64\Utils\LLVMAArch64Utils.vcxproj">
+      <Project>{CAA07AB4-CF13-33A9-9B44-D40D83CBA822}</Project>
+      <Name>LLVMAArch64Utils</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\AMDGPU\AsmParser\LLVMAMDGPUAsmParser.vcxproj">
+      <Project>{A7FCBC22-F142-326A-8DDA-50BF018A903E}</Project>
+      <Name>LLVMAMDGPUAsmParser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\AMDGPU\InstPrinter\LLVMAMDGPUAsmPrinter.vcxproj">
+      <Project>{3A37926B-F147-3D1D-99B7-1776D368D162}</Project>
+      <Name>LLVMAMDGPUAsmPrinter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\AMDGPU\LLVMAMDGPUCodeGen.vcxproj">
+      <Project>{70CE3936-0ADE-361A-9CEA-92BE3FA6F001}</Project>
+      <Name>LLVMAMDGPUCodeGen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\AMDGPU\MCTargetDesc\LLVMAMDGPUDesc.vcxproj">
+      <Project>{F4347BB0-A3BF-3300-8EE6-166E5B28C1C4}</Project>
+      <Name>LLVMAMDGPUDesc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\AMDGPU\Disassembler\LLVMAMDGPUDisassembler.vcxproj">
+      <Project>{16D63093-99EF-3AA7-8E24-7BE2A09B21E5}</Project>
+      <Name>LLVMAMDGPUDisassembler</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\AMDGPU\TargetInfo\LLVMAMDGPUInfo.vcxproj">
+      <Project>{64C0BCC0-BE4D-3807-86B7-771E9046F1E1}</Project>
+      <Name>LLVMAMDGPUInfo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\AMDGPU\Utils\LLVMAMDGPUUtils.vcxproj">
+      <Project>{46287191-E03D-3CC1-81D4-D47F4381267A}</Project>
+      <Name>LLVMAMDGPUUtils</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\ARM\AsmParser\LLVMARMAsmParser.vcxproj">
+      <Project>{29F36A24-AECC-35C3-A6FB-DDF1814F919E}</Project>
+      <Name>LLVMARMAsmParser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\ARM\InstPrinter\LLVMARMAsmPrinter.vcxproj">
+      <Project>{2C4695D6-2D42-3005-A475-6479F9D2A4CE}</Project>
+      <Name>LLVMARMAsmPrinter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\ARM\LLVMARMCodeGen.vcxproj">
+      <Project>{0B0AD349-DF97-3525-B012-A5DD3F01F178}</Project>
+      <Name>LLVMARMCodeGen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\ARM\MCTargetDesc\LLVMARMDesc.vcxproj">
+      <Project>{7B5C8D29-0BC8-3C96-A3BA-1580992D0ED2}</Project>
+      <Name>LLVMARMDesc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\ARM\Disassembler\LLVMARMDisassembler.vcxproj">
+      <Project>{B043835B-537B-3504-8B62-C19EBDE3804E}</Project>
+      <Name>LLVMARMDisassembler</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\ARM\TargetInfo\LLVMARMInfo.vcxproj">
+      <Project>{B6F8F5E6-9F07-3E29-B796-21B2D7ED5ACB}</Project>
+      <Name>LLVMARMInfo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\ARM\Utils\LLVMARMUtils.vcxproj">
+      <Project>{38A1B3EF-9AFC-300D-94F3-4FF8FE7919A3}</Project>
+      <Name>LLVMARMUtils</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Transforms\AggressiveInstCombine\LLVMAggressiveInstCombine.vcxproj">
+      <Project>{2D08D3B6-4E31-31B0-89E1-450AD29FFCE8}</Project>
+      <Name>LLVMAggressiveInstCombine</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Analysis\LLVMAnalysis.vcxproj">
+      <Project>{1559919D-35CC-3106-AEC1-6053DE7BE3A5}</Project>
+      <Name>LLVMAnalysis</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\AsmParser\LLVMAsmParser.vcxproj">
+      <Project>{5E033D3A-EDE4-357A-A6B1-B53AC780852B}</Project>
+      <Name>LLVMAsmParser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\CodeGen\AsmPrinter\LLVMAsmPrinter.vcxproj">
+      <Project>{6D8A8429-1815-3746-81DD-FD94130BA9DD}</Project>
+      <Name>LLVMAsmPrinter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\BPF\AsmParser\LLVMBPFAsmParser.vcxproj">
+      <Project>{4ED7780A-C423-3BB4-8BD6-3054318BBA07}</Project>
+      <Name>LLVMBPFAsmParser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\BPF\InstPrinter\LLVMBPFAsmPrinter.vcxproj">
+      <Project>{D2AC3253-98D5-3938-ABC4-EDED93A93707}</Project>
+      <Name>LLVMBPFAsmPrinter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\BPF\LLVMBPFCodeGen.vcxproj">
+      <Project>{4591B632-70FF-3D37-8632-39821DAC408C}</Project>
+      <Name>LLVMBPFCodeGen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\BPF\MCTargetDesc\LLVMBPFDesc.vcxproj">
+      <Project>{9CAB4997-3F8E-3C02-A1E3-0E55429862FC}</Project>
+      <Name>LLVMBPFDesc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\BPF\Disassembler\LLVMBPFDisassembler.vcxproj">
+      <Project>{EF6BE897-1E0D-3EEB-AE74-8E0B479B3475}</Project>
+      <Name>LLVMBPFDisassembler</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\BPF\TargetInfo\LLVMBPFInfo.vcxproj">
+      <Project>{8089E8E6-7E58-34C7-8857-ECF8E27F33D1}</Project>
+      <Name>LLVMBPFInfo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\BinaryFormat\LLVMBinaryFormat.vcxproj">
+      <Project>{1C181B4B-8EEF-39B6-9430-6A87BC1947D8}</Project>
+      <Name>LLVMBinaryFormat</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Bitcode\Reader\LLVMBitReader.vcxproj">
+      <Project>{5698EC74-D6A1-3493-B268-99BFDDF345F5}</Project>
+      <Name>LLVMBitReader</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Bitcode\Writer\LLVMBitWriter.vcxproj">
+      <Project>{20AC7E97-B34A-3135-9A37-51278B433CBC}</Project>
+      <Name>LLVMBitWriter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\CodeGen\LLVMCodeGen.vcxproj">
+      <Project>{3033B41A-773F-3FBA-8D16-68594764E832}</Project>
+      <Name>LLVMCodeGen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\IR\LLVMCore.vcxproj">
+      <Project>{9AEF1FB6-8CD7-39E8-B3FF-4CA2E20F1E0D}</Project>
+      <Name>LLVMCore</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\DebugInfo\CodeView\LLVMDebugInfoCodeView.vcxproj">
+      <Project>{7448E393-C706-3682-A61E-B8FABE67C984}</Project>
+      <Name>LLVMDebugInfoCodeView</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\DebugInfo\MSF\LLVMDebugInfoMSF.vcxproj">
+      <Project>{E3721871-5405-37F8-8CCF-926DC8EE220C}</Project>
+      <Name>LLVMDebugInfoMSF</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Demangle\LLVMDemangle.vcxproj">
+      <Project>{021DBB9D-B36A-3774-92D8-F00F233D292F}</Project>
+      <Name>LLVMDemangle</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\CodeGen\GlobalISel\LLVMGlobalISel.vcxproj">
+      <Project>{F5F13F0A-C3DC-3987-B728-8AC65808B29D}</Project>
+      <Name>LLVMGlobalISel</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Hexagon\AsmParser\LLVMHexagonAsmParser.vcxproj">
+      <Project>{534A4C03-9029-34D0-8366-627D7FC096EA}</Project>
+      <Name>LLVMHexagonAsmParser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Hexagon\LLVMHexagonCodeGen.vcxproj">
+      <Project>{DE98826A-3F84-326B-8E67-5950D28B9922}</Project>
+      <Name>LLVMHexagonCodeGen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Hexagon\MCTargetDesc\LLVMHexagonDesc.vcxproj">
+      <Project>{0994AA68-CC8E-3CDE-A6FB-8E3CAA86DAAE}</Project>
+      <Name>LLVMHexagonDesc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Hexagon\Disassembler\LLVMHexagonDisassembler.vcxproj">
+      <Project>{F15EA132-BA80-38BB-AFD8-8822CDB7C336}</Project>
+      <Name>LLVMHexagonDisassembler</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Hexagon\TargetInfo\LLVMHexagonInfo.vcxproj">
+      <Project>{D3552736-7363-367E-B53A-E8E6D295E029}</Project>
+      <Name>LLVMHexagonInfo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\IRReader\LLVMIRReader.vcxproj">
+      <Project>{677B8EB9-1E94-361A-808D-56A9D9619086}</Project>
+      <Name>LLVMIRReader</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Transforms\InstCombine\LLVMInstCombine.vcxproj">
+      <Project>{97C125DC-7485-3285-B35E-8852C45B16C8}</Project>
+      <Name>LLVMInstCombine</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Transforms\Instrumentation\LLVMInstrumentation.vcxproj">
+      <Project>{F2FE71BA-C831-3824-B15F-32E65883D2B3}</Project>
+      <Name>LLVMInstrumentation</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Lanai\AsmParser\LLVMLanaiAsmParser.vcxproj">
+      <Project>{BF65519A-1FB0-377E-B73E-DF364C0DBFB1}</Project>
+      <Name>LLVMLanaiAsmParser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Lanai\InstPrinter\LLVMLanaiAsmPrinter.vcxproj">
+      <Project>{B454C231-4549-3E9D-BA47-1AC8DD04502F}</Project>
+      <Name>LLVMLanaiAsmPrinter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Lanai\LLVMLanaiCodeGen.vcxproj">
+      <Project>{5C9C5129-431F-3FE4-9249-EBFB9B0B90CF}</Project>
+      <Name>LLVMLanaiCodeGen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Lanai\MCTargetDesc\LLVMLanaiDesc.vcxproj">
+      <Project>{DB5964E9-A591-3D64-AB8B-AC014F4EA880}</Project>
+      <Name>LLVMLanaiDesc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Lanai\Disassembler\LLVMLanaiDisassembler.vcxproj">
+      <Project>{74B222A7-2444-39C3-8805-84B0D4B6A30A}</Project>
+      <Name>LLVMLanaiDisassembler</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Lanai\TargetInfo\LLVMLanaiInfo.vcxproj">
+      <Project>{78D86B33-E2B8-32E7-90C5-2781A31EA4D6}</Project>
+      <Name>LLVMLanaiInfo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Linker\LLVMLinker.vcxproj">
+      <Project>{2FDAB742-BC32-326D-A406-1363DA5A3A90}</Project>
+      <Name>LLVMLinker</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\MC\LLVMMC.vcxproj">
+      <Project>{88CBEFBD-11BD-3874-9ADA-D301906EBB44}</Project>
+      <Name>LLVMMC</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\MC\MCDisassembler\LLVMMCDisassembler.vcxproj">
+      <Project>{62BBC6F6-BC6E-3879-BFBB-5BE1C876902B}</Project>
+      <Name>LLVMMCDisassembler</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\MC\MCParser\LLVMMCParser.vcxproj">
+      <Project>{870588A7-6BB6-3E9E-AEF8-22384AA4EC4F}</Project>
+      <Name>LLVMMCParser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\CodeGen\MIRParser\LLVMMIRParser.vcxproj">
+      <Project>{2A1AB4C1-D424-3B7B-BCE4-2D5D1F5DBA99}</Project>
+      <Name>LLVMMIRParser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\MSP430\AsmParser\LLVMMSP430AsmParser.vcxproj">
+      <Project>{EF361B74-75C4-3D08-83EC-3853BBFA7751}</Project>
+      <Name>LLVMMSP430AsmParser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\MSP430\InstPrinter\LLVMMSP430AsmPrinter.vcxproj">
+      <Project>{DB13568F-CD96-39FD-ACAD-A8006158DE81}</Project>
+      <Name>LLVMMSP430AsmPrinter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\MSP430\LLVMMSP430CodeGen.vcxproj">
+      <Project>{0BF50D79-EDA5-3E2A-9708-23FA4F2DF7BC}</Project>
+      <Name>LLVMMSP430CodeGen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\MSP430\MCTargetDesc\LLVMMSP430Desc.vcxproj">
+      <Project>{D8D647C3-59DB-3A59-9FAB-83A3F26BE913}</Project>
+      <Name>LLVMMSP430Desc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\MSP430\Disassembler\LLVMMSP430Disassembler.vcxproj">
+      <Project>{C9A1CEDC-CFB6-36C7-95DD-E6F24FBF7997}</Project>
+      <Name>LLVMMSP430Disassembler</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\MSP430\TargetInfo\LLVMMSP430Info.vcxproj">
+      <Project>{CCE4A568-6158-33E3-9FFD-24DC37CE0A4D}</Project>
+      <Name>LLVMMSP430Info</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Mips\AsmParser\LLVMMipsAsmParser.vcxproj">
+      <Project>{D0E0E9ED-8976-3A8B-9869-A707E1477032}</Project>
+      <Name>LLVMMipsAsmParser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Mips\InstPrinter\LLVMMipsAsmPrinter.vcxproj">
+      <Project>{E78253CE-BE3A-384A-82D2-293927169001}</Project>
+      <Name>LLVMMipsAsmPrinter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Mips\LLVMMipsCodeGen.vcxproj">
+      <Project>{4EDB87C0-59F7-387A-B2AF-E3A3D45A83F9}</Project>
+      <Name>LLVMMipsCodeGen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Mips\MCTargetDesc\LLVMMipsDesc.vcxproj">
+      <Project>{05362419-8EC2-3993-A027-DFB87770415D}</Project>
+      <Name>LLVMMipsDesc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Mips\Disassembler\LLVMMipsDisassembler.vcxproj">
+      <Project>{7ECDC8AA-3728-37BE-A6DC-163831943FEE}</Project>
+      <Name>LLVMMipsDisassembler</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Mips\TargetInfo\LLVMMipsInfo.vcxproj">
+      <Project>{39148D80-217D-3ABB-A6BD-6BBEA731280D}</Project>
+      <Name>LLVMMipsInfo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\NVPTX\InstPrinter\LLVMNVPTXAsmPrinter.vcxproj">
+      <Project>{0349DD5B-5F9A-36F1-886C-166EC962321A}</Project>
+      <Name>LLVMNVPTXAsmPrinter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\NVPTX\LLVMNVPTXCodeGen.vcxproj">
+      <Project>{EF1D15D7-D2FE-3B5E-AB63-53B7973CBA26}</Project>
+      <Name>LLVMNVPTXCodeGen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\NVPTX\MCTargetDesc\LLVMNVPTXDesc.vcxproj">
+      <Project>{555020C7-50A3-3C7D-AEFA-CE9B7D51DBBD}</Project>
+      <Name>LLVMNVPTXDesc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\NVPTX\TargetInfo\LLVMNVPTXInfo.vcxproj">
+      <Project>{DD39F129-7B80-30E2-91D7-6E94D5D58ADF}</Project>
+      <Name>LLVMNVPTXInfo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Object\LLVMObject.vcxproj">
+      <Project>{B0D43E7D-4241-335C-B6EF-1F567D98B664}</Project>
+      <Name>LLVMObject</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\PowerPC\AsmParser\LLVMPowerPCAsmParser.vcxproj">
+      <Project>{1B495EA5-904D-3072-B0C4-E093F1452B9E}</Project>
+      <Name>LLVMPowerPCAsmParser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\PowerPC\InstPrinter\LLVMPowerPCAsmPrinter.vcxproj">
+      <Project>{F934F239-3246-3993-AD96-8305BA9DFD9D}</Project>
+      <Name>LLVMPowerPCAsmPrinter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\PowerPC\LLVMPowerPCCodeGen.vcxproj">
+      <Project>{09BE33D0-1BBE-3CA0-BF26-AC3E383DDBF6}</Project>
+      <Name>LLVMPowerPCCodeGen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\PowerPC\MCTargetDesc\LLVMPowerPCDesc.vcxproj">
+      <Project>{581A6305-ABF3-347B-B426-3B646EAEA09B}</Project>
+      <Name>LLVMPowerPCDesc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\PowerPC\Disassembler\LLVMPowerPCDisassembler.vcxproj">
+      <Project>{22FED63C-B436-3418-8F34-53E63B2270E4}</Project>
+      <Name>LLVMPowerPCDisassembler</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\PowerPC\TargetInfo\LLVMPowerPCInfo.vcxproj">
+      <Project>{3D289181-A820-3F54-B334-B6F3CF04F9B1}</Project>
+      <Name>LLVMPowerPCInfo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\ProfileData\LLVMProfileData.vcxproj">
+      <Project>{48A73AA4-5C03-3578-8CFB-4601F1ECA667}</Project>
+      <Name>LLVMProfileData</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Transforms\Scalar\LLVMScalarOpts.vcxproj">
+      <Project>{AC21E7FF-DA95-3FC9-8BB6-04493FB46899}</Project>
+      <Name>LLVMScalarOpts</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\CodeGen\SelectionDAG\LLVMSelectionDAG.vcxproj">
+      <Project>{8DA62F15-4438-3E55-B8B6-2A909B2D05EA}</Project>
+      <Name>LLVMSelectionDAG</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Sparc\AsmParser\LLVMSparcAsmParser.vcxproj">
+      <Project>{04FFB85D-E6F6-3E0C-889C-5DD386AB4283}</Project>
+      <Name>LLVMSparcAsmParser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Sparc\InstPrinter\LLVMSparcAsmPrinter.vcxproj">
+      <Project>{EAFD7455-A4FE-3425-B755-08D6AD7F6E2F}</Project>
+      <Name>LLVMSparcAsmPrinter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Sparc\LLVMSparcCodeGen.vcxproj">
+      <Project>{ADA703E3-F15C-3650-8B06-C64FC7B57B72}</Project>
+      <Name>LLVMSparcCodeGen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Sparc\MCTargetDesc\LLVMSparcDesc.vcxproj">
+      <Project>{2329492B-F979-3E7D-B4B4-9AE408CBF1D9}</Project>
+      <Name>LLVMSparcDesc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Sparc\Disassembler\LLVMSparcDisassembler.vcxproj">
+      <Project>{6A295404-A436-3DD1-9D53-9A281383669C}</Project>
+      <Name>LLVMSparcDisassembler</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\Sparc\TargetInfo\LLVMSparcInfo.vcxproj">
+      <Project>{ACD20DC8-4C17-3952-8577-DB6AA8D73BD3}</Project>
+      <Name>LLVMSparcInfo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Support\LLVMSupport.vcxproj">
+      <Project>{6C9F71D0-02B3-3A30-8BC1-D1A383F7BC5F}</Project>
+      <Name>LLVMSupport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\SystemZ\AsmParser\LLVMSystemZAsmParser.vcxproj">
+      <Project>{772347E4-5B02-3CE8-A65A-8CAB10B2DCCC}</Project>
+      <Name>LLVMSystemZAsmParser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\SystemZ\InstPrinter\LLVMSystemZAsmPrinter.vcxproj">
+      <Project>{72B142FA-F608-360B-8843-23A159995464}</Project>
+      <Name>LLVMSystemZAsmPrinter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\SystemZ\LLVMSystemZCodeGen.vcxproj">
+      <Project>{3BAB27EB-BFB9-34D0-A86A-F06498D5C253}</Project>
+      <Name>LLVMSystemZCodeGen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\SystemZ\MCTargetDesc\LLVMSystemZDesc.vcxproj">
+      <Project>{8ED1E62E-286F-350D-8AB1-F628FA89F7BB}</Project>
+      <Name>LLVMSystemZDesc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\SystemZ\Disassembler\LLVMSystemZDisassembler.vcxproj">
+      <Project>{792024EC-7666-3C37-B277-2FADDCDFC4B8}</Project>
+      <Name>LLVMSystemZDisassembler</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\SystemZ\TargetInfo\LLVMSystemZInfo.vcxproj">
+      <Project>{C4E4ADDB-AEA8-345E-B165-2FDB31D97049}</Project>
+      <Name>LLVMSystemZInfo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\LLVMTarget.vcxproj">
+      <Project>{650C82C2-84DE-38BD-A213-EFEE693D20DB}</Project>
+      <Name>LLVMTarget</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Transforms\Utils\LLVMTransformUtils.vcxproj">
+      <Project>{95BF119D-45EF-33AD-8F06-CF1EFB9C032A}</Project>
+      <Name>LLVMTransformUtils</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Transforms\Vectorize\LLVMVectorize.vcxproj">
+      <Project>{8AA646C3-B92A-3375-B195-228CE25D2560}</Project>
+      <Name>LLVMVectorize</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\WebAssembly\AsmParser\LLVMWebAssemblyAsmParser.vcxproj">
+      <Project>{08AC0AF4-A6EF-3405-86B9-343D194E0AAA}</Project>
+      <Name>LLVMWebAssemblyAsmParser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\WebAssembly\InstPrinter\LLVMWebAssemblyAsmPrinter.vcxproj">
+      <Project>{F5097830-4DAE-3A21-8740-2D76B3FE7C30}</Project>
+      <Name>LLVMWebAssemblyAsmPrinter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\WebAssembly\LLVMWebAssemblyCodeGen.vcxproj">
+      <Project>{C77E5E96-D3FE-3557-8D82-56F8DA160846}</Project>
+      <Name>LLVMWebAssemblyCodeGen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\WebAssembly\MCTargetDesc\LLVMWebAssemblyDesc.vcxproj">
+      <Project>{77B1B9A4-FB64-3305-84D5-43A8081A5F5D}</Project>
+      <Name>LLVMWebAssemblyDesc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\WebAssembly\Disassembler\LLVMWebAssemblyDisassembler.vcxproj">
+      <Project>{A8082A93-0466-306F-9B4E-F3AE5995C24C}</Project>
+      <Name>LLVMWebAssemblyDisassembler</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\WebAssembly\TargetInfo\LLVMWebAssemblyInfo.vcxproj">
+      <Project>{E165C8B5-A79D-3DF4-9500-B4482ABEA0F1}</Project>
+      <Name>LLVMWebAssemblyInfo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\X86\AsmParser\LLVMX86AsmParser.vcxproj">
+      <Project>{A583256A-4BF9-324F-AAFF-FC0A091E7C97}</Project>
+      <Name>LLVMX86AsmParser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\X86\InstPrinter\LLVMX86AsmPrinter.vcxproj">
+      <Project>{389370B2-A38C-35F0-B82C-6178EC8F41A8}</Project>
+      <Name>LLVMX86AsmPrinter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\X86\LLVMX86CodeGen.vcxproj">
+      <Project>{E336634B-B59D-38B8-BCE0-C1E16360002A}</Project>
+      <Name>LLVMX86CodeGen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\X86\MCTargetDesc\LLVMX86Desc.vcxproj">
+      <Project>{5470D774-ADCA-38FC-8A98-F1C4D8EC683E}</Project>
+      <Name>LLVMX86Desc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\X86\Disassembler\LLVMX86Disassembler.vcxproj">
+      <Project>{25BC13F4-241C-31EA-B546-C585094CACDF}</Project>
+      <Name>LLVMX86Disassembler</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\X86\TargetInfo\LLVMX86Info.vcxproj">
+      <Project>{F64114CC-B659-31FC-81ED-6472F84E9A01}</Project>
+      <Name>LLVMX86Info</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\X86\Utils\LLVMX86Utils.vcxproj">
+      <Project>{81CA1E60-F5E6-3AB3-9E98-4CC5C2B30910}</Project>
+      <Name>LLVMX86Utils</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\XCore\InstPrinter\LLVMXCoreAsmPrinter.vcxproj">
+      <Project>{5BBF4C61-4D59-3B3C-8565-F40F81433E73}</Project>
+      <Name>LLVMXCoreAsmPrinter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\XCore\LLVMXCoreCodeGen.vcxproj">
+      <Project>{EC01B8E7-36C0-3166-B6AF-94449AD29513}</Project>
+      <Name>LLVMXCoreCodeGen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\XCore\MCTargetDesc\LLVMXCoreDesc.vcxproj">
+      <Project>{AB83220B-9EA2-375F-B720-983845800429}</Project>
+      <Name>LLVMXCoreDesc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\XCore\Disassembler\LLVMXCoreDisassembler.vcxproj">
+      <Project>{9214A994-7989-3EFA-B106-D78E620A321A}</Project>
+      <Name>LLVMXCoreDisassembler</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\XCore\TargetInfo\LLVMXCoreInfo.vcxproj">
+      <Project>{1A7EC853-F398-3DFA-BBAF-68884BB6B2C9}</Project>
+      <Name>LLVMXCoreInfo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Transforms\IPO\LLVMipo.vcxproj">
+      <Project>{9AFE00C7-0607-38CE-B1CB-C569B4F9273F}</Project>
+      <Name>LLVMipo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\utils\unittest\gtest.vcxproj">
+      <Project>{353531D4-ABB0-330E-B03F-84D5B7C22626}</Project>
+      <Name>gtest</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\utils\unittest\UnitTestMain\gtest_main.vcxproj">
+      <Project>{D9A9D266-C6F6-340E-845B-F8096CE86078}</Project>
+      <Name>gtest_main</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

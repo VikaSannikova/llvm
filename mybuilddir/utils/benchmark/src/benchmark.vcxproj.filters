@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\tetsLLVM\llvm\utils\benchmark\src\benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\utils\benchmark\src\benchmark_register.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\utils\benchmark\src\colorprint.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\utils\benchmark\src\commandlineflags.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\utils\benchmark\src\complexity.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\utils\benchmark\src\console_reporter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\utils\benchmark\src\counter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\utils\benchmark\src\csv_reporter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\utils\benchmark\src\json_reporter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\utils\benchmark\src\reporter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\utils\benchmark\src\sleep.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\utils\benchmark\src\statistics.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\utils\benchmark\src\string_util.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\utils\benchmark\src\sysinfo.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\utils\benchmark\src\timers.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\tetsLLVM\llvm\utils\benchmark\include\benchmark\benchmark.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\utils\benchmark\src\arraysize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\utils\benchmark\src\benchmark_api_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\utils\benchmark\src\benchmark_register.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\utils\benchmark\src\check.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\utils\benchmark\src\colorprint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\utils\benchmark\src\commandlineflags.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\utils\benchmark\src\complexity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\utils\benchmark\src\counter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\utils\benchmark\src\cycleclock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\utils\benchmark\src\internal_macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\utils\benchmark\src\log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\utils\benchmark\src\mutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\utils\benchmark\src\re.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\utils\benchmark\src\sleep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\utils\benchmark\src\statistics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\utils\benchmark\src\string_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\utils\benchmark\src\thread_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\utils\benchmark\src\thread_timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\utils\benchmark\src\timers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\utils\benchmark\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F48EE06F-5695-3A60-B0FB-79F65E01A75D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EC4B794C-986D-3A40-A587-8DD71D2C4B26}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

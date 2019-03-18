@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{02898B37-65CD-3620-8E30-C8687C5F6852}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>LLVMExegesisAArch64</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\tetsLLVM\llvm\mybuilddir\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LLVMExegesisAArch64.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LLVMExegesisAArch64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\tetsLLVM\llvm\mybuilddir\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LLVMExegesisAArch64.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LLVMExegesisAArch64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\tetsLLVM\llvm\mybuilddir\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LLVMExegesisAArch64.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LLVMExegesisAArch64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\tetsLLVM\llvm\mybuilddir\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LLVMExegesisAArch64.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LLVMExegesisAArch64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\lib\Target\AArch64;C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\lib\Target\AArch64;C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\lib\Target\AArch64;C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\lib\Target\AArch64;C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\lib\Target\AArch64;C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\lib\Target\AArch64;C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\lib\Target\AArch64;C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\lib\Target\AArch64;C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\lib\Target\AArch64;C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\lib\Target\AArch64;C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\lib\Target\AArch64;C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\tools\llvm-exegesis\lib\AArch64;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;C:\tetsLLVM\llvm\lib\Target\AArch64;C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\tools\llvm-exegesis\lib\AArch64\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/tetsLLVM/llvm/tools/llvm-exegesis/lib/AArch64/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/tetsLLVM/llvm -BC:/tetsLLVM/llvm/mybuilddir --check-stamp-file C:/tetsLLVM/llvm/mybuilddir/tools/llvm-exegesis/lib/AArch64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/tetsLLVM/llvm/tools/llvm-exegesis/lib/AArch64/CMakeLists.txt;C:\tetsLLVM\llvm\tools\llvm-exegesis\lib\AArch64\CMakeLists.txt;C:\tetsLLVM\llvm\tools\llvm-exegesis\lib\AArch64\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\tetsLLVM\llvm\mybuilddir\tools\llvm-exegesis\lib\AArch64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/tetsLLVM/llvm/tools/llvm-exegesis/lib/AArch64/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/tetsLLVM/llvm -BC:/tetsLLVM/llvm/mybuilddir --check-stamp-file C:/tetsLLVM/llvm/mybuilddir/tools/llvm-exegesis/lib/AArch64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/tetsLLVM/llvm/tools/llvm-exegesis/lib/AArch64/CMakeLists.txt;C:\tetsLLVM\llvm\tools\llvm-exegesis\lib\AArch64\CMakeLists.txt;C:\tetsLLVM\llvm\tools\llvm-exegesis\lib\AArch64\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\tetsLLVM\llvm\mybuilddir\tools\llvm-exegesis\lib\AArch64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/tetsLLVM/llvm/tools/llvm-exegesis/lib/AArch64/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/tetsLLVM/llvm -BC:/tetsLLVM/llvm/mybuilddir --check-stamp-file C:/tetsLLVM/llvm/mybuilddir/tools/llvm-exegesis/lib/AArch64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/tetsLLVM/llvm/tools/llvm-exegesis/lib/AArch64/CMakeLists.txt;C:\tetsLLVM\llvm\tools\llvm-exegesis\lib\AArch64\CMakeLists.txt;C:\tetsLLVM\llvm\tools\llvm-exegesis\lib\AArch64\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\tetsLLVM\llvm\mybuilddir\tools\llvm-exegesis\lib\AArch64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/tetsLLVM/llvm/tools/llvm-exegesis/lib/AArch64/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/tetsLLVM/llvm -BC:/tetsLLVM/llvm/mybuilddir --check-stamp-file C:/tetsLLVM/llvm/mybuilddir/tools/llvm-exegesis/lib/AArch64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/tetsLLVM/llvm/tools/llvm-exegesis/lib/AArch64/CMakeLists.txt;C:\tetsLLVM\llvm\tools\llvm-exegesis\lib\AArch64\CMakeLists.txt;C:\tetsLLVM\llvm\tools\llvm-exegesis\lib\AArch64\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\tetsLLVM\llvm\mybuilddir\tools\llvm-exegesis\lib\AArch64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\tetsLLVM\llvm\tools\llvm-exegesis\lib\AArch64\Target.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\ZERO_CHECK.vcxproj">
+      <Project>{984D425B-D0AF-3E68-8EE1-923FA53F079C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64\AsmParser\LLVMAArch64AsmParser.vcxproj">
+      <Project>{67B2C805-C531-3024-BF67-2DCA4FC102F3}</Project>
+      <Name>LLVMAArch64AsmParser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64\InstPrinter\LLVMAArch64AsmPrinter.vcxproj">
+      <Project>{B149A469-AFFF-319B-8747-F7F7C8A6D6BE}</Project>
+      <Name>LLVMAArch64AsmPrinter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64\LLVMAArch64CodeGen.vcxproj">
+      <Project>{AE5D1884-41AC-3263-A376-A6D76B59CF4E}</Project>
+      <Name>LLVMAArch64CodeGen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64\MCTargetDesc\LLVMAArch64Desc.vcxproj">
+      <Project>{97B02140-256F-3DB3-941C-E117B32D3146}</Project>
+      <Name>LLVMAArch64Desc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64\Disassembler\LLVMAArch64Disassembler.vcxproj">
+      <Project>{B5FCBCF6-B69F-3B8F-873D-150A8924BD8D}</Project>
+      <Name>LLVMAArch64Disassembler</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64\TargetInfo\LLVMAArch64Info.vcxproj">
+      <Project>{38D5A945-1515-3E66-9923-D7AAEE669FA6}</Project>
+      <Name>LLVMAArch64Info</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64\Utils\LLVMAArch64Utils.vcxproj">
+      <Project>{CAA07AB4-CF13-33A9-9B44-D40D83CBA822}</Project>
+      <Name>LLVMAArch64Utils</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Transforms\AggressiveInstCombine\LLVMAggressiveInstCombine.vcxproj">
+      <Project>{2D08D3B6-4E31-31B0-89E1-450AD29FFCE8}</Project>
+      <Name>LLVMAggressiveInstCombine</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Analysis\LLVMAnalysis.vcxproj">
+      <Project>{1559919D-35CC-3106-AEC1-6053DE7BE3A5}</Project>
+      <Name>LLVMAnalysis</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\CodeGen\AsmPrinter\LLVMAsmPrinter.vcxproj">
+      <Project>{6D8A8429-1815-3746-81DD-FD94130BA9DD}</Project>
+      <Name>LLVMAsmPrinter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\BinaryFormat\LLVMBinaryFormat.vcxproj">
+      <Project>{1C181B4B-8EEF-39B6-9430-6A87BC1947D8}</Project>
+      <Name>LLVMBinaryFormat</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Bitcode\Reader\LLVMBitReader.vcxproj">
+      <Project>{5698EC74-D6A1-3493-B268-99BFDDF345F5}</Project>
+      <Name>LLVMBitReader</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Bitcode\Writer\LLVMBitWriter.vcxproj">
+      <Project>{20AC7E97-B34A-3135-9A37-51278B433CBC}</Project>
+      <Name>LLVMBitWriter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\CodeGen\LLVMCodeGen.vcxproj">
+      <Project>{3033B41A-773F-3FBA-8D16-68594764E832}</Project>
+      <Name>LLVMCodeGen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\IR\LLVMCore.vcxproj">
+      <Project>{9AEF1FB6-8CD7-39E8-B3FF-4CA2E20F1E0D}</Project>
+      <Name>LLVMCore</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\DebugInfo\CodeView\LLVMDebugInfoCodeView.vcxproj">
+      <Project>{7448E393-C706-3682-A61E-B8FABE67C984}</Project>
+      <Name>LLVMDebugInfoCodeView</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\DebugInfo\MSF\LLVMDebugInfoMSF.vcxproj">
+      <Project>{E3721871-5405-37F8-8CCF-926DC8EE220C}</Project>
+      <Name>LLVMDebugInfoMSF</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Demangle\LLVMDemangle.vcxproj">
+      <Project>{021DBB9D-B36A-3774-92D8-F00F233D292F}</Project>
+      <Name>LLVMDemangle</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\ExecutionEngine\LLVMExecutionEngine.vcxproj">
+      <Project>{AB25D069-FBCA-3950-998B-5C7C4655755E}</Project>
+      <Name>LLVMExecutionEngine</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-exegesis\lib\LLVMExegesis.vcxproj">
+      <Project>{8CCB2DDD-DD8B-3D16-A278-6548F98A18A9}</Project>
+      <Name>LLVMExegesis</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\CodeGen\GlobalISel\LLVMGlobalISel.vcxproj">
+      <Project>{F5F13F0A-C3DC-3987-B728-8AC65808B29D}</Project>
+      <Name>LLVMGlobalISel</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Transforms\InstCombine\LLVMInstCombine.vcxproj">
+      <Project>{97C125DC-7485-3285-B35E-8852C45B16C8}</Project>
+      <Name>LLVMInstCombine</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\MC\LLVMMC.vcxproj">
+      <Project>{88CBEFBD-11BD-3874-9ADA-D301906EBB44}</Project>
+      <Name>LLVMMC</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\MC\MCDisassembler\LLVMMCDisassembler.vcxproj">
+      <Project>{62BBC6F6-BC6E-3879-BFBB-5BE1C876902B}</Project>
+      <Name>LLVMMCDisassembler</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\ExecutionEngine\MCJIT\LLVMMCJIT.vcxproj">
+      <Project>{6237705A-C816-37E6-8F40-C0619876273B}</Project>
+      <Name>LLVMMCJIT</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\MC\MCParser\LLVMMCParser.vcxproj">
+      <Project>{870588A7-6BB6-3E9E-AEF8-22384AA4EC4F}</Project>
+      <Name>LLVMMCParser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Object\LLVMObject.vcxproj">
+      <Project>{B0D43E7D-4241-335C-B6EF-1F567D98B664}</Project>
+      <Name>LLVMObject</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\ObjectYAML\LLVMObjectYAML.vcxproj">
+      <Project>{70FDDF1C-2CA5-3DD8-9960-B2621A642AD1}</Project>
+      <Name>LLVMObjectYAML</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\ProfileData\LLVMProfileData.vcxproj">
+      <Project>{48A73AA4-5C03-3578-8CFB-4601F1ECA667}</Project>
+      <Name>LLVMProfileData</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\ExecutionEngine\RuntimeDyld\LLVMRuntimeDyld.vcxproj">
+      <Project>{F7B17CC3-3724-39F4-A479-633A33D08345}</Project>
+      <Name>LLVMRuntimeDyld</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Transforms\Scalar\LLVMScalarOpts.vcxproj">
+      <Project>{AC21E7FF-DA95-3FC9-8BB6-04493FB46899}</Project>
+      <Name>LLVMScalarOpts</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\CodeGen\SelectionDAG\LLVMSelectionDAG.vcxproj">
+      <Project>{8DA62F15-4438-3E55-B8B6-2A909B2D05EA}</Project>
+      <Name>LLVMSelectionDAG</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Support\LLVMSupport.vcxproj">
+      <Project>{6C9F71D0-02B3-3A30-8BC1-D1A383F7BC5F}</Project>
+      <Name>LLVMSupport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\LLVMTarget.vcxproj">
+      <Project>{650C82C2-84DE-38BD-A213-EFEE693D20DB}</Project>
+      <Name>LLVMTarget</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Transforms\Utils\LLVMTransformUtils.vcxproj">
+      <Project>{95BF119D-45EF-33AD-8F06-CF1EFB9C032A}</Project>
+      <Name>LLVMTransformUtils</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

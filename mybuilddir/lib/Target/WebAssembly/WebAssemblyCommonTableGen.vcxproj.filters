@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\1cae6081966251b30ec98001653a16b0\WebAssemblyGenAsmMatcher.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\1cae6081966251b30ec98001653a16b0\WebAssemblyGenAsmWriter.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\1cae6081966251b30ec98001653a16b0\WebAssemblyGenDAGISel.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\1cae6081966251b30ec98001653a16b0\WebAssemblyGenDisassemblerTables.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\1cae6081966251b30ec98001653a16b0\WebAssemblyGenFastISel.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\1cae6081966251b30ec98001653a16b0\WebAssemblyGenInstrInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\1cae6081966251b30ec98001653a16b0\WebAssemblyGenMCCodeEmitter.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\1cae6081966251b30ec98001653a16b0\WebAssemblyGenRegisterInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\1cae6081966251b30ec98001653a16b0\WebAssemblyGenSubtargetInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\8e71ff016b1e48bb0d137333b952fe90\WebAssemblyCommonTableGen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\lib\Target\WebAssembly\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\WebAssembly\CMakeFiles\WebAssemblyCommonTableGen" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D4EBACED-6769-3248-8D6C-E505D76A0424}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\73e64af7c4010f0e0e39a448ade61975\LTO.def.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\63e43681facbe542fb8b7ba173c39831\LTO_exports.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\tools\lto\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\tetsLLVM\llvm\mybuilddir\tools\lto\CMakeFiles\LTO_exports" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D4EBACED-6769-3248-8D6C-E505D76A0424}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

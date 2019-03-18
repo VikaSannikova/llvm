@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMAsmBackend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMELFObjectWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMELFStreamer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMMachObjectWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMMachORelocationInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMMCAsmInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMMCCodeEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMMCExpr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMMCTargetDesc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMTargetStreamer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMUnwindOpAsm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMWinCOFFObjectWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMWinCOFFStreamer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMAddressingModes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMAsmBackend.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMAsmBackendDarwin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMAsmBackendELF.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMAsmBackendWinCOFF.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMBaseInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMFixupKinds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMMCAsmInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMMCExpr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMMCTargetDesc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\ARMUnwindOpAsm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F48EE06F-5695-3A60-B0FB-79F65E01A75D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EC4B794C-986D-3A40-A587-8DD71D2C4B26}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

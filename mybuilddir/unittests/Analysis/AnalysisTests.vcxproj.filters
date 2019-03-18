@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\AliasAnalysisTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\AliasSetTrackerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\BasicAliasAnalysisTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\BlockFrequencyInfoTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\BranchProbabilityInfoTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\CallGraphTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\CaptureTrackingTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\CFGTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\CGSCCPassManagerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\DivergenceAnalysisTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\GlobalsModRefTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\ValueLatticeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\LazyCallGraphTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\LoopInfoTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\MemoryBuiltinsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\MemorySSATest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\OrderedBasicBlockTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\OrderedInstructionsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\PhiValuesTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\ProfileSummaryInfoTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\ScalarEvolutionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\SparsePropagation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\TargetLibraryInfoTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\TBAATest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\UnrollAnalyzerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\unittests\Analysis\ValueTrackingTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\unittests\Analysis\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\tetsLLVM\llvm\resources\windows_version_resource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{5D927E97-74FF-33EE-8B6E-55C030A6BED1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EC4B794C-986D-3A40-A587-8DD71D2C4B26}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

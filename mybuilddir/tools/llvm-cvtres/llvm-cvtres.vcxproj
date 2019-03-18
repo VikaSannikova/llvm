@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{101B6F74-D12A-3A6B-9F17-B4624FF66E10}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>llvm-cvtres</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\tetsLLVM\llvm\mybuilddir\Debug\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">llvm-cvtres.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">llvm-cvtres</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\tetsLLVM\llvm\mybuilddir\Release\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">llvm-cvtres.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">llvm-cvtres</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">llvm-cvtres.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">llvm-cvtres</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">llvm-cvtres.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">llvm-cvtres</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cvtres;C:\tetsLLVM\llvm\tools\llvm-cvtres;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cvtres;C:\tetsLLVM\llvm\tools\llvm-cvtres;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cvtres;C:\tetsLLVM\llvm\tools\llvm-cvtres;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\Debug\lib\LLVMObject.lib;..\..\Debug\lib\LLVMOption.lib;..\..\Debug\lib\LLVMSupport.lib;..\..\Debug\lib\LLVMBitReader.lib;..\..\Debug\lib\LLVMCore.lib;..\..\Debug\lib\LLVMMCParser.lib;..\..\Debug\lib\LLVMMC.lib;..\..\Debug\lib\LLVMBinaryFormat.lib;..\..\Debug\lib\LLVMDebugInfoCodeView.lib;..\..\Debug\lib\LLVMDebugInfoMSF.lib;..\..\Debug\lib\LLVMSupport.lib;psapi.lib;shell32.lib;ole32.lib;uuid.lib;advapi32.lib;delayimp.lib;-delayload:shell32.dll;-delayload:ole32.dll;..\..\Debug\lib\LLVMDemangle.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/tetsLLVM/llvm/mybuilddir/Debug/lib/llvm-cvtres.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/tetsLLVM/llvm/mybuilddir/Debug/bin/llvm-cvtres.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cvtres;C:\tetsLLVM\llvm\tools\llvm-cvtres;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cvtres;C:\tetsLLVM\llvm\tools\llvm-cvtres;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cvtres;C:\tetsLLVM\llvm\tools\llvm-cvtres;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\Release\lib\LLVMObject.lib;..\..\Release\lib\LLVMOption.lib;..\..\Release\lib\LLVMSupport.lib;..\..\Release\lib\LLVMBitReader.lib;..\..\Release\lib\LLVMCore.lib;..\..\Release\lib\LLVMMCParser.lib;..\..\Release\lib\LLVMMC.lib;..\..\Release\lib\LLVMBinaryFormat.lib;..\..\Release\lib\LLVMDebugInfoCodeView.lib;..\..\Release\lib\LLVMDebugInfoMSF.lib;..\..\Release\lib\LLVMSupport.lib;psapi.lib;shell32.lib;ole32.lib;uuid.lib;advapi32.lib;delayimp.lib;-delayload:shell32.dll;-delayload:ole32.dll;..\..\Release\lib\LLVMDemangle.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/tetsLLVM/llvm/mybuilddir/Release/lib/llvm-cvtres.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/tetsLLVM/llvm/mybuilddir/Release/bin/llvm-cvtres.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cvtres;C:\tetsLLVM\llvm\tools\llvm-cvtres;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cvtres;C:\tetsLLVM\llvm\tools\llvm-cvtres;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cvtres;C:\tetsLLVM\llvm\tools\llvm-cvtres;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\MinSizeRel\lib\LLVMObject.lib;..\..\MinSizeRel\lib\LLVMOption.lib;..\..\MinSizeRel\lib\LLVMSupport.lib;..\..\MinSizeRel\lib\LLVMBitReader.lib;..\..\MinSizeRel\lib\LLVMCore.lib;..\..\MinSizeRel\lib\LLVMMCParser.lib;..\..\MinSizeRel\lib\LLVMMC.lib;..\..\MinSizeRel\lib\LLVMBinaryFormat.lib;..\..\MinSizeRel\lib\LLVMDebugInfoCodeView.lib;..\..\MinSizeRel\lib\LLVMDebugInfoMSF.lib;..\..\MinSizeRel\lib\LLVMSupport.lib;psapi.lib;shell32.lib;ole32.lib;uuid.lib;advapi32.lib;delayimp.lib;-delayload:shell32.dll;-delayload:ole32.dll;..\..\MinSizeRel\lib\LLVMDemangle.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/tetsLLVM/llvm/mybuilddir/MinSizeRel/lib/llvm-cvtres.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/tetsLLVM/llvm/mybuilddir/MinSizeRel/bin/llvm-cvtres.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cvtres;C:\tetsLLVM\llvm\tools\llvm-cvtres;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_LARGEFILE_SOURCE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cvtres;C:\tetsLLVM\llvm\tools\llvm-cvtres;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cvtres;C:\tetsLLVM\llvm\tools\llvm-cvtres;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\RelWithDebInfo\lib\LLVMObject.lib;..\..\RelWithDebInfo\lib\LLVMOption.lib;..\..\RelWithDebInfo\lib\LLVMSupport.lib;..\..\RelWithDebInfo\lib\LLVMBitReader.lib;..\..\RelWithDebInfo\lib\LLVMCore.lib;..\..\RelWithDebInfo\lib\LLVMMCParser.lib;..\..\RelWithDebInfo\lib\LLVMMC.lib;..\..\RelWithDebInfo\lib\LLVMBinaryFormat.lib;..\..\RelWithDebInfo\lib\LLVMDebugInfoCodeView.lib;..\..\RelWithDebInfo\lib\LLVMDebugInfoMSF.lib;..\..\RelWithDebInfo\lib\LLVMSupport.lib;psapi.lib;shell32.lib;ole32.lib;uuid.lib;advapi32.lib;delayimp.lib;-delayload:shell32.dll;-delayload:ole32.dll;..\..\RelWithDebInfo\lib\LLVMDemangle.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/tetsLLVM/llvm/mybuilddir/RelWithDebInfo/lib/llvm-cvtres.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/tetsLLVM/llvm/mybuilddir/RelWithDebInfo/bin/llvm-cvtres.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\tools\llvm-cvtres\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/tetsLLVM/llvm/tools/llvm-cvtres/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/tetsLLVM/llvm -BC:/tetsLLVM/llvm/mybuilddir --check-stamp-file C:/tetsLLVM/llvm/mybuilddir/tools/llvm-cvtres/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/tetsLLVM/llvm/tools/llvm-cvtres/CMakeLists.txt;C:\tetsLLVM\llvm\tools\llvm-cvtres\CMakeLists.txt;C:\tetsLLVM\llvm\tools\llvm-cvtres\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cvtres\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/tetsLLVM/llvm/tools/llvm-cvtres/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/tetsLLVM/llvm -BC:/tetsLLVM/llvm/mybuilddir --check-stamp-file C:/tetsLLVM/llvm/mybuilddir/tools/llvm-cvtres/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/tetsLLVM/llvm/tools/llvm-cvtres/CMakeLists.txt;C:\tetsLLVM\llvm\tools\llvm-cvtres\CMakeLists.txt;C:\tetsLLVM\llvm\tools\llvm-cvtres\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cvtres\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/tetsLLVM/llvm/tools/llvm-cvtres/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/tetsLLVM/llvm -BC:/tetsLLVM/llvm/mybuilddir --check-stamp-file C:/tetsLLVM/llvm/mybuilddir/tools/llvm-cvtres/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/tetsLLVM/llvm/tools/llvm-cvtres/CMakeLists.txt;C:\tetsLLVM\llvm\tools\llvm-cvtres\CMakeLists.txt;C:\tetsLLVM\llvm\tools\llvm-cvtres\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cvtres\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/tetsLLVM/llvm/tools/llvm-cvtres/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/tetsLLVM/llvm -BC:/tetsLLVM/llvm/mybuilddir --check-stamp-file C:/tetsLLVM/llvm/mybuilddir/tools/llvm-cvtres/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/tetsLLVM/llvm/tools/llvm-cvtres/CMakeLists.txt;C:\tetsLLVM\llvm\tools\llvm-cvtres\CMakeLists.txt;C:\tetsLLVM\llvm\tools\llvm-cvtres\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cvtres\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\tetsLLVM\llvm\tools\llvm-cvtres\llvm-cvtres.cpp" />
+    <ClInclude Include="C:\tetsLLVM\llvm\tools\llvm-cvtres\Opts.td" />
+    <ResourceCompile Include="C:\tetsLLVM\llvm\resources\windows_version_resource.rc">
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</SuppressStartupBanner>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RC_VERSION_FIELD_1=8;RC_VERSION_FIELD_2=0;RC_VERSION_FIELD_3=0;RC_VERSION_FIELD_4=0;RC_FILE_VERSION=\"8.0.0\";RC_INTERNAL_NAME=\"llvm-cvtres\";RC_PRODUCT_NAME=\"LLVM\";RC_PRODUCT_VERSION=\"8.0.0\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</SuppressStartupBanner>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RC_VERSION_FIELD_1=8;RC_VERSION_FIELD_2=0;RC_VERSION_FIELD_3=0;RC_VERSION_FIELD_4=0;RC_FILE_VERSION=\"8.0.0\";RC_INTERNAL_NAME=\"llvm-cvtres\";RC_PRODUCT_NAME=\"LLVM\";RC_PRODUCT_VERSION=\"8.0.0\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</SuppressStartupBanner>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">RC_VERSION_FIELD_1=8;RC_VERSION_FIELD_2=0;RC_VERSION_FIELD_3=0;RC_VERSION_FIELD_4=0;RC_FILE_VERSION=\"8.0.0\";RC_INTERNAL_NAME=\"llvm-cvtres\";RC_PRODUCT_NAME=\"LLVM\";RC_PRODUCT_VERSION=\"8.0.0\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</SuppressStartupBanner>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">RC_VERSION_FIELD_1=8;RC_VERSION_FIELD_2=0;RC_VERSION_FIELD_3=0;RC_VERSION_FIELD_4=0;RC_FILE_VERSION=\"8.0.0\";RC_INTERNAL_NAME=\"llvm-cvtres\";RC_PRODUCT_NAME=\"LLVM\";RC_PRODUCT_VERSION=\"8.0.0\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\ZERO_CHECK.vcxproj">
+      <Project>{984D425B-D0AF-3E68-8EE1-923FA53F079C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cvtres\CvtResTableGen.vcxproj">
+      <Project>{FB73FDA6-3D1A-3E99-8CC1-27D81BFF2566}</Project>
+      <Name>CvtResTableGen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\BinaryFormat\LLVMBinaryFormat.vcxproj">
+      <Project>{1C181B4B-8EEF-39B6-9430-6A87BC1947D8}</Project>
+      <Name>LLVMBinaryFormat</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Bitcode\Reader\LLVMBitReader.vcxproj">
+      <Project>{5698EC74-D6A1-3493-B268-99BFDDF345F5}</Project>
+      <Name>LLVMBitReader</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\IR\LLVMCore.vcxproj">
+      <Project>{9AEF1FB6-8CD7-39E8-B3FF-4CA2E20F1E0D}</Project>
+      <Name>LLVMCore</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\DebugInfo\CodeView\LLVMDebugInfoCodeView.vcxproj">
+      <Project>{7448E393-C706-3682-A61E-B8FABE67C984}</Project>
+      <Name>LLVMDebugInfoCodeView</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\DebugInfo\MSF\LLVMDebugInfoMSF.vcxproj">
+      <Project>{E3721871-5405-37F8-8CCF-926DC8EE220C}</Project>
+      <Name>LLVMDebugInfoMSF</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Demangle\LLVMDemangle.vcxproj">
+      <Project>{021DBB9D-B36A-3774-92D8-F00F233D292F}</Project>
+      <Name>LLVMDemangle</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\MC\LLVMMC.vcxproj">
+      <Project>{88CBEFBD-11BD-3874-9ADA-D301906EBB44}</Project>
+      <Name>LLVMMC</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\MC\MCParser\LLVMMCParser.vcxproj">
+      <Project>{870588A7-6BB6-3E9E-AEF8-22384AA4EC4F}</Project>
+      <Name>LLVMMCParser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Object\LLVMObject.vcxproj">
+      <Project>{B0D43E7D-4241-335C-B6EF-1F567D98B664}</Project>
+      <Name>LLVMObject</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Option\LLVMOption.vcxproj">
+      <Project>{841BA7E4-0829-309F-AD5E-2BD945FE128B}</Project>
+      <Name>LLVMOption</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Support\LLVMSupport.vcxproj">
+      <Project>{6C9F71D0-02B3-3A30-8BC1-D1A383F7BC5F}</Project>
+      <Name>LLVMSupport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

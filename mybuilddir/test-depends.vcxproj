@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A43B2F7F-4EC6-34AC-8B61-B2385048C06F}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>test-depends</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir;C:\tetsLLVM\llvm;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir;C:\tetsLLVM\llvm;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir;C:\tetsLLVM\llvm;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir;C:\tetsLLVM\llvm;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\490908ce64bc8674eef8c60f2f1c1fb6\test-depends.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/490908ce64bc8674eef8c60f2f1c1fb6/test-depends.rule;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\FileCheck.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\not.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\FileCheck.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\bugpoint.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\count.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llc.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\lli.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\lli-child-target.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-ar.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-as.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-bcanalyzer.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-c-test.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-cat.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-cfi-verify.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-config.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-cov.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-cvtres.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-cxxdump.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-cxxfilt.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-cxxmap.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-diff.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-dis.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\dsymutil.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-dwarfdump.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-dwp.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-elfabi.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-exegesis.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-extract.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-isel-fuzzer.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-link.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-lto2.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-mc.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-mca.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-modextract.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-mt.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-nm.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-objcopy.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-objdump.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-opt-fuzzer.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-opt-report.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-pdbutil.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-profdata.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-rc.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-readobj.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-rtdyld.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-size.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-split.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-strings.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-symbolizer.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-undname.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-xray.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\not.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\obj2yaml.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\opt.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\sancov.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\sanstats.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\verify-uselistorder.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\yaml-bench.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\yaml2obj.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-lto.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\LTO.dll;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\test-depends</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/490908ce64bc8674eef8c60f2f1c1fb6/test-depends.rule;C:\tetsLLVM\llvm\mybuilddir\Release\bin\FileCheck.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\not.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\FileCheck.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\bugpoint.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\count.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llc.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\lli.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\lli-child-target.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-ar.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-as.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-bcanalyzer.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-c-test.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-cat.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-cfi-verify.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-config.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-cov.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-cvtres.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-cxxdump.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-cxxfilt.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-cxxmap.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-diff.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-dis.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\dsymutil.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-dwarfdump.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-dwp.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-elfabi.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-exegesis.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-extract.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-isel-fuzzer.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-link.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-lto2.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-mc.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-mca.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-modextract.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-mt.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-nm.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-objcopy.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-objdump.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-opt-fuzzer.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-opt-report.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-pdbutil.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-profdata.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-rc.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-readobj.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-rtdyld.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-size.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-split.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-strings.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-symbolizer.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-undname.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-xray.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\not.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\obj2yaml.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\opt.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\sancov.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\sanstats.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\verify-uselistorder.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\yaml-bench.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\yaml2obj.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-lto.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\LTO.dll;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\test-depends</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/490908ce64bc8674eef8c60f2f1c1fb6/test-depends.rule;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\FileCheck.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\not.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\FileCheck.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\bugpoint.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\count.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llc.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\lli.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\lli-child-target.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-ar.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-as.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-bcanalyzer.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-c-test.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-cat.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-cfi-verify.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-config.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-cov.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-cvtres.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-cxxdump.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-cxxfilt.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-cxxmap.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-diff.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-dis.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\dsymutil.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-dwarfdump.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-dwp.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-elfabi.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-exegesis.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-extract.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-isel-fuzzer.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-link.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-lto2.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-mc.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-mca.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-modextract.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-mt.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-nm.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-objcopy.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-objdump.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-opt-fuzzer.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-opt-report.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-pdbutil.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-profdata.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-rc.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-readobj.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-rtdyld.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-size.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-split.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-strings.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-symbolizer.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-undname.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-xray.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\not.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\obj2yaml.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\opt.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\sancov.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\sanstats.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\verify-uselistorder.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\yaml-bench.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\yaml2obj.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-lto.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\LTO.dll;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\test-depends</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/490908ce64bc8674eef8c60f2f1c1fb6/test-depends.rule;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\FileCheck.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\not.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\FileCheck.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\bugpoint.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\count.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llc.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\lli.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\lli-child-target.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-ar.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-as.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-bcanalyzer.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-c-test.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-cat.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-cfi-verify.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-config.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-cov.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-cvtres.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-cxxdump.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-cxxfilt.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-cxxmap.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-diff.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-dis.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\dsymutil.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-dwarfdump.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-dwp.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-elfabi.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-exegesis.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-extract.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-isel-fuzzer.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-link.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-lto2.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-mc.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-mca.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-modextract.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-mt.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-nm.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-objcopy.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-objdump.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-opt-fuzzer.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-opt-report.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-pdbutil.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-profdata.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-rc.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-readobj.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-rtdyld.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-size.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-split.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-strings.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-symbolizer.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-undname.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-xray.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\not.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\obj2yaml.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\opt.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\sancov.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\sanstats.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\verify-uselistorder.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\yaml-bench.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\yaml2obj.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-lto.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\LTO.dll;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\test-depends</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/tetsLLVM/llvm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/tetsLLVM/llvm -BC:/tetsLLVM/llvm/mybuilddir --check-stamp-file C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/tetsLLVM/llvm/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.13\Modules\AddFileDependencies.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindBacktrace.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.13\Templates\CPackConfig.cmake.in;C:\tetsLLVM\llvm\CMakeLists.txt;C:\tetsLLVM\llvm\LLVMBuild.txt;C:\tetsLLVM\llvm\bindings\LLVMBuild.txt;C:\tetsLLVM\llvm\cmake\config-ix.cmake;C:\tetsLLVM\llvm\cmake\modules\AddLLVM.cmake;C:\tetsLLVM\llvm\cmake\modules\AddOCaml.cmake;C:\tetsLLVM\llvm\cmake\modules\CheckAtomic.cmake;C:\tetsLLVM\llvm\cmake\modules\CheckCompilerVersion.cmake;C:\tetsLLVM\llvm\cmake\modules\CheckLinkerFlag.cmake;C:\tetsLLVM\llvm\cmake\modules\ChooseMSVCCRT.cmake;C:\tetsLLVM\llvm\cmake\modules\DetermineGCCCompatible.cmake;C:\tetsLLVM\llvm\cmake\modules\FindLibpfm.cmake;C:\tetsLLVM\llvm\cmake\modules\FindOCaml.cmake;C:\tetsLLVM\llvm\cmake\modules\GetHostTriple.cmake;C:\tetsLLVM\llvm\cmake\modules\HandleLLVMOptions.cmake;C:\tetsLLVM\llvm\cmake\modules\HandleLLVMStdlib.cmake;C:\tetsLLVM\llvm\cmake\modules\LLVM-Config.cmake;C:\tetsLLVM\llvm\cmake\modules\LLVMExternalProjectUtils.cmake;C:\tetsLLVM\llvm\cmake\modules\LLVMProcessSources.cmake;C:\tetsLLVM\llvm\cmake\modules\TableGen.cmake;C:\tetsLLVM\llvm\cmake\modules\VersionFromVCS.cmake;C:\tetsLLVM\llvm\docs\LLVMBuild.txt;C:\tetsLLVM\llvm\examples\LLVMBuild.txt;C:\tetsLLVM\llvm\include\llvm\Config\AsmParsers.def.in;C:\tetsLLVM\llvm\include\llvm\Config\AsmPrinters.def.in;C:\tetsLLVM\llvm\include\llvm\Config\Disassemblers.def.in;C:\tetsLLVM\llvm\include\llvm\Config\Targets.def.in;C:\tetsLLVM\llvm\include\llvm\Config\abi-breaking.h.cmake;C:\tetsLLVM\llvm\include\llvm\Config\config.h.cmake;C:\tetsLLVM\llvm\include\llvm\Config\llvm-config.h.cmake;C:\tetsLLVM\llvm\lib\Analysis\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\BinaryFormat\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Bitcode\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Bitcode\Reader\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Bitcode\Writer\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\CodeGen\AsmPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\CodeGen\GlobalISel\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\CodeGen\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\CodeGen\MIRParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\CodeGen\SelectionDAG\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\CodeView\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\DWARF\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\MSF\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\PDB\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\Symbolize\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Demangle\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\IntelJITEvents\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\Interpreter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\MCJIT\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\OProfileJIT\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\Orc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\PerfJITEvents\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\RuntimeDyld\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\FuzzMutate\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\IR\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\IRReader\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\LTO\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\LineEditor\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Linker\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\MC\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\MC\MCDisassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\MC\MCParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\MCA\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Object\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ObjectYAML\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\OptRemarks\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Option\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Passes\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ProfileData\Coverage\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ProfileData\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Support\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\TableGen\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARC\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARC\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARC\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARC\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARC\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Hexagon\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Hexagon\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Hexagon\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Hexagon\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\NVPTX\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\NVPTX\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\NVPTX\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\NVPTX\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\XCore\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\XCore\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\XCore\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\XCore\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\XCore\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Testing\Support\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\TextAPI\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ToolDrivers\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ToolDrivers\llvm-dlltool\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ToolDrivers\llvm-lib\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\AggressiveInstCombine\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\Coroutines\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\IPO\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\InstCombine\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\Instrumentation\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\ObjCARC\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\Scalar\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\Vectorize\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\WindowsManifest\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\XRay\LLVMBuild.txt;C:\tetsLLVM\llvm\llvm.spec.in;C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CMakeASMCompiler.cmake;C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CMakeCCompiler.cmake;C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CMakeCXXCompiler.cmake;C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CMakeRCCompiler.cmake;C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CMakeSystem.cmake;C:\tetsLLVM\llvm\mybuilddir\LLVMBuild.cmake;C:\tetsLLVM\llvm\projects\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\bugpoint\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\dsymutil\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llc\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\lli\ChildTarget\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\lli\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-ar\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-as\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-bcanalyzer\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-cat\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-cfi-verify\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-cov\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-cvtres\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-diff\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-dis\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-dwarfdump\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-dwp\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-elfabi\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-exegesis\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-extract\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-jitlistener\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-link\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-lto\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-mc\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-mca\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-modextract\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-mt\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-nm\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-objcopy\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-objdump\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-pdbutil\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-profdata\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-rc\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-rtdyld\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-size\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-split\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-undname\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\opt\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\verify-uselistorder\LLVMBuild.txt;C:\tetsLLVM\llvm\utils\LLVMBuild.txt;C:\tetsLLVM\llvm\utils\TableGen\LLVMBuild.txt;C:\tetsLLVM\llvm\utils\llvm-build\llvmbuild\__init__.py;C:\tetsLLVM\llvm\utils\llvm-build\llvmbuild\componentinfo.py;C:\tetsLLVM\llvm\utils\llvm-build\llvmbuild\main.py;C:\tetsLLVM\llvm\utils\llvm-build\llvmbuild\util.py;C:\tetsLLVM\llvm\utils\unittest\LLVMBuild.txt;C:\tetsLLVM\llvm\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/tetsLLVM/llvm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/tetsLLVM/llvm -BC:/tetsLLVM/llvm/mybuilddir --check-stamp-file C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/tetsLLVM/llvm/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.13\Modules\AddFileDependencies.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindBacktrace.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.13\Templates\CPackConfig.cmake.in;C:\tetsLLVM\llvm\CMakeLists.txt;C:\tetsLLVM\llvm\LLVMBuild.txt;C:\tetsLLVM\llvm\bindings\LLVMBuild.txt;C:\tetsLLVM\llvm\cmake\config-ix.cmake;C:\tetsLLVM\llvm\cmake\modules\AddLLVM.cmake;C:\tetsLLVM\llvm\cmake\modules\AddOCaml.cmake;C:\tetsLLVM\llvm\cmake\modules\CheckAtomic.cmake;C:\tetsLLVM\llvm\cmake\modules\CheckCompilerVersion.cmake;C:\tetsLLVM\llvm\cmake\modules\CheckLinkerFlag.cmake;C:\tetsLLVM\llvm\cmake\modules\ChooseMSVCCRT.cmake;C:\tetsLLVM\llvm\cmake\modules\DetermineGCCCompatible.cmake;C:\tetsLLVM\llvm\cmake\modules\FindLibpfm.cmake;C:\tetsLLVM\llvm\cmake\modules\FindOCaml.cmake;C:\tetsLLVM\llvm\cmake\modules\GetHostTriple.cmake;C:\tetsLLVM\llvm\cmake\modules\HandleLLVMOptions.cmake;C:\tetsLLVM\llvm\cmake\modules\HandleLLVMStdlib.cmake;C:\tetsLLVM\llvm\cmake\modules\LLVM-Config.cmake;C:\tetsLLVM\llvm\cmake\modules\LLVMExternalProjectUtils.cmake;C:\tetsLLVM\llvm\cmake\modules\LLVMProcessSources.cmake;C:\tetsLLVM\llvm\cmake\modules\TableGen.cmake;C:\tetsLLVM\llvm\cmake\modules\VersionFromVCS.cmake;C:\tetsLLVM\llvm\docs\LLVMBuild.txt;C:\tetsLLVM\llvm\examples\LLVMBuild.txt;C:\tetsLLVM\llvm\include\llvm\Config\AsmParsers.def.in;C:\tetsLLVM\llvm\include\llvm\Config\AsmPrinters.def.in;C:\tetsLLVM\llvm\include\llvm\Config\Disassemblers.def.in;C:\tetsLLVM\llvm\include\llvm\Config\Targets.def.in;C:\tetsLLVM\llvm\include\llvm\Config\abi-breaking.h.cmake;C:\tetsLLVM\llvm\include\llvm\Config\config.h.cmake;C:\tetsLLVM\llvm\include\llvm\Config\llvm-config.h.cmake;C:\tetsLLVM\llvm\lib\Analysis\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\BinaryFormat\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Bitcode\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Bitcode\Reader\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Bitcode\Writer\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\CodeGen\AsmPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\CodeGen\GlobalISel\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\CodeGen\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\CodeGen\MIRParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\CodeGen\SelectionDAG\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\CodeView\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\DWARF\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\MSF\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\PDB\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\Symbolize\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Demangle\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\IntelJITEvents\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\Interpreter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\MCJIT\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\OProfileJIT\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\Orc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\PerfJITEvents\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\RuntimeDyld\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\FuzzMutate\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\IR\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\IRReader\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\LTO\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\LineEditor\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Linker\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\MC\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\MC\MCDisassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\MC\MCParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\MCA\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Object\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ObjectYAML\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\OptRemarks\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Option\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Passes\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ProfileData\Coverage\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ProfileData\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Support\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\TableGen\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARC\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARC\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARC\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARC\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARC\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Hexagon\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Hexagon\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Hexagon\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Hexagon\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\NVPTX\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\NVPTX\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\NVPTX\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\NVPTX\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\XCore\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\XCore\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\XCore\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\XCore\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\XCore\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Testing\Support\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\TextAPI\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ToolDrivers\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ToolDrivers\llvm-dlltool\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ToolDrivers\llvm-lib\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\AggressiveInstCombine\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\Coroutines\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\IPO\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\InstCombine\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\Instrumentation\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\ObjCARC\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\Scalar\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\Vectorize\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\WindowsManifest\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\XRay\LLVMBuild.txt;C:\tetsLLVM\llvm\llvm.spec.in;C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CMakeASMCompiler.cmake;C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CMakeCCompiler.cmake;C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CMakeCXXCompiler.cmake;C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CMakeRCCompiler.cmake;C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CMakeSystem.cmake;C:\tetsLLVM\llvm\mybuilddir\LLVMBuild.cmake;C:\tetsLLVM\llvm\projects\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\bugpoint\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\dsymutil\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llc\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\lli\ChildTarget\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\lli\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-ar\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-as\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-bcanalyzer\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-cat\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-cfi-verify\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-cov\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-cvtres\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-diff\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-dis\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-dwarfdump\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-dwp\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-elfabi\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-exegesis\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-extract\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-jitlistener\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-link\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-lto\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-mc\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-mca\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-modextract\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-mt\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-nm\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-objcopy\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-objdump\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-pdbutil\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-profdata\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-rc\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-rtdyld\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-size\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-split\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-undname\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\opt\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\verify-uselistorder\LLVMBuild.txt;C:\tetsLLVM\llvm\utils\LLVMBuild.txt;C:\tetsLLVM\llvm\utils\TableGen\LLVMBuild.txt;C:\tetsLLVM\llvm\utils\llvm-build\llvmbuild\__init__.py;C:\tetsLLVM\llvm\utils\llvm-build\llvmbuild\componentinfo.py;C:\tetsLLVM\llvm\utils\llvm-build\llvmbuild\main.py;C:\tetsLLVM\llvm\utils\llvm-build\llvmbuild\util.py;C:\tetsLLVM\llvm\utils\unittest\LLVMBuild.txt;C:\tetsLLVM\llvm\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/tetsLLVM/llvm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/tetsLLVM/llvm -BC:/tetsLLVM/llvm/mybuilddir --check-stamp-file C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/tetsLLVM/llvm/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.13\Modules\AddFileDependencies.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindBacktrace.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.13\Templates\CPackConfig.cmake.in;C:\tetsLLVM\llvm\CMakeLists.txt;C:\tetsLLVM\llvm\LLVMBuild.txt;C:\tetsLLVM\llvm\bindings\LLVMBuild.txt;C:\tetsLLVM\llvm\cmake\config-ix.cmake;C:\tetsLLVM\llvm\cmake\modules\AddLLVM.cmake;C:\tetsLLVM\llvm\cmake\modules\AddOCaml.cmake;C:\tetsLLVM\llvm\cmake\modules\CheckAtomic.cmake;C:\tetsLLVM\llvm\cmake\modules\CheckCompilerVersion.cmake;C:\tetsLLVM\llvm\cmake\modules\CheckLinkerFlag.cmake;C:\tetsLLVM\llvm\cmake\modules\ChooseMSVCCRT.cmake;C:\tetsLLVM\llvm\cmake\modules\DetermineGCCCompatible.cmake;C:\tetsLLVM\llvm\cmake\modules\FindLibpfm.cmake;C:\tetsLLVM\llvm\cmake\modules\FindOCaml.cmake;C:\tetsLLVM\llvm\cmake\modules\GetHostTriple.cmake;C:\tetsLLVM\llvm\cmake\modules\HandleLLVMOptions.cmake;C:\tetsLLVM\llvm\cmake\modules\HandleLLVMStdlib.cmake;C:\tetsLLVM\llvm\cmake\modules\LLVM-Config.cmake;C:\tetsLLVM\llvm\cmake\modules\LLVMExternalProjectUtils.cmake;C:\tetsLLVM\llvm\cmake\modules\LLVMProcessSources.cmake;C:\tetsLLVM\llvm\cmake\modules\TableGen.cmake;C:\tetsLLVM\llvm\cmake\modules\VersionFromVCS.cmake;C:\tetsLLVM\llvm\docs\LLVMBuild.txt;C:\tetsLLVM\llvm\examples\LLVMBuild.txt;C:\tetsLLVM\llvm\include\llvm\Config\AsmParsers.def.in;C:\tetsLLVM\llvm\include\llvm\Config\AsmPrinters.def.in;C:\tetsLLVM\llvm\include\llvm\Config\Disassemblers.def.in;C:\tetsLLVM\llvm\include\llvm\Config\Targets.def.in;C:\tetsLLVM\llvm\include\llvm\Config\abi-breaking.h.cmake;C:\tetsLLVM\llvm\include\llvm\Config\config.h.cmake;C:\tetsLLVM\llvm\include\llvm\Config\llvm-config.h.cmake;C:\tetsLLVM\llvm\lib\Analysis\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\BinaryFormat\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Bitcode\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Bitcode\Reader\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Bitcode\Writer\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\CodeGen\AsmPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\CodeGen\GlobalISel\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\CodeGen\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\CodeGen\MIRParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\CodeGen\SelectionDAG\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\CodeView\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\DWARF\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\MSF\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\PDB\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\Symbolize\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Demangle\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\IntelJITEvents\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\Interpreter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\MCJIT\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\OProfileJIT\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\Orc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\PerfJITEvents\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\RuntimeDyld\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\FuzzMutate\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\IR\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\IRReader\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\LTO\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\LineEditor\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Linker\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\MC\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\MC\MCDisassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\MC\MCParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\MCA\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Object\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ObjectYAML\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\OptRemarks\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Option\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Passes\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ProfileData\Coverage\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ProfileData\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Support\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\TableGen\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARC\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARC\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARC\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARC\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARC\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Hexagon\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Hexagon\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Hexagon\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Hexagon\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\NVPTX\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\NVPTX\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\NVPTX\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\NVPTX\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\XCore\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\XCore\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\XCore\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\XCore\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\XCore\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Testing\Support\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\TextAPI\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ToolDrivers\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ToolDrivers\llvm-dlltool\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ToolDrivers\llvm-lib\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\AggressiveInstCombine\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\Coroutines\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\IPO\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\InstCombine\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\Instrumentation\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\ObjCARC\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\Scalar\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\Vectorize\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\WindowsManifest\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\XRay\LLVMBuild.txt;C:\tetsLLVM\llvm\llvm.spec.in;C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CMakeASMCompiler.cmake;C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CMakeCCompiler.cmake;C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CMakeCXXCompiler.cmake;C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CMakeRCCompiler.cmake;C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CMakeSystem.cmake;C:\tetsLLVM\llvm\mybuilddir\LLVMBuild.cmake;C:\tetsLLVM\llvm\projects\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\bugpoint\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\dsymutil\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llc\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\lli\ChildTarget\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\lli\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-ar\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-as\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-bcanalyzer\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-cat\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-cfi-verify\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-cov\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-cvtres\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-diff\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-dis\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-dwarfdump\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-dwp\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-elfabi\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-exegesis\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-extract\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-jitlistener\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-link\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-lto\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-mc\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-mca\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-modextract\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-mt\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-nm\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-objcopy\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-objdump\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-pdbutil\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-profdata\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-rc\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-rtdyld\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-size\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-split\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-undname\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\opt\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\verify-uselistorder\LLVMBuild.txt;C:\tetsLLVM\llvm\utils\LLVMBuild.txt;C:\tetsLLVM\llvm\utils\TableGen\LLVMBuild.txt;C:\tetsLLVM\llvm\utils\llvm-build\llvmbuild\__init__.py;C:\tetsLLVM\llvm\utils\llvm-build\llvmbuild\componentinfo.py;C:\tetsLLVM\llvm\utils\llvm-build\llvmbuild\main.py;C:\tetsLLVM\llvm\utils\llvm-build\llvmbuild\util.py;C:\tetsLLVM\llvm\utils\unittest\LLVMBuild.txt;C:\tetsLLVM\llvm\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/tetsLLVM/llvm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/tetsLLVM/llvm -BC:/tetsLLVM/llvm/mybuilddir --check-stamp-file C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/tetsLLVM/llvm/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.13\Modules\AddFileDependencies.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindBacktrace.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.13\Templates\CPackConfig.cmake.in;C:\tetsLLVM\llvm\CMakeLists.txt;C:\tetsLLVM\llvm\LLVMBuild.txt;C:\tetsLLVM\llvm\bindings\LLVMBuild.txt;C:\tetsLLVM\llvm\cmake\config-ix.cmake;C:\tetsLLVM\llvm\cmake\modules\AddLLVM.cmake;C:\tetsLLVM\llvm\cmake\modules\AddOCaml.cmake;C:\tetsLLVM\llvm\cmake\modules\CheckAtomic.cmake;C:\tetsLLVM\llvm\cmake\modules\CheckCompilerVersion.cmake;C:\tetsLLVM\llvm\cmake\modules\CheckLinkerFlag.cmake;C:\tetsLLVM\llvm\cmake\modules\ChooseMSVCCRT.cmake;C:\tetsLLVM\llvm\cmake\modules\DetermineGCCCompatible.cmake;C:\tetsLLVM\llvm\cmake\modules\FindLibpfm.cmake;C:\tetsLLVM\llvm\cmake\modules\FindOCaml.cmake;C:\tetsLLVM\llvm\cmake\modules\GetHostTriple.cmake;C:\tetsLLVM\llvm\cmake\modules\HandleLLVMOptions.cmake;C:\tetsLLVM\llvm\cmake\modules\HandleLLVMStdlib.cmake;C:\tetsLLVM\llvm\cmake\modules\LLVM-Config.cmake;C:\tetsLLVM\llvm\cmake\modules\LLVMExternalProjectUtils.cmake;C:\tetsLLVM\llvm\cmake\modules\LLVMProcessSources.cmake;C:\tetsLLVM\llvm\cmake\modules\TableGen.cmake;C:\tetsLLVM\llvm\cmake\modules\VersionFromVCS.cmake;C:\tetsLLVM\llvm\docs\LLVMBuild.txt;C:\tetsLLVM\llvm\examples\LLVMBuild.txt;C:\tetsLLVM\llvm\include\llvm\Config\AsmParsers.def.in;C:\tetsLLVM\llvm\include\llvm\Config\AsmPrinters.def.in;C:\tetsLLVM\llvm\include\llvm\Config\Disassemblers.def.in;C:\tetsLLVM\llvm\include\llvm\Config\Targets.def.in;C:\tetsLLVM\llvm\include\llvm\Config\abi-breaking.h.cmake;C:\tetsLLVM\llvm\include\llvm\Config\config.h.cmake;C:\tetsLLVM\llvm\include\llvm\Config\llvm-config.h.cmake;C:\tetsLLVM\llvm\lib\Analysis\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\BinaryFormat\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Bitcode\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Bitcode\Reader\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Bitcode\Writer\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\CodeGen\AsmPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\CodeGen\GlobalISel\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\CodeGen\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\CodeGen\MIRParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\CodeGen\SelectionDAG\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\CodeView\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\DWARF\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\MSF\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\PDB\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\DebugInfo\Symbolize\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Demangle\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\IntelJITEvents\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\Interpreter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\MCJIT\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\OProfileJIT\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\Orc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\PerfJITEvents\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ExecutionEngine\RuntimeDyld\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\FuzzMutate\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\IR\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\IRReader\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\LTO\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\LineEditor\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Linker\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\MC\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\MC\MCDisassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\MC\MCParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\MCA\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Object\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ObjectYAML\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\OptRemarks\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Option\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Passes\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ProfileData\Coverage\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ProfileData\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Support\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\TableGen\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AArch64\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AMDGPU\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARC\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARC\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARC\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARC\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARC\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\ARM\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\AVR\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\BPF\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Hexagon\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Hexagon\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Hexagon\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Hexagon\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Lanai\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\MSP430\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Mips\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\NVPTX\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\NVPTX\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\NVPTX\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\NVPTX\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\PowerPC\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\RISCV\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\Sparc\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\SystemZ\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\WebAssembly\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\AsmParser\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\X86\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\XCore\Disassembler\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\XCore\InstPrinter\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\XCore\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\XCore\MCTargetDesc\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Target\XCore\TargetInfo\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Testing\Support\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\TextAPI\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ToolDrivers\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ToolDrivers\llvm-dlltool\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\ToolDrivers\llvm-lib\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\AggressiveInstCombine\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\Coroutines\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\IPO\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\InstCombine\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\Instrumentation\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\ObjCARC\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\Scalar\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\Utils\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\Transforms\Vectorize\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\WindowsManifest\LLVMBuild.txt;C:\tetsLLVM\llvm\lib\XRay\LLVMBuild.txt;C:\tetsLLVM\llvm\llvm.spec.in;C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CMakeASMCompiler.cmake;C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CMakeCCompiler.cmake;C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CMakeCXXCompiler.cmake;C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CMakeRCCompiler.cmake;C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CMakeSystem.cmake;C:\tetsLLVM\llvm\mybuilddir\LLVMBuild.cmake;C:\tetsLLVM\llvm\projects\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\bugpoint\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\dsymutil\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llc\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\lli\ChildTarget\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\lli\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-ar\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-as\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-bcanalyzer\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-cat\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-cfi-verify\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-cov\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-cvtres\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-diff\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-dis\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-dwarfdump\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-dwp\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-elfabi\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-exegesis\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-extract\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-jitlistener\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-link\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-lto\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-mc\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-mca\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-modextract\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-mt\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-nm\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-objcopy\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-objdump\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-pdbutil\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-profdata\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-rc\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-rtdyld\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-size\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-split\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\llvm-undname\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\opt\LLVMBuild.txt;C:\tetsLLVM\llvm\tools\verify-uselistorder\LLVMBuild.txt;C:\tetsLLVM\llvm\utils\LLVMBuild.txt;C:\tetsLLVM\llvm\utils\TableGen\LLVMBuild.txt;C:\tetsLLVM\llvm\utils\llvm-build\llvmbuild\__init__.py;C:\tetsLLVM\llvm\utils\llvm-build\llvmbuild\componentinfo.py;C:\tetsLLVM\llvm\utils\llvm-build\llvmbuild\main.py;C:\tetsLLVM\llvm\utils\llvm-build\llvmbuild\util.py;C:\tetsLLVM\llvm\utils\unittest\LLVMBuild.txt;C:\tetsLLVM\llvm\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\test-depends" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\ZERO_CHECK.vcxproj">
+      <Project>{984D425B-D0AF-3E68-8EE1-923FA53F079C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\bugpoint-passes\BugpointPasses.vcxproj">
+      <Project>{4CEAB373-F345-31EC-B39B-EA4DF757F1B4}</Project>
+      <Name>BugpointPasses</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\utils\FileCheck\FileCheck.vcxproj">
+      <Project>{B48577DC-2B27-3E20-9B45-D191F1EA0C3D}</Project>
+      <Name>FileCheck</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\lib\Transforms\Hello\LLVMHello.vcxproj">
+      <Project>{947101BB-35D7-3DD5-923A-84C04E3AE34F}</Project>
+      <Name>LLVMHello</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\lto\LTO.vcxproj">
+      <Project>{937F5C03-0B00-3D83-81EB-D6CED24E2C51}</Project>
+      <Name>LTO</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\unittests\UnitTests.vcxproj">
+      <Project>{94B625B3-FD37-3C11-86AF-8574BA50C3FF}</Project>
+      <Name>UnitTests</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\bugpoint\bugpoint.vcxproj">
+      <Project>{DAAA29BA-8E96-36C2-B379-FF356B0ACCEC}</Project>
+      <Name>bugpoint</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\utils\count\count.vcxproj">
+      <Project>{7BADCB59-BCC7-3F27-BB77-D42D182D1A50}</Project>
+      <Name>count</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\dsymutil\dsymutil.vcxproj">
+      <Project>{423F490D-8E7A-3C8E-9782-2BAE8D79FFA8}</Project>
+      <Name>dsymutil</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llc\llc.vcxproj">
+      <Project>{6A62E4D2-178A-3153-BF73-194DDF584A6C}</Project>
+      <Name>llc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\lli\lli.vcxproj">
+      <Project>{0B952BF1-327C-3A45-B43D-D32456EF317F}</Project>
+      <Name>lli</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\lli\ChildTarget\lli-child-target.vcxproj">
+      <Project>{22576DD0-4E36-3A9A-95F8-25CDF5EDF79B}</Project>
+      <Name>lli-child-target</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-ar\llvm-ar.vcxproj">
+      <Project>{455D854F-E6EA-3D96-BD43-A04F1D7CED5D}</Project>
+      <Name>llvm-ar</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-as\llvm-as.vcxproj">
+      <Project>{C2387300-C69F-3129-B847-F7C7F0DB46E8}</Project>
+      <Name>llvm-as</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-bcanalyzer\llvm-bcanalyzer.vcxproj">
+      <Project>{8D541CC3-179F-3D4F-8CDE-E636480A6E08}</Project>
+      <Name>llvm-bcanalyzer</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-c-test\llvm-c-test.vcxproj">
+      <Project>{44DEE905-1BE8-3A49-8989-A6F93E681245}</Project>
+      <Name>llvm-c-test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cat\llvm-cat.vcxproj">
+      <Project>{7F62EB25-7D61-3865-8175-05E4FDA7016C}</Project>
+      <Name>llvm-cat</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cfi-verify\llvm-cfi-verify.vcxproj">
+      <Project>{D46B9C4A-BE85-3527-85B4-B57A642FF98F}</Project>
+      <Name>llvm-cfi-verify</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-config\llvm-config.vcxproj">
+      <Project>{18363FFF-0EF6-3786-A5D1-C13D597B885A}</Project>
+      <Name>llvm-config</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cov\llvm-cov.vcxproj">
+      <Project>{69A8EB8C-FAE1-309B-BD55-58E5EB1D680B}</Project>
+      <Name>llvm-cov</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cvtres\llvm-cvtres.vcxproj">
+      <Project>{101B6F74-D12A-3A6B-9F17-B4624FF66E10}</Project>
+      <Name>llvm-cvtres</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cxxdump\llvm-cxxdump.vcxproj">
+      <Project>{86D6869A-A3CF-3D4A-99A0-30C186479A3A}</Project>
+      <Name>llvm-cxxdump</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cxxfilt\llvm-cxxfilt.vcxproj">
+      <Project>{0DAD55C5-11C5-3A60-B363-8826230AD5C8}</Project>
+      <Name>llvm-cxxfilt</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-cxxmap\llvm-cxxmap.vcxproj">
+      <Project>{1B78FE97-2AE7-3C60-8F57-2400760D4D3F}</Project>
+      <Name>llvm-cxxmap</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-diff\llvm-diff.vcxproj">
+      <Project>{71CD988E-6909-3D31-AB30-3771D4A45214}</Project>
+      <Name>llvm-diff</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-dis\llvm-dis.vcxproj">
+      <Project>{050120CA-BF15-3484-8CE7-7B8261F83E48}</Project>
+      <Name>llvm-dis</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-ar\llvm-dlltool.vcxproj">
+      <Project>{F170CDE8-7481-3095-8503-29BED3BB0F29}</Project>
+      <Name>llvm-dlltool</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-dwarfdump\llvm-dwarfdump.vcxproj">
+      <Project>{2D58590F-B9E7-310E-A935-1599D4EBCC8B}</Project>
+      <Name>llvm-dwarfdump</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-dwp\llvm-dwp.vcxproj">
+      <Project>{CEF25528-19F6-3897-A8AF-2531A3B72553}</Project>
+      <Name>llvm-dwp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-elfabi\llvm-elfabi.vcxproj">
+      <Project>{367B43E7-3D50-3B9D-B1BD-DDA896FC5E43}</Project>
+      <Name>llvm-elfabi</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-exegesis\llvm-exegesis.vcxproj">
+      <Project>{F5E11015-82C9-30EB-A197-46814A9633DC}</Project>
+      <Name>llvm-exegesis</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-extract\llvm-extract.vcxproj">
+      <Project>{F394AC66-96FE-3C33-A4FE-D786A8924397}</Project>
+      <Name>llvm-extract</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-isel-fuzzer\llvm-isel-fuzzer.vcxproj">
+      <Project>{90071F72-F485-39D8-BAE1-268F589990A2}</Project>
+      <Name>llvm-isel-fuzzer</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-ar\llvm-lib.vcxproj">
+      <Project>{2AC4141F-5311-3FEC-AB00-B87A4DC30EDB}</Project>
+      <Name>llvm-lib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-link\llvm-link.vcxproj">
+      <Project>{4A3165BB-5715-3FCB-BCD6-626A69E13B05}</Project>
+      <Name>llvm-link</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-lto\llvm-lto.vcxproj">
+      <Project>{77471D72-433B-3211-9809-F636F018EE24}</Project>
+      <Name>llvm-lto</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-lto2\llvm-lto2.vcxproj">
+      <Project>{9B10C748-F77D-3D66-BDF3-9D0CC525B39A}</Project>
+      <Name>llvm-lto2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-mc\llvm-mc.vcxproj">
+      <Project>{42C592C1-7ED2-3AE5-A731-C7452D471273}</Project>
+      <Name>llvm-mc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-mca\llvm-mca.vcxproj">
+      <Project>{6BA4BCDB-412B-3DFE-8418-379779ADC71E}</Project>
+      <Name>llvm-mca</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-modextract\llvm-modextract.vcxproj">
+      <Project>{EE2A80D3-FF6A-35F3-85F9-C28F3CC68DC3}</Project>
+      <Name>llvm-modextract</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-mt\llvm-mt.vcxproj">
+      <Project>{8A41FCF7-D945-3B43-98A6-FDCE0B896E42}</Project>
+      <Name>llvm-mt</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-nm\llvm-nm.vcxproj">
+      <Project>{B101C6FA-2EEA-346E-9B8B-99801B056509}</Project>
+      <Name>llvm-nm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-objcopy\llvm-objcopy.vcxproj">
+      <Project>{018347F7-AF70-3C78-9A79-B2068593256C}</Project>
+      <Name>llvm-objcopy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-objdump\llvm-objdump.vcxproj">
+      <Project>{CD92F7E4-8835-3A00-A527-7C89080B1233}</Project>
+      <Name>llvm-objdump</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-opt-fuzzer\llvm-opt-fuzzer.vcxproj">
+      <Project>{399ABA43-9E9F-3D3C-98D9-02BC9D10F909}</Project>
+      <Name>llvm-opt-fuzzer</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-opt-report\llvm-opt-report.vcxproj">
+      <Project>{8A9905F5-C06F-3F9C-81AF-F7DC19539829}</Project>
+      <Name>llvm-opt-report</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-pdbutil\llvm-pdbutil.vcxproj">
+      <Project>{CFC36743-7C52-3D36-A9AF-5953B7A7D2FC}</Project>
+      <Name>llvm-pdbutil</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-profdata\llvm-profdata.vcxproj">
+      <Project>{A3CF5233-C369-3246-B26A-D138E33FA858}</Project>
+      <Name>llvm-profdata</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-ar\llvm-ranlib.vcxproj">
+      <Project>{88203125-1FBE-398F-997E-463D9B0246CC}</Project>
+      <Name>llvm-ranlib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-rc\llvm-rc.vcxproj">
+      <Project>{4DBB5B3E-F384-37E5-9839-D814988D896B}</Project>
+      <Name>llvm-rc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-readobj\llvm-readelf.vcxproj">
+      <Project>{75E1024D-F01D-3CAB-AB28-5E93B1224EFB}</Project>
+      <Name>llvm-readelf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-readobj\llvm-readobj.vcxproj">
+      <Project>{E3897338-9F6D-3269-80B9-394DD4C08A2D}</Project>
+      <Name>llvm-readobj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-rtdyld\llvm-rtdyld.vcxproj">
+      <Project>{BADB0CCC-4EF2-37C1-BC04-298DE4802A33}</Project>
+      <Name>llvm-rtdyld</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-size\llvm-size.vcxproj">
+      <Project>{015FA430-B147-3860-B644-400368A096DF}</Project>
+      <Name>llvm-size</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-split\llvm-split.vcxproj">
+      <Project>{C997F160-450C-34CC-BC64-985EA9E83244}</Project>
+      <Name>llvm-split</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-strings\llvm-strings.vcxproj">
+      <Project>{21F4E068-ADCA-3A79-92D8-1638F66F3598}</Project>
+      <Name>llvm-strings</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-objcopy\llvm-strip.vcxproj">
+      <Project>{03751116-E309-3ADC-9E7B-E3AE65BAB445}</Project>
+      <Name>llvm-strip</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-symbolizer\llvm-symbolizer.vcxproj">
+      <Project>{01912081-4509-3F8A-B380-9FDE81BEF148}</Project>
+      <Name>llvm-symbolizer</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\utils\TableGen\llvm-tblgen.vcxproj">
+      <Project>{AFE15AEC-F81C-3CA6-8DE9-D7AFED73AEB9}</Project>
+      <Name>llvm-tblgen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-undname\llvm-undname.vcxproj">
+      <Project>{D0ADF66A-3FCE-3E2B-B88D-6ED86E5DB1B7}</Project>
+      <Name>llvm-undname</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\llvm-xray\llvm-xray.vcxproj">
+      <Project>{E01D69A1-D7F6-3B1A-AFE7-B10EC5152809}</Project>
+      <Name>llvm-xray</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\utils\not\not.vcxproj">
+      <Project>{8CD0686C-87AE-3550-BF0D-6F21ED45FBDD}</Project>
+      <Name>not</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\obj2yaml\obj2yaml.vcxproj">
+      <Project>{BBD8BB34-2E34-3F96-B81A-36AA72D1F56A}</Project>
+      <Name>obj2yaml</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\opt\opt.vcxproj">
+      <Project>{4B2EAFDF-0550-3D5F-A4D9-3B92BE4F001D}</Project>
+      <Name>opt</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\utils\lit\prepare-check-lit.vcxproj">
+      <Project>{E4E63E5F-02C6-33C5-B320-84C132B0C1AA}</Project>
+      <Name>prepare-check-lit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\sancov\sancov.vcxproj">
+      <Project>{7C2EECDD-3855-3869-9FE4-28D39821E74A}</Project>
+      <Name>sancov</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\sanstats\sanstats.vcxproj">
+      <Project>{39D6ACF8-6234-358A-839E-80A872B2B513}</Project>
+      <Name>sanstats</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\verify-uselistorder\verify-uselistorder.vcxproj">
+      <Project>{7BBCB2B2-0F8D-3EB4-A17F-CB53DFE56576}</Project>
+      <Name>verify-uselistorder</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\utils\yaml-bench\yaml-bench.vcxproj">
+      <Project>{2B5C4E6E-5A0D-3635-BA46-A3273B4B2A6E}</Project>
+      <Name>yaml-bench</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\tools\yaml2obj\yaml2obj.vcxproj">
+      <Project>{CD2AE769-125B-37A5-9BCB-4BFECCE3EC1C}</Project>
+      <Name>yaml2obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\MC\MCParser\AsmLexer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\MC\MCParser\AsmParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\MC\MCParser\COFFAsmParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\MC\MCParser\DarwinAsmParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\MC\MCParser\ELFAsmParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\MC\MCParser\MCAsmLexer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\MC\MCParser\MCAsmParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\MC\MCParser\MCAsmParserExtension.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\MC\MCParser\MCTargetAsmParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\MC\MCParser\WasmAsmParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\tetsLLVM\llvm\include\llvm\MC\MCParser\AsmCond.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\include\llvm\MC\MCParser\AsmLexer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\include\llvm\MC\MCParser\MCAsmLexer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\include\llvm\MC\MCParser\MCAsmParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\include\llvm\MC\MCParser\MCAsmParserExtension.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\include\llvm\MC\MCParser\MCAsmParserUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\include\llvm\MC\MCParser\MCParsedAsmOperand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\include\llvm\MC\MCParser\MCTargetAsmParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\lib\MC\MCParser\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F48EE06F-5695-3A60-B0FB-79F65E01A75D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EC4B794C-986D-3A40-A587-8DD71D2C4B26}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

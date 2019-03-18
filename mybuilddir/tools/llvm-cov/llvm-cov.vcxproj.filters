@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\tetsLLVM\llvm\tools\llvm-cov\llvm-cov.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\tools\llvm-cov\gcov.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\tools\llvm-cov\CodeCoverage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\tools\llvm-cov\CoverageExporterJson.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\tools\llvm-cov\CoverageExporterLcov.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\tools\llvm-cov\CoverageFilters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\tools\llvm-cov\CoverageReport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\tools\llvm-cov\CoverageSummaryInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\tools\llvm-cov\SourceCoverageView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\tools\llvm-cov\SourceCoverageViewHTML.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\tools\llvm-cov\SourceCoverageViewText.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\tools\llvm-cov\TestingSupport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\tetsLLVM\llvm\tools\llvm-cov\CoverageExporter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\tools\llvm-cov\CoverageExporterJson.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\tools\llvm-cov\CoverageExporterLcov.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\tools\llvm-cov\CoverageFilters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\tools\llvm-cov\CoverageReport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\tools\llvm-cov\CoverageSummaryInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\tools\llvm-cov\CoverageViewOptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\tools\llvm-cov\RenderingSupport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\tools\llvm-cov\SourceCoverageView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\tools\llvm-cov\SourceCoverageViewHTML.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\tools\llvm-cov\SourceCoverageViewText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\tools\llvm-cov\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\tetsLLVM\llvm\resources\windows_version_resource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F48EE06F-5695-3A60-B0FB-79F65E01A75D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{5D927E97-74FF-33EE-8B6E-55C030A6BED1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EC4B794C-986D-3A40-A587-8DD71D2C4B26}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

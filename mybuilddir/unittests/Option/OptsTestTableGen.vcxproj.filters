@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\6f75a2bc52e06cfaeefe223e8dc2abaf\Opts.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\11c7fc146b671b4c6e22e41055d9811e\OptsTestTableGen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\unittests\Option\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\tetsLLVM\llvm\mybuilddir\unittests\Option\CMakeFiles\OptsTestTableGen" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D4EBACED-6769-3248-8D6C-E505D76A0424}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\489205a043a58b03f063a91e3c36c521\X86GenAsmMatcher.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\489205a043a58b03f063a91e3c36c521\X86GenAsmWriter.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\489205a043a58b03f063a91e3c36c521\X86GenAsmWriter1.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\489205a043a58b03f063a91e3c36c521\X86GenCallingConv.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\489205a043a58b03f063a91e3c36c521\X86GenDAGISel.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\489205a043a58b03f063a91e3c36c521\X86GenDisassemblerTables.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\489205a043a58b03f063a91e3c36c521\X86GenEVEX2VEXTables.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\489205a043a58b03f063a91e3c36c521\X86GenExegesis.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\489205a043a58b03f063a91e3c36c521\X86GenFastISel.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\489205a043a58b03f063a91e3c36c521\X86GenGlobalISel.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\489205a043a58b03f063a91e3c36c521\X86GenInstrInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\489205a043a58b03f063a91e3c36c521\X86GenRegisterBank.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\489205a043a58b03f063a91e3c36c521\X86GenRegisterInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\489205a043a58b03f063a91e3c36c521\X86GenSubtargetInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3de05f4c49327e29375a23651af4de3f\X86CommonTableGen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\lib\Target\X86\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\X86\CMakeFiles\X86CommonTableGen" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D4EBACED-6769-3248-8D6C-E505D76A0424}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

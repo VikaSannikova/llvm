@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\13cdc6e40f9921d734908b209e46e65a\AArch64GenAsmMatcher.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\13cdc6e40f9921d734908b209e46e65a\AArch64GenAsmWriter.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\13cdc6e40f9921d734908b209e46e65a\AArch64GenAsmWriter1.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\13cdc6e40f9921d734908b209e46e65a\AArch64GenCallingConv.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\13cdc6e40f9921d734908b209e46e65a\AArch64GenDAGISel.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\13cdc6e40f9921d734908b209e46e65a\AArch64GenDisassemblerTables.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\13cdc6e40f9921d734908b209e46e65a\AArch64GenFastISel.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\13cdc6e40f9921d734908b209e46e65a\AArch64GenGlobalISel.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\13cdc6e40f9921d734908b209e46e65a\AArch64GenInstrInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\13cdc6e40f9921d734908b209e46e65a\AArch64GenMCCodeEmitter.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\13cdc6e40f9921d734908b209e46e65a\AArch64GenMCPseudoLowering.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\13cdc6e40f9921d734908b209e46e65a\AArch64GenRegisterBank.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\13cdc6e40f9921d734908b209e46e65a\AArch64GenRegisterInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\13cdc6e40f9921d734908b209e46e65a\AArch64GenSubtargetInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\13cdc6e40f9921d734908b209e46e65a\AArch64GenSystemOperands.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\13cdc6e40f9921d734908b209e46e65a\AArch64GenExegesis.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\dccfd90f4e8aea17bf0f8db5fb7034d3\AArch64CommonTableGen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\tetsLLVM\llvm\lib\Target\AArch64\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\tetsLLVM\llvm\mybuilddir\lib\Target\AArch64\CMakeFiles\AArch64CommonTableGen" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D4EBACED-6769-3248-8D6C-E505D76A0424}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

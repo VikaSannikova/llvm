@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonAsmBackend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonELFObjectWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonInstPrinter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCAsmInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCChecker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCCodeEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCCompound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCDuplexInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCELFStreamer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCExpr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCInstrInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCShuffler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCTargetDesc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonShuffler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonBaseInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonFixupKinds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonInstPrinter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCAsmInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCChecker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCCodeEmitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCELFStreamer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCExpr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCInstrInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCShuffler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCTargetDesc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonShuffler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\lib\Target\Hexagon\MCTargetDesc\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F48EE06F-5695-3A60-B0FB-79F65E01A75D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EC4B794C-986D-3A40-A587-8DD71D2C4B26}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

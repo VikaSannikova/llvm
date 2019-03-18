@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiAsmPrinter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiDelaySlotFiller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiFrameLowering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiInstrInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiISelDAGToDAG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiISelLowering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiMachineFunctionInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiMCInstLower.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiMemAluCombiner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiRegisterInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiSelectionDAGInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiSubtarget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiTargetMachine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiTargetObjectFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Lanai\Lanai.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiCallingConv.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiInstrFormats.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiInstrInfo.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiRegisterInfo.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiSchedule.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Lanai\Lanai.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiAluCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiCondCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiFrameLowering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiISelLowering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiInstrInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiMCInstLower.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiMachineFunctionInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiRegisterInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiSelectionDAGInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiSubtarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiTargetMachine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiTargetObjectFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\Lanai\LanaiTargetTransformInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\lib\Target\Lanai\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F48EE06F-5695-3A60-B0FB-79F65E01A75D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EC4B794C-986D-3A40-A587-8DD71D2C4B26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TableGen descriptions">
+      <UniqueIdentifier>{4118FC5C-57B9-3E6D-ABFD-1E067FDD4190}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

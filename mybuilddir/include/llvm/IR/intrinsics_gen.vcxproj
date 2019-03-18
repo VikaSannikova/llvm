@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DEBC1075-77E6-380E-B4D3-CE7CB5106A0A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>intrinsics_gen</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR;C:\tetsLLVM\llvm\include\llvm\IR;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR;C:\tetsLLVM\llvm\include\llvm\IR;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR;C:\tetsLLVM\llvm\include\llvm\IR;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR;C:\tetsLLVM\llvm\include\llvm\IR;C:\tetsLLVM\llvm\mybuilddir\include;C:\tetsLLVM\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\c95741011c10f2018f4f53786a17864a\Attributes.inc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Attributes.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+..\..\..\Debug\bin\llvm-tblgen.exe -gen-attrs -I C:/tetsLLVM/llvm/include/llvm/IR -I C:/tetsLLVM/llvm/include C:/tetsLLVM/llvm/include/llvm/IR/Attributes.td -o C:/tetsLLVM/llvm/mybuilddir/include/llvm/IR/Attributes.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/c95741011c10f2018f4f53786a17864a/Attributes.inc.rule;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\SDNodeProperties.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\ValueTypes.td;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\Option\OptParser.td;C:\tetsLLVM\llvm\include\llvm\TableGen\SearchableTable.td;C:\tetsLLVM\llvm\include\llvm\Target\GenericOpcodes.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetCallingConv.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetInstrPredicate.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetItinerary.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetPfmCounters.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSchedule.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSelectionDAG.td;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\Attributes.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Attributes.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-attrs -I C:/tetsLLVM/llvm/include/llvm/IR -I C:/tetsLLVM/llvm/include C:/tetsLLVM/llvm/include/llvm/IR/Attributes.td -o C:/tetsLLVM/llvm/mybuilddir/include/llvm/IR/Attributes.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/c95741011c10f2018f4f53786a17864a/Attributes.inc.rule;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\SDNodeProperties.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\ValueTypes.td;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\Option\OptParser.td;C:\tetsLLVM\llvm\include\llvm\TableGen\SearchableTable.td;C:\tetsLLVM\llvm\include\llvm\Target\GenericOpcodes.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetCallingConv.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetInstrPredicate.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetItinerary.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetPfmCounters.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSchedule.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSelectionDAG.td;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\Attributes.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Attributes.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+..\..\..\MinSizeRel\bin\llvm-tblgen.exe -gen-attrs -I C:/tetsLLVM/llvm/include/llvm/IR -I C:/tetsLLVM/llvm/include C:/tetsLLVM/llvm/include/llvm/IR/Attributes.td -o C:/tetsLLVM/llvm/mybuilddir/include/llvm/IR/Attributes.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/c95741011c10f2018f4f53786a17864a/Attributes.inc.rule;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\SDNodeProperties.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\ValueTypes.td;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\Option\OptParser.td;C:\tetsLLVM\llvm\include\llvm\TableGen\SearchableTable.td;C:\tetsLLVM\llvm\include\llvm\Target\GenericOpcodes.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetCallingConv.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetInstrPredicate.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetItinerary.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetPfmCounters.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSchedule.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSelectionDAG.td;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\Attributes.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Attributes.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+..\..\..\RelWithDebInfo\bin\llvm-tblgen.exe -gen-attrs -I C:/tetsLLVM/llvm/include/llvm/IR -I C:/tetsLLVM/llvm/include C:/tetsLLVM/llvm/include/llvm/IR/Attributes.td -o C:/tetsLLVM/llvm/mybuilddir/include/llvm/IR/Attributes.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/c95741011c10f2018f4f53786a17864a/Attributes.inc.rule;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\SDNodeProperties.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\ValueTypes.td;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\Option\OptParser.td;C:\tetsLLVM\llvm\include\llvm\TableGen\SearchableTable.td;C:\tetsLLVM\llvm\include\llvm\Target\GenericOpcodes.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetCallingConv.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetInstrPredicate.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetItinerary.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetPfmCounters.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSchedule.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSelectionDAG.td;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\Attributes.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\c95741011c10f2018f4f53786a17864a\IntrinsicEnums.inc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building IntrinsicEnums.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+..\..\..\Debug\bin\llvm-tblgen.exe -gen-intrinsic-enums -I C:/tetsLLVM/llvm/include/llvm/IR -I C:/tetsLLVM/llvm/include C:/tetsLLVM/llvm/include/llvm/IR/Intrinsics.td -o C:/tetsLLVM/llvm/mybuilddir/include/llvm/IR/IntrinsicEnums.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/c95741011c10f2018f4f53786a17864a/IntrinsicEnums.inc.rule;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\SDNodeProperties.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\ValueTypes.td;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\Option\OptParser.td;C:\tetsLLVM\llvm\include\llvm\TableGen\SearchableTable.td;C:\tetsLLVM\llvm\include\llvm\Target\GenericOpcodes.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetCallingConv.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetInstrPredicate.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetItinerary.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetPfmCounters.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSchedule.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSelectionDAG.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\IntrinsicEnums.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building IntrinsicEnums.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-intrinsic-enums -I C:/tetsLLVM/llvm/include/llvm/IR -I C:/tetsLLVM/llvm/include C:/tetsLLVM/llvm/include/llvm/IR/Intrinsics.td -o C:/tetsLLVM/llvm/mybuilddir/include/llvm/IR/IntrinsicEnums.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/c95741011c10f2018f4f53786a17864a/IntrinsicEnums.inc.rule;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\SDNodeProperties.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\ValueTypes.td;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\Option\OptParser.td;C:\tetsLLVM\llvm\include\llvm\TableGen\SearchableTable.td;C:\tetsLLVM\llvm\include\llvm\Target\GenericOpcodes.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetCallingConv.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetInstrPredicate.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetItinerary.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetPfmCounters.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSchedule.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSelectionDAG.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\IntrinsicEnums.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building IntrinsicEnums.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+..\..\..\MinSizeRel\bin\llvm-tblgen.exe -gen-intrinsic-enums -I C:/tetsLLVM/llvm/include/llvm/IR -I C:/tetsLLVM/llvm/include C:/tetsLLVM/llvm/include/llvm/IR/Intrinsics.td -o C:/tetsLLVM/llvm/mybuilddir/include/llvm/IR/IntrinsicEnums.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/c95741011c10f2018f4f53786a17864a/IntrinsicEnums.inc.rule;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\SDNodeProperties.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\ValueTypes.td;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\Option\OptParser.td;C:\tetsLLVM\llvm\include\llvm\TableGen\SearchableTable.td;C:\tetsLLVM\llvm\include\llvm\Target\GenericOpcodes.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetCallingConv.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetInstrPredicate.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetItinerary.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetPfmCounters.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSchedule.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSelectionDAG.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\IntrinsicEnums.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building IntrinsicEnums.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+..\..\..\RelWithDebInfo\bin\llvm-tblgen.exe -gen-intrinsic-enums -I C:/tetsLLVM/llvm/include/llvm/IR -I C:/tetsLLVM/llvm/include C:/tetsLLVM/llvm/include/llvm/IR/Intrinsics.td -o C:/tetsLLVM/llvm/mybuilddir/include/llvm/IR/IntrinsicEnums.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/c95741011c10f2018f4f53786a17864a/IntrinsicEnums.inc.rule;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\SDNodeProperties.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\ValueTypes.td;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\Option\OptParser.td;C:\tetsLLVM\llvm\include\llvm\TableGen\SearchableTable.td;C:\tetsLLVM\llvm\include\llvm\Target\GenericOpcodes.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetCallingConv.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetInstrPredicate.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetItinerary.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetPfmCounters.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSchedule.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSelectionDAG.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\IntrinsicEnums.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\c95741011c10f2018f4f53786a17864a\IntrinsicImpl.inc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building IntrinsicImpl.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+..\..\..\Debug\bin\llvm-tblgen.exe -gen-intrinsic-impl -I C:/tetsLLVM/llvm/include/llvm/IR -I C:/tetsLLVM/llvm/include C:/tetsLLVM/llvm/include/llvm/IR/Intrinsics.td -o C:/tetsLLVM/llvm/mybuilddir/include/llvm/IR/IntrinsicImpl.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/c95741011c10f2018f4f53786a17864a/IntrinsicImpl.inc.rule;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\mybuilddir\Debug\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\SDNodeProperties.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\ValueTypes.td;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\Option\OptParser.td;C:\tetsLLVM\llvm\include\llvm\TableGen\SearchableTable.td;C:\tetsLLVM\llvm\include\llvm\Target\GenericOpcodes.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetCallingConv.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetInstrPredicate.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetItinerary.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetPfmCounters.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSchedule.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSelectionDAG.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\IntrinsicImpl.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building IntrinsicImpl.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-intrinsic-impl -I C:/tetsLLVM/llvm/include/llvm/IR -I C:/tetsLLVM/llvm/include C:/tetsLLVM/llvm/include/llvm/IR/Intrinsics.td -o C:/tetsLLVM/llvm/mybuilddir/include/llvm/IR/IntrinsicImpl.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/c95741011c10f2018f4f53786a17864a/IntrinsicImpl.inc.rule;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\mybuilddir\Release\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\SDNodeProperties.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\ValueTypes.td;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\Option\OptParser.td;C:\tetsLLVM\llvm\include\llvm\TableGen\SearchableTable.td;C:\tetsLLVM\llvm\include\llvm\Target\GenericOpcodes.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetCallingConv.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetInstrPredicate.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetItinerary.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetPfmCounters.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSchedule.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSelectionDAG.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\IntrinsicImpl.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building IntrinsicImpl.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+..\..\..\MinSizeRel\bin\llvm-tblgen.exe -gen-intrinsic-impl -I C:/tetsLLVM/llvm/include/llvm/IR -I C:/tetsLLVM/llvm/include C:/tetsLLVM/llvm/include/llvm/IR/Intrinsics.td -o C:/tetsLLVM/llvm/mybuilddir/include/llvm/IR/IntrinsicImpl.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/c95741011c10f2018f4f53786a17864a/IntrinsicImpl.inc.rule;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\mybuilddir\MinSizeRel\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\SDNodeProperties.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\ValueTypes.td;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\Option\OptParser.td;C:\tetsLLVM\llvm\include\llvm\TableGen\SearchableTable.td;C:\tetsLLVM\llvm\include\llvm\Target\GenericOpcodes.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetCallingConv.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetInstrPredicate.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetItinerary.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetPfmCounters.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSchedule.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSelectionDAG.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\IntrinsicImpl.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building IntrinsicImpl.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+..\..\..\RelWithDebInfo\bin\llvm-tblgen.exe -gen-intrinsic-impl -I C:/tetsLLVM/llvm/include/llvm/IR -I C:/tetsLLVM/llvm/include C:/tetsLLVM/llvm/include/llvm/IR/Intrinsics.td -o C:/tetsLLVM/llvm/mybuilddir/include/llvm/IR/IntrinsicImpl.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/c95741011c10f2018f4f53786a17864a/IntrinsicImpl.inc.rule;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\mybuilddir\RelWithDebInfo\bin\llvm-tblgen.exe;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\SDNodeProperties.td;C:\tetsLLVM\llvm\include\llvm\CodeGen\ValueTypes.td;C:\tetsLLVM\llvm\include\llvm\IR\Attributes.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsARM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsMips.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsRISCV.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsX86.td;C:\tetsLLVM\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\tetsLLVM\llvm\include\llvm\Option\OptParser.td;C:\tetsLLVM\llvm\include\llvm\TableGen\SearchableTable.td;C:\tetsLLVM\llvm\include\llvm\Target\GenericOpcodes.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;C:\tetsLLVM\llvm\include\llvm\Target\GlobalISel\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\Target.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetCallingConv.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetInstrPredicate.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetItinerary.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetPfmCounters.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSchedule.td;C:\tetsLLVM\llvm\include\llvm\Target\TargetSelectionDAG.td;C:\tetsLLVM\llvm\include\llvm\IR\Intrinsics.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\IntrinsicImpl.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\1200ff0cc70c71d3fec83e56aaae0a4c\intrinsics_gen.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/1200ff0cc70c71d3fec83e56aaae0a4c/intrinsics_gen.rule;C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\Attributes.inc;C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\IntrinsicEnums.inc;C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\IntrinsicImpl.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\CMakeFiles\intrinsics_gen</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/1200ff0cc70c71d3fec83e56aaae0a4c/intrinsics_gen.rule;C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\Attributes.inc;C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\IntrinsicEnums.inc;C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\IntrinsicImpl.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\CMakeFiles\intrinsics_gen</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/1200ff0cc70c71d3fec83e56aaae0a4c/intrinsics_gen.rule;C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\Attributes.inc;C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\IntrinsicEnums.inc;C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\IntrinsicImpl.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\CMakeFiles\intrinsics_gen</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/1200ff0cc70c71d3fec83e56aaae0a4c/intrinsics_gen.rule;C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\Attributes.inc;C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\IntrinsicEnums.inc;C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\IntrinsicImpl.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\CMakeFiles\intrinsics_gen</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\include\llvm\IR\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/tetsLLVM/llvm/include/llvm/IR/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/tetsLLVM/llvm -BC:/tetsLLVM/llvm/mybuilddir --check-stamp-file C:/tetsLLVM/llvm/mybuilddir/include/llvm/IR/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/tetsLLVM/llvm/include/llvm/IR/CMakeLists.txt;C:\tetsLLVM\llvm\include\llvm\IR\CMakeLists.txt;C:\tetsLLVM\llvm\include\llvm\IR\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/tetsLLVM/llvm/include/llvm/IR/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/tetsLLVM/llvm -BC:/tetsLLVM/llvm/mybuilddir --check-stamp-file C:/tetsLLVM/llvm/mybuilddir/include/llvm/IR/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/tetsLLVM/llvm/include/llvm/IR/CMakeLists.txt;C:\tetsLLVM\llvm\include\llvm\IR\CMakeLists.txt;C:\tetsLLVM\llvm\include\llvm\IR\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/tetsLLVM/llvm/include/llvm/IR/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/tetsLLVM/llvm -BC:/tetsLLVM/llvm/mybuilddir --check-stamp-file C:/tetsLLVM/llvm/mybuilddir/include/llvm/IR/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/tetsLLVM/llvm/include/llvm/IR/CMakeLists.txt;C:\tetsLLVM\llvm\include\llvm\IR\CMakeLists.txt;C:\tetsLLVM\llvm\include\llvm\IR\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/tetsLLVM/llvm/include/llvm/IR/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/tetsLLVM/llvm -BC:/tetsLLVM/llvm/mybuilddir --check-stamp-file C:/tetsLLVM/llvm/mybuilddir/include/llvm/IR/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/tetsLLVM/llvm/include/llvm/IR/CMakeLists.txt;C:\tetsLLVM\llvm\include\llvm\IR\CMakeLists.txt;C:\tetsLLVM\llvm\include\llvm\IR\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\tetsLLVM\llvm\mybuilddir\include\llvm\IR\CMakeFiles\intrinsics_gen" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\ZERO_CHECK.vcxproj">
+      <Project>{984D425B-D0AF-3E68-8EE1-923FA53F079C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\tetsLLVM\llvm\mybuilddir\utils\TableGen\llvm-tblgen.vcxproj">
+      <Project>{AFE15AEC-F81C-3CA6-8DE9-D7AFED73AEB9}</Project>
+      <Name>llvm-tblgen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

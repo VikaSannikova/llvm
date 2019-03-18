@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZAsmPrinter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZCallingConv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZConstantPoolValue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZElimCompare.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZExpandPseudo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZFrameLowering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZHazardRecognizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZISelDAGToDAG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZISelLowering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZInstrInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZLDCleanup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZLongBranch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZMachineFunctionInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZMachineScheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZMCInstLower.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZRegisterInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZSelectionDAGInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZShortenInst.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZSubtarget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZTargetMachine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZTargetTransformInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZTDC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZ.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZCallingConv.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZFeatures.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZInstrDFP.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZInstrFP.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZInstrFormats.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZInstrHFP.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZInstrInfo.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZInstrSystem.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZInstrVector.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZOperands.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZOperators.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZPatterns.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZProcessors.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZRegisterInfo.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZSchedule.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZScheduleZ13.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZScheduleZ14.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZScheduleZ196.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZScheduleZEC12.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZ.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZAsmPrinter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZCallingConv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZConstantPoolValue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZFrameLowering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZHazardRecognizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZISelLowering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZInstrBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZInstrInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZMCInstLower.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZMachineFunctionInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZMachineScheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZRegisterInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZSelectionDAGInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZSubtarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZTargetMachine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\SystemZTargetTransformInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\tetsLLVM\llvm\lib\Target\SystemZ\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F48EE06F-5695-3A60-B0FB-79F65E01A75D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EC4B794C-986D-3A40-A587-8DD71D2C4B26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TableGen descriptions">
+      <UniqueIdentifier>{4118FC5C-57B9-3E6D-ABFD-1E067FDD4190}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

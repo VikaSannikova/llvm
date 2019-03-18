@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.13/Modules/ExternalProject.cmake
+C:/tetsLLVM/llvm/cmake/modules/LLVMExternalProjectUtils.cmake
+C:/tetsLLVM/llvm/runtimes/CMakeLists.txt

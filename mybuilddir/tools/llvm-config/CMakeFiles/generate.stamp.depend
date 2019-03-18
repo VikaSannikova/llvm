@@ -1,0 +1,3 @@
+# CMake generation dependency list for this directory.
+C:/tetsLLVM/llvm/tools/llvm-config/BuildVariables.inc.in
+C:/tetsLLVM/llvm/tools/llvm-config/CMakeLists.txt

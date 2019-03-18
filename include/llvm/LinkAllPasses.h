@@ -56,6 +56,7 @@
 #include "llvm/Transforms/Utils/UnifyFunctionExitNodes.h"
 #include "llvm/Transforms/Vectorize.h"
 #include <cstdlib>
+#include "llvm/Analysis/BranchInstCount/BICinit.h"
 
 namespace {
   struct ForcePassLinking {
@@ -67,6 +68,7 @@ namespace {
       if (std::getenv("bar") != (char*) -1)
         return;
 
+	  (void) llvm::createBranchInstCount();
       (void) llvm::createAAEvalPass();
       (void) llvm::createAggressiveDCEPass();
       (void) llvm::createAggressiveInstCombinerPass();

@@ -1,0 +1,1280 @@
+The system is: Windows - 10.0.17134 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine версии 15.5.180.51428 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 18.03.2019 11:38:48.
+Проект "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CompilerIdC\CompilerIdC.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "Debug\".
+  Создание каталога "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Создание "Debug\CompilerIdC.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\Hostx86\x86\cl.exe
+FinalizeBuildStatus:
+  Файл "Debug\CompilerIdC.tlog\unsuccessfulbuild" удаляется.
+  Обращение к "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Сборка проекта "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CompilerIdC\CompilerIdC.vcxproj" завершена (целевые объекты по умолчанию).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:02.96
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/3.13.4/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine версии 15.5.180.51428 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 18.03.2019 11:38:52.
+Проект "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CompilerIdCXX\CompilerIdCXX.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "Debug\".
+  Создание каталога "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Создание "Debug\CompilerIdCXX.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\Hostx86\x86\cl.exe
+FinalizeBuildStatus:
+  Файл "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" удаляется.
+  Обращение к "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Сборка проекта "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\3.13.4\CompilerIdCXX\CompilerIdCXX.vcxproj" завершена (целевые объекты по умолчанию).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:01.99
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/3.13.4/CompilerIdCXX/CompilerIdCXX.exe"
+
+Checking whether the ASM compiler is MSVC using "/?" matched "Microsoft":
+Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.12.25831 для x86
+(C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+
+                         ПАРАМЕТРЫ КОМПИЛЯТОРА C/C++
+
+
+                              -ОПТИМИЗАЦИЯ-
+
+/O1 свернуть пространство               /O2 максимально увеличить скорость
+/Ob<n> подстановка кода (по умолчанию n=0)
+/Od отключить оптимизации (по умолчанию)/Og включить глобальную оптимизацию
+/Oi[-] включить подставляемые функции   /Os предпочтительное пространство кода
+/Ot предпочтительная скорость кода      /Ox максимальная оптимизация
+/Oy[-] включить опускание указателя фрейма 
+/favor:<blend|ATOM> выбора процессора для оптимизации из списка:
+    blend - сочетание оптимизации для нескольких различных процессоров
+    ATOM - процессоры Intel(R) Atom(TM) 
+
+                             -ФОРМИРОВАНИЕ КОДА-
+
+/Gw[-] разделять глобальные переменные для компоновщика
+/GF включить объединение строк только для чтения
+/Gm[-] включить режим минимизации при построении
+/Gy[-] разделять функции для компоновщика
+/GS[-] включить проверку системы безопасности
+/GR[-] включить C++ RTTI                
+/GX[-] включить C++ EH (то же, что и /EHsc)
+/guard:cf[-] включает CFG (защита потока управления)
+/EHs включить C++ EH (без исключений SEH)
+/EHa включить C++ EH (с исключениями SEH)
+/EHc внешний C получает значение по умолчанию nothrow
+/EHr всегда создавать проверки завершения времени выполнения noexcept
+/fp:<except[-]|fast|precise|strict> выбор модели с плавающей запятой:
+    except[-] - возможность использования исключений с плавающей запятой при создании кода
+    fast - "быстрая" (fast) модель с плавающей запятой; результаты менее предсказуемы
+    precise - "точная" (precise) модель с плавающей запятой; результаты предсказуемы
+    strict - "строгая" (strict) модель с плавающей запятой (выражает /fp:except)
+/Qfast_transcendentals создание встроенных макроопределений FP даже с /fp:except
+/Qpar[-] - включение параллельного создания кода
+/Qpar-report:1 диагностика автоматического параллелизатора; указание параллелизованных циклов
+/Qpar-report:2 диагностика автоматического параллелизатора; указание непараллелизованных циклов
+/Qvec-report:1 диагностика автоматического векторизатора; указание векторизированных циклов
+/Qvec-report:2 диагностика автоматического векторизатора; указание невекторизованных циклов
+/GL[-] включение создания кода во время компоновки
+/volatile:<iso|ms> выбор переменной модели:
+    iso - семантика получения и освобождения не гарантируется при переменном обращении
+    ms - семантика получения и освобождения гарантируется при переменном обращении
+/GA оптимизировать для приложения Windows
+/Ge проверять стек для всех функций     
+/Gs[число] контролировать вызовы проверки стека
+/Gh включить вызов функции _penter      /GH включить вызов функции _pexit
+/GT создать безопасные относительно волокон доступы к локальному хранилищу потока (TLS)
+/RTC1 включить быструю проверку (/RTCsu)
+/RTCc преобразовать к сокращенной проверке типов
+/RTCs проверка кадров стека во время выполнения
+/RTCu неинициализированная проверка локального использования
+/clr[:параметр] компилировать для общеязыковой среды выполнения; здесь параметр - это:
+    pure - создать выходной файл только IL (без исполняемого машинного кода)
+    safe - создать проверяемый выходной файл только IL
+    initialAppDomain - включить начальное поведение AppDomain из Visual C++ 2002
+    noAssembly - не создавать сборку    
+    nostdlib - игнорировать каталог по умолчанию\clr
+/Gd использовать соглашение о вызовах __cdecl 
+/Gr использовать соглашение о вызовах __fastcall
+/Gz использовать соглашение о вызовах __stdcall
+/GZ включить проверку стека (/RTCs)     
+/Gv использовать соглашение о вызовах __vectorcall
+/QIfist[-] использовать FIST вместо ftol()
+/hotpatch обеспечить заполнение функции для образов с обновлениями
+/arch:<IA32|SSE|SSE2|AVX|AVX2> минимальные требования к архитектуре ЦП; один из вариантов:
+    IA32 - использовать расширенные инструкции и x87 для операций с плавающей запятой
+   SSE - включить использование инструкций, доступных для процессоров, поддерживающих SSE
+   SSE2 - (по умолчанию) включить использование инструкций, доступных для процессоров, поддерживающих SSE2
+   AVX - включить использование инструкций, доступных для процессоров, поддерживающих AVX
+   AVX2 - включить использование инструкций, доступных для процессоров, поддерживающих AVX2
+/Qimprecise_fwaits создавать FWAITs только на границах "try", не внутри "try"
+/Qsafe_fp_loads формировать безопасные загрузки FP
+
+                              -ВЫХОДНЫЕ ФАЙЛЫ-
+
+/Fa[file] задать имя файла списка сборок/FA[scu] настроить список сборок
+/Fd[file] задать имя PDB-файла          /Fe<file> задать имя исполняемого файла
+/Fm[file] задать имя файла соответствий /Fo<file> задать имя объектного файла
+/Fp<file> задать имя файла предкомпилированного заголовка
+/Fr[file] задать имя исходного файла браузера
+/FR[file] задать имя расширенного SBR-файла
+/Fi[файл] имя файла препроцессора       /Fd: <файл> задание имени PDB-файла
+/Fe: <файл> задание имени исполняемого файла
+/Fm: <файл> задание имени файла сопоставления
+/Fo: <файл> задание имени объектного файла
+/Fp: <файл> задание имени PCH-файла     
+/FR: <файл> задание имени расширенного SBR-файла
+/Fi: <файл> задание имени файла препроцессора
+/doc[файл] обработать комментарии к XML-документации и дать имя (необязательно) XDC-файлу
+
+                              -ПРЕПРОЦЕССОР-
+
+/AI<dir> добавить к пути поиска сборок  
+/FU<file> обязательное использование сборки или модуля 
+/C не удалять комментарии               
+/D<name>{=|#}<text> задать макроопределение
+/E вывод сообщений в stdout             /EP вывод сообщений в stdout, без #line
+/P вывод сообщений в файл               /Fx добавить внесенный код в файл
+/FI<файл> задать имя обязательно включаемого файла
+/U<name> удалить встроенное макроопределение
+/u удалить все встроенные макроопределения
+/I<dir> добавить в путь поиска включаемых файлов
+/X пропустить "standard places"         
+/PH создает #pragma file_hash во время предварительной обработки
+
+                                -ЯЗЫК-
+
+/Zi включить отладочную информацию      
+/Z7 включить отладочную информацию старого типа
+/Zp[n] упаковать структуры по n-байтной границе
+/Za выключить расширения                /Ze включить расширения (по умолчанию)
+/Zl не включать имя библиотеки по умолчанию в OBJ-файл
+/Zs только проверка синтаксиса          
+/vd{0|1|2} отключить или включить vtordisp
+/vm<x> тип указателей на члены          
+/Zc:arg1[,arg2] - соответствие языку C++, где аргументы могут быть:
+    forScope[-] - обеспечить выполнение стандартным C++ правил обзора
+  wchar_t[-] - wchar_t - это собственный тип, а не тип, заданный typedef
+  auto[-] - использовать новое значение стандартного C++ для auto
+  trigraphs[-] - включить триграфы (по умолчанию отключено)
+  rvalueCast[-] - принудительное применение стандартных правил явного преобразования типов C++
+  strictStings[-] - отключение преобразования строкового литерала
+                        в [char|wchar_t]* (по умолчанию отключено)
+  implicitNoexcept[-]   включение неявного оператора noexcept для обязательных функций
+  threadSafeInit[-]     включение потокобезопасной локальной статичной инициализации
+  inline[-]             удаление функции, на которую не указывает ссылка, или данных, если они]
+                        являются данными COMDAT или имеют только внутреннюю связь (выключено по умолчанию)
+  sizedDealloc[-]       включение глобальных размерных функций удаления
+                        C++14 (включено по умолчанию)
+  throwingNew[-]        предполагать новые вызовы оператора при сбое (отключено по умолчанию)
+  referenceBinding[-]   временное не будет привязано к непостоянной
+                        ссылке lvalue (отключено по умолчанию)
+  twoPhase-             отключение двухэтапного поиска имен
+  ternary[-]            применение стандартных правил C++ для условного оператора (по умолчанию отключен)
+  noexceptTypes[-]      принудительно применять правила noexcept C++17 (включено по умолчанию в C++17 и более поздних версиях)
+  alignedNew[-]         включить выравнивание C++17 для динамически выделяемых объектов (по умолчанию включено)
+/ZH:SHA_256             используйте SHA256 для отображения контрольной суммы файла в данных об отладке (экспериментальная функция)
+/Zf упрощение создания PDB в компиляторе (предварительная версия)
+/Zo[-] формирование расширенных данных об отладке для оптимизированного кода (включено по умолчанию)
+/ZW включение языковых расширений WinRT 
+/constexpr:depth<N>     используйте <N> в качестве предела глубины рекурсии
+                        для constexpr (по умолчанию 512)
+/constexpr:backtrace<N> отображение <N> вычислений constexpr
+                        в диагностике (по умолчанию 10)
+/constexpr:steps<N>     завершение вычисления constexpr после
+                        <N> шагов (по умолчанию 100000)
+/ZI включить отладочные данные в режиме "Изменить и продолжить"
+/openmp включить языковые расширения OpenMP 2.0
+
+                              -ПРОЧЕЕ-
+
+@<файл> параметры файла ответов         
+/?, /help вывести это справочное сообщение
+/bigobj создать расширенный формат объекта
+/c только компилировать, без компоновки 
+/errorReport:параметр сообщать о внутренних ошибках компилятора в корпорацию Майкрософт
+    none - не отправлять отчет          
+    prompt - предложить немедленную отправку отчета
+    queue - при следующем входе в систему в качестве администратора предложить отправку отчета (параметр по умолчанию)
+    send - автоматически отправлять отчет
+/FC использовать полные пути в диагностических сообщениях
+/H<num> максимальная длина внешнего имени
+/J использовать по умолчанию unsigned для типа char
+/MP[n] использовать до n процессов для компиляции
+/nologo не выводить уведомление об авторских правах
+/sdl - включить дополнительные уведомления и функции безопасности
+/showIncludes показать имена включаемых файлов
+/Tc<исходный_файл> компилировать файл как .c
+/Tp<исходный_файл> компилировать файл как .cpp
+/TC компилировать все файлы как .c      /TP компилировать все файлы как .cpp
+/V<строка> задать строку с номером версии
+/w отключить все предупреждения         /wd<n> отключить предупреждение уровня n
+/we<n> обрабатывать предупреждение уровня n как ошибку
+/wo<n> выдавать предупреждение уровня n один раз
+/w<l><n> установить для n уровень предупреждений 1-4
+/W<n> установить уровень предупреждений (по умолчанию n=1)
+/Wall включить все предупреждения       
+/WL включить однострочные диагностические сообщения
+/WX обрабатывать предупреждения как ошибки
+/Yc[файл] создать PCH-файл              
+/Yd выводить отладочные данные в каждый OBJ-файл
+/Yl[символ] ввести ссылку PCH-файла для отладочной библиотеки
+/Yu[файл] использовать PCH-файл         /Y- отключить все параметры PCH
+/Zm<n> задать максимальное выделение памяти (% от значения по умолчанию)
+/FS принудительно использовать MSPDBSRV.EXE
+/await разрешает расширение возобновляемых функций
+/Wv:xx[.yy[.zzzzz]] отключить предупреждения, появившиеся после версии xx.yy.zzzzz
+/source-charset:<iana-name>|.nnnn: задание исходной кодировки
+/execution-charset:<iana-name>|.nnnn задание кодировки выполнения
+/utf-8 задание UTF-8 в качестве исходной кодировки и кодировки выполнения
+/validate-charset[-] проверка файлов UTF-8 на наличие только допустимых знаков
+/diagnostics:<аргументы,...> определяет формат диагностических сообщений:
+             classic - сохранение предыдущего формата.
+             column[-] - печать данных о столбце.
+             caret[-] - печать столбца и указанной строки источника.
+/permissive - задание стандартного режима соответствия (набор возможностей может быть изменен)
+/std:<c++14|c++latest> - стандартная версия C++
+    c++14 - ISO/IEC 14882:2014 (по умолчанию)
+    c++latest - последний черновик стандарта (набор возможностей может быть изменен)
+
+                                -КОМПОНОВКА-
+
+/LD создать библиотеку .DLL             
+/LDd создать отладочную библиотеку (.DLL)
+/LN создать .netmodule                  /F<число> задать размер стека
+/link [параметры компоновщика и библиотеки]
+/MD компоновать с MSVCRT.LIB            /MT компоновать с LIBCMT.LIB
+/MDd компоновать с отладочной библиотекой MSVCRTD.LIB
+/MTd компоновать с отладочной библиотекой LIBCMTD.LIB
+
+                              -АНАЛИЗ КОДА-
+
+/analyze[-] Включить анализ машинного кода
+/analyze:quiet[-] Не выводить предупреждения на консоль
+/analyze:log<имя> Вывод предупреждений в файл
+/analyze:autolog Запись журнала в *.pftlog
+/analyze:autolog:ext<расширение> Запись журнала в *.<расширение>
+/analyze:autolog- Не записывать файл журнала
+/analyze:WX- Предупреждения не являются критическими
+/analyze:stacksize<число> Максимальный размер кадра стека
+/analyze:max_paths<число> Максимальное число путей
+/analyze: только анализ, без создания кода
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_10847.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine ╨▓╨╡╤А╤Б╨╕╨╕ 15.5.180.51428 ╨┤╨╗╤П .NET Framework
+(C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation). ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+
+╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 18.03.2019 11:38:56.
+╨Я╤А╨╛╨╡╨║╤В "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_10847.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+PrepareForBuild:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_10847.dir\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_10847.dir\Debug\cmTC_10847.tlog\".
+InitializeBuildStatus:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_10847.dir\Debug\cmTC_10847.tlog\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_10847.dir\Debug\\" /Fd"cmTC_10847.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\testCCompiler.c
+  ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.12.25831 ╨┤╨╗╤П x86
+  testCCompiler.c
+  (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_10847.dir\Debug\\" /Fd"cmTC_10847.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\testCCompiler.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_10847.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_10847.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_10847.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_10847.dir\Debug\testCCompiler.obj
+  cmTC_10847.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_10847.exe
+FinalizeBuildStatus:
+  ╨д╨░╨╣╨╗ "cmTC_10847.dir\Debug\cmTC_10847.tlog\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+  ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_10847.dir\Debug\cmTC_10847.tlog\cmTC_10847.lastbuildstate".
+╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_10847.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+
+╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+    ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+    ╨Ю╤И╨╕╨▒╨╛╨║: 0
+
+╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:02.10
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_be80a.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine ╨▓╨╡╤А╤Б╨╕╨╕ 15.5.180.51428 ╨┤╨╗╤П .NET Framework
+(C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation). ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+
+╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 18.03.2019 11:38:59.
+╨Я╤А╨╛╨╡╨║╤В "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_be80a.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+PrepareForBuild:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_be80a.dir\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_be80a.dir\Debug\cmTC_be80a.tlog\".
+InitializeBuildStatus:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_be80a.dir\Debug\cmTC_be80a.tlog\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_be80a.dir\Debug\\" /Fd"cmTC_be80a.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCCompilerABI.c"
+  ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.12.25831 ╨┤╨╗╤П x86
+  (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_be80a.dir\Debug\\" /Fd"cmTC_be80a.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCCompilerABI.c"
+  CMakeCCompilerABI.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_be80a.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_be80a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_be80a.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_be80a.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_be80a.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_be80a.exe
+FinalizeBuildStatus:
+  ╨д╨░╨╣╨╗ "cmTC_be80a.dir\Debug\cmTC_be80a.tlog\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+  ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_be80a.dir\Debug\cmTC_be80a.tlog\cmTC_be80a.lastbuildstate".
+╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_be80a.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+
+╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+    ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+    ╨Ю╤И╨╕╨▒╨╛╨║: 0
+
+╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.60
+
+
+
+
+Detecting C [] compiler features compiled with the following output:
+Change Dir: C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_f51f4.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine ╨▓╨╡╤А╤Б╨╕╨╕ 15.5.180.51428 ╨┤╨╗╤П .NET Framework
+(C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation). ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+
+╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 18.03.2019 11:39:01.
+╨Я╤А╨╛╨╡╨║╤В "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_f51f4.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+PrepareForBuild:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_f51f4.dir\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_f51f4.dir\Debug\cmTC_f51f4.tlog\".
+InitializeBuildStatus:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_f51f4.dir\Debug\cmTC_f51f4.tlog\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f51f4.dir\Debug\\" /Fd"cmTC_f51f4.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\feature_tests.c
+  ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.12.25831 ╨┤╨╗╤П x86
+  (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f51f4.dir\Debug\\" /Fd"cmTC_f51f4.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\feature_tests.c
+  feature_tests.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_f51f4.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_f51f4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_f51f4.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_f51f4.dir\Debug\feature_tests.obj
+  cmTC_f51f4.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_f51f4.exe
+FinalizeBuildStatus:
+  ╨д╨░╨╣╨╗ "cmTC_f51f4.dir\Debug\cmTC_f51f4.tlog\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+  ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_f51f4.dir\Debug\cmTC_f51f4.tlog\cmTC_f51f4.lastbuildstate".
+╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_f51f4.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+
+╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+    ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+    ╨Ю╤И╨╕╨▒╨╛╨║: 0
+
+╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.41
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_287a3.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine ╨▓╨╡╤А╤Б╨╕╨╕ 15.5.180.51428 ╨┤╨╗╤П .NET Framework
+(C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation). ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+
+╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 18.03.2019 11:39:03.
+╨Я╤А╨╛╨╡╨║╤В "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_287a3.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+PrepareForBuild:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_287a3.dir\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_287a3.dir\Debug\cmTC_287a3.tlog\".
+InitializeBuildStatus:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_287a3.dir\Debug\cmTC_287a3.tlog\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_287a3.dir\Debug\\" /Fd"cmTC_287a3.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.12.25831 ╨┤╨╗╤П x86
+  (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_287a3.dir\Debug\\" /Fd"cmTC_287a3.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  testCXXCompiler.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_287a3.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_287a3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_287a3.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_287a3.dir\Debug\testCXXCompiler.obj
+  cmTC_287a3.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_287a3.exe
+FinalizeBuildStatus:
+  ╨д╨░╨╣╨╗ "cmTC_287a3.dir\Debug\cmTC_287a3.tlog\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+  ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_287a3.dir\Debug\cmTC_287a3.tlog\cmTC_287a3.lastbuildstate".
+╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_287a3.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+
+╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+    ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+    ╨Ю╤И╨╕╨▒╨╛╨║: 0
+
+╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.63
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_4ebb4.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine ╨▓╨╡╤А╤Б╨╕╨╕ 15.5.180.51428 ╨┤╨╗╤П .NET Framework
+(C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation). ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+
+╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 18.03.2019 11:39:06.
+╨Я╤А╨╛╨╡╨║╤В "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_4ebb4.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+PrepareForBuild:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_4ebb4.dir\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_4ebb4.dir\Debug\cmTC_4ebb4.tlog\".
+InitializeBuildStatus:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_4ebb4.dir\Debug\cmTC_4ebb4.tlog\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4ebb4.dir\Debug\\" /Fd"cmTC_4ebb4.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXCompilerABI.cpp"
+  ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.12.25831 ╨┤╨╗╤П x86
+  (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4ebb4.dir\Debug\\" /Fd"cmTC_4ebb4.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXCompilerABI.cpp"
+  CMakeCXXCompilerABI.cpp
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_4ebb4.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_4ebb4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_4ebb4.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_4ebb4.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_4ebb4.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_4ebb4.exe
+FinalizeBuildStatus:
+  ╨д╨░╨╣╨╗ "cmTC_4ebb4.dir\Debug\cmTC_4ebb4.tlog\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+  ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_4ebb4.dir\Debug\cmTC_4ebb4.tlog\cmTC_4ebb4.lastbuildstate".
+╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_4ebb4.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+
+╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+    ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+    ╨Ю╤И╨╕╨▒╨╛╨║: 0
+
+╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.63
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_e240c.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine ╨▓╨╡╤А╤Б╨╕╨╕ 15.5.180.51428 ╨┤╨╗╤П .NET Framework
+(C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation). ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+
+╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 18.03.2019 11:39:08.
+╨Я╤А╨╛╨╡╨║╤В "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_e240c.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+PrepareForBuild:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_e240c.dir\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_e240c.dir\Debug\cmTC_e240c.tlog\".
+InitializeBuildStatus:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_e240c.dir\Debug\cmTC_e240c.tlog\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e240c.dir\Debug\\" /Fd"cmTC_e240c.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\feature_tests.cxx
+  ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.12.25831 ╨┤╨╗╤П x86
+  (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e240c.dir\Debug\\" /Fd"cmTC_e240c.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\feature_tests.cxx
+  feature_tests.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_e240c.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_e240c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_e240c.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_e240c.dir\Debug\feature_tests.obj
+  cmTC_e240c.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_e240c.exe
+FinalizeBuildStatus:
+  ╨д╨░╨╣╨╗ "cmTC_e240c.dir\Debug\cmTC_e240c.tlog\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+  ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_e240c.dir\Debug\cmTC_e240c.tlog\cmTC_e240c.lastbuildstate".
+╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_e240c.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+
+╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+    ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+    ╨Ю╤И╨╕╨▒╨╛╨║: 0
+
+╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.48
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+Determining if the include file errno.h exists passed with the following output:
+Change Dir: C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_12cd5.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine ╨▓╨╡╤А╤Б╨╕╨╕ 15.5.180.51428 ╨┤╨╗╤П .NET Framework
+(C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation). ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+
+╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 18.03.2019 11:39:12.
+╨Я╤А╨╛╨╡╨║╤В "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_12cd5.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+PrepareForBuild:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_12cd5.dir\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_12cd5.dir\Debug\cmTC_12cd5.tlog\".
+InitializeBuildStatus:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_12cd5.dir\Debug\cmTC_12cd5.tlog\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_12cd5.dir\Debug\\" /Fd"cmTC_12cd5.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.12.25831 ╨┤╨╗╤П x86
+  (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_12cd5.dir\Debug\\" /Fd"cmTC_12cd5.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  CheckIncludeFile.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_12cd5.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_12cd5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_12cd5.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_12cd5.dir\Debug\CheckIncludeFile.obj
+  cmTC_12cd5.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_12cd5.exe
+FinalizeBuildStatus:
+  ╨д╨░╨╣╨╗ "cmTC_12cd5.dir\Debug\cmTC_12cd5.tlog\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+  ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_12cd5.dir\Debug\cmTC_12cd5.tlog\cmTC_12cd5.lastbuildstate".
+╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_12cd5.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+
+╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+    ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+    ╨Ю╤И╨╕╨▒╨╛╨║: 0
+
+╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.46
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_c4c49.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine ╨▓╨╡╤А╤Б╨╕╨╕ 15.5.180.51428 ╨┤╨╗╤П .NET Framework
+(C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation). ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+
+╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 18.03.2019 11:39:14.
+╨Я╤А╨╛╨╡╨║╤В "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_c4c49.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+PrepareForBuild:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_c4c49.dir\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_c4c49.dir\Debug\cmTC_c4c49.tlog\".
+InitializeBuildStatus:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_c4c49.dir\Debug\cmTC_c4c49.tlog\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c4c49.dir\Debug\\" /Fd"cmTC_c4c49.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.12.25831 ╨┤╨╗╤П x86
+  (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c4c49.dir\Debug\\" /Fd"cmTC_c4c49.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  CheckIncludeFile.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_c4c49.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_c4c49.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_c4c49.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_c4c49.dir\Debug\CheckIncludeFile.obj
+  cmTC_c4c49.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_c4c49.exe
+FinalizeBuildStatus:
+  ╨д╨░╨╣╨╗ "cmTC_c4c49.dir\Debug\cmTC_c4c49.tlog\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+  ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_c4c49.dir\Debug\cmTC_c4c49.tlog\cmTC_c4c49.lastbuildstate".
+╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_c4c49.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+
+╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+    ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+    ╨Ю╤И╨╕╨▒╨╛╨║: 0
+
+╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.47
+
+
+Determining if the include file malloc.h exists passed with the following output:
+Change Dir: C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_56788.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine ╨▓╨╡╤А╤Б╨╕╨╕ 15.5.180.51428 ╨┤╨╗╤П .NET Framework
+(C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation). ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+
+╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 18.03.2019 11:39:17.
+╨Я╤А╨╛╨╡╨║╤В "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_56788.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+PrepareForBuild:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_56788.dir\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_56788.dir\Debug\cmTC_56788.tlog\".
+InitializeBuildStatus:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_56788.dir\Debug\cmTC_56788.tlog\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_56788.dir\Debug\\" /Fd"cmTC_56788.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.12.25831 ╨┤╨╗╤П x86
+  (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_56788.dir\Debug\\" /Fd"cmTC_56788.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  CheckIncludeFile.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_56788.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_56788.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_56788.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_56788.dir\Debug\CheckIncludeFile.obj
+  cmTC_56788.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_56788.exe
+FinalizeBuildStatus:
+  ╨д╨░╨╣╨╗ "cmTC_56788.dir\Debug\cmTC_56788.tlog\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+  ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_56788.dir\Debug\cmTC_56788.tlog\cmTC_56788.lastbuildstate".
+╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_56788.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+
+╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+    ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+    ╨Ю╤И╨╕╨▒╨╛╨║: 0
+
+╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.54
+
+
+Determining if the include file signal.h exists passed with the following output:
+Change Dir: C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_347e1.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine ╨▓╨╡╤А╤Б╨╕╨╕ 15.5.180.51428 ╨┤╨╗╤П .NET Framework
+(C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation). ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+
+╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 18.03.2019 11:39:20.
+╨Я╤А╨╛╨╡╨║╤В "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_347e1.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+PrepareForBuild:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_347e1.dir\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_347e1.dir\Debug\cmTC_347e1.tlog\".
+InitializeBuildStatus:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_347e1.dir\Debug\cmTC_347e1.tlog\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_347e1.dir\Debug\\" /Fd"cmTC_347e1.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.12.25831 ╨┤╨╗╤П x86
+  (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_347e1.dir\Debug\\" /Fd"cmTC_347e1.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  CheckIncludeFile.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_347e1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_347e1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_347e1.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_347e1.dir\Debug\CheckIncludeFile.obj
+  cmTC_347e1.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_347e1.exe
+FinalizeBuildStatus:
+  ╨д╨░╨╣╨╗ "cmTC_347e1.dir\Debug\cmTC_347e1.tlog\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+  ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_347e1.dir\Debug\cmTC_347e1.tlog\cmTC_347e1.lastbuildstate".
+╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_347e1.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+
+╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+    ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+    ╨Ю╤И╨╕╨▒╨╛╨║: 0
+
+╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.61
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_d09f0.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine ╨▓╨╡╤А╤Б╨╕╨╕ 15.5.180.51428 ╨┤╨╗╤П .NET Framework
+(C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation). ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+
+╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 18.03.2019 11:39:27.
+╨Я╤А╨╛╨╡╨║╤В "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_d09f0.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+PrepareForBuild:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_d09f0.dir\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_d09f0.dir\Debug\cmTC_d09f0.tlog\".
+InitializeBuildStatus:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_d09f0.dir\Debug\cmTC_d09f0.tlog\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d09f0.dir\Debug\\" /Fd"cmTC_d09f0.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.12.25831 ╨┤╨╗╤П x86
+  (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d09f0.dir\Debug\\" /Fd"cmTC_d09f0.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  CheckIncludeFile.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_d09f0.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_d09f0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_d09f0.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_d09f0.dir\Debug\CheckIncludeFile.obj
+  cmTC_d09f0.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_d09f0.exe
+FinalizeBuildStatus:
+  ╨д╨░╨╣╨╗ "cmTC_d09f0.dir\Debug\cmTC_d09f0.tlog\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+  ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_d09f0.dir\Debug\cmTC_d09f0.tlog\cmTC_d09f0.lastbuildstate".
+╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_d09f0.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+
+╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+    ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+    ╨Ю╤И╨╕╨▒╨╛╨║: 0
+
+╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.43
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_6601c.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine ╨▓╨╡╤А╤Б╨╕╨╕ 15.5.180.51428 ╨┤╨╗╤П .NET Framework
+(C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation). ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+
+╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 18.03.2019 11:39:31.
+╨Я╤А╨╛╨╡╨║╤В "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_6601c.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+PrepareForBuild:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_6601c.dir\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_6601c.dir\Debug\cmTC_6601c.tlog\".
+InitializeBuildStatus:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_6601c.dir\Debug\cmTC_6601c.tlog\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6601c.dir\Debug\\" /Fd"cmTC_6601c.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.12.25831 ╨┤╨╗╤П x86
+  (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6601c.dir\Debug\\" /Fd"cmTC_6601c.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  CheckIncludeFile.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_6601c.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_6601c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_6601c.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_6601c.dir\Debug\CheckIncludeFile.obj
+  cmTC_6601c.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_6601c.exe
+FinalizeBuildStatus:
+  ╨д╨░╨╣╨╗ "cmTC_6601c.dir\Debug\cmTC_6601c.tlog\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+  ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_6601c.dir\Debug\cmTC_6601c.tlog\cmTC_6601c.lastbuildstate".
+╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_6601c.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+
+╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+    ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+    ╨Ю╤И╨╕╨▒╨╛╨║: 0
+
+╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.59
+
+
+Determining if the include file fenv.h exists passed with the following output:
+Change Dir: C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_a9e37.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine ╨▓╨╡╤А╤Б╨╕╨╕ 15.5.180.51428 ╨┤╨╗╤П .NET Framework
+(C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation). ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+
+╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 18.03.2019 11:39:38.
+╨Я╤А╨╛╨╡╨║╤В "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_a9e37.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+PrepareForBuild:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_a9e37.dir\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_a9e37.dir\Debug\cmTC_a9e37.tlog\".
+InitializeBuildStatus:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_a9e37.dir\Debug\cmTC_a9e37.tlog\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a9e37.dir\Debug\\" /Fd"cmTC_a9e37.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.12.25831 ╨┤╨╗╤П x86
+  (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a9e37.dir\Debug\\" /Fd"cmTC_a9e37.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  CheckIncludeFile.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_a9e37.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_a9e37.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_a9e37.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_a9e37.dir\Debug\CheckIncludeFile.obj
+  cmTC_a9e37.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_a9e37.exe
+FinalizeBuildStatus:
+  ╨д╨░╨╣╨╗ "cmTC_a9e37.dir\Debug\cmTC_a9e37.tlog\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+  ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_a9e37.dir\Debug\cmTC_a9e37.tlog\cmTC_a9e37.lastbuildstate".
+╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_a9e37.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+
+╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+    ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+    ╨Ю╤И╨╕╨▒╨╛╨║: 0
+
+╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.48
+
+
+Determining if the FE_ALL_EXCEPT exist passed with the following output:
+Change Dir: C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_5fe2f.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine ╨▓╨╡╤А╤Б╨╕╨╕ 15.5.180.51428 ╨┤╨╗╤П .NET Framework
+(C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation). ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+
+╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 18.03.2019 11:39:40.
+╨Я╤А╨╛╨╡╨║╤В "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_5fe2f.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+PrepareForBuild:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_5fe2f.dir\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_5fe2f.dir\Debug\cmTC_5fe2f.tlog\".
+InitializeBuildStatus:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_5fe2f.dir\Debug\cmTC_5fe2f.tlog\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5fe2f.dir\Debug\\" /Fd"cmTC_5fe2f.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+  ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.12.25831 ╨┤╨╗╤П x86
+  (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5fe2f.dir\Debug\\" /Fd"cmTC_5fe2f.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+  CheckSymbolExists.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_5fe2f.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_5fe2f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_5fe2f.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_5fe2f.dir\Debug\CheckSymbolExists.obj
+  cmTC_5fe2f.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_5fe2f.exe
+FinalizeBuildStatus:
+  ╨д╨░╨╣╨╗ "cmTC_5fe2f.dir\Debug\cmTC_5fe2f.tlog\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+  ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_5fe2f.dir\Debug\cmTC_5fe2f.tlog\cmTC_5fe2f.lastbuildstate".
+╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_5fe2f.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+
+╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+    ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+    ╨Ю╤И╨╕╨▒╨╛╨║: 0
+
+╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.50
+
+File C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fenv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef FE_ALL_EXCEPT
+  return ((int*)(&FE_ALL_EXCEPT))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the FE_INEXACT exist passed with the following output:
+Change Dir: C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_b828d.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine ╨▓╨╡╤А╤Б╨╕╨╕ 15.5.180.51428 ╨┤╨╗╤П .NET Framework
+(C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation). ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+
+╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 18.03.2019 11:39:42.
+╨Я╤А╨╛╨╡╨║╤В "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_b828d.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+PrepareForBuild:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_b828d.dir\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_b828d.dir\Debug\cmTC_b828d.tlog\".
+InitializeBuildStatus:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_b828d.dir\Debug\cmTC_b828d.tlog\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b828d.dir\Debug\\" /Fd"cmTC_b828d.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+  ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.12.25831 ╨┤╨╗╤П x86
+  (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b828d.dir\Debug\\" /Fd"cmTC_b828d.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+  CheckSymbolExists.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_b828d.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_b828d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_b828d.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_b828d.dir\Debug\CheckSymbolExists.obj
+  cmTC_b828d.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_b828d.exe
+FinalizeBuildStatus:
+  ╨д╨░╨╣╨╗ "cmTC_b828d.dir\Debug\cmTC_b828d.tlog\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+  ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_b828d.dir\Debug\cmTC_b828d.tlog\cmTC_b828d.lastbuildstate".
+╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_b828d.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+
+╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+    ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+    ╨Ю╤И╨╕╨▒╨╛╨║: 0
+
+╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.37
+
+File C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fenv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef FE_INEXACT
+  return ((int*)(&FE_INEXACT))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strerror exist passed with the following output:
+Change Dir: C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_f6cd8.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine ╨▓╨╡╤А╤Б╨╕╨╕ 15.5.180.51428 ╨┤╨╗╤П .NET Framework
+(C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation). ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+
+╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 18.03.2019 11:40:24.
+╨Я╤А╨╛╨╡╨║╤В "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_f6cd8.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+PrepareForBuild:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_f6cd8.dir\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_f6cd8.dir\Debug\cmTC_f6cd8.tlog\".
+InitializeBuildStatus:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_f6cd8.dir\Debug\cmTC_f6cd8.tlog\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f6cd8.dir\Debug\\" /Fd"cmTC_f6cd8.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+  ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.12.25831 ╨┤╨╗╤П x86
+  (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f6cd8.dir\Debug\\" /Fd"cmTC_f6cd8.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+  CheckSymbolExists.c
+  
+C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckSymbolExists.c(8): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_f6cd8.vcxproj]
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt\string.h(181): note:  ╤Б╨╝. ╨╛╨▒╤К╤П╨▓╨╗╨╡╨╜╨╕╨╡ "strerror"
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_f6cd8.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_f6cd8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_f6cd8.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_f6cd8.dir\Debug\CheckSymbolExists.obj
+  cmTC_f6cd8.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_f6cd8.exe
+FinalizeBuildStatus:
+  ╨д╨░╨╣╨╗ "cmTC_f6cd8.dir\Debug\cmTC_f6cd8.tlog\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+  ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_f6cd8.dir\Debug\cmTC_f6cd8.tlog\cmTC_f6cd8.lastbuildstate".
+╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_f6cd8.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+
+╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+
+"C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_f6cd8.vcxproj" (╤Ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) (1) ->
+(ClCompile ╨║╨╛╨╜╨╡╤З╨╜╤Л╨╣ ╨╛╨▒╤К╨╡╨║╤В) -> 
+  C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckSymbolExists.c(8): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_f6cd8.vcxproj]
+
+    ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 1
+    ╨Ю╤И╨╕╨▒╨╛╨║: 0
+
+╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.50
+
+File C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strerror
+  return ((int*)(&strerror))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strerror_s exist passed with the following output:
+Change Dir: C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_c177e.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine ╨▓╨╡╤А╤Б╨╕╨╕ 15.5.180.51428 ╨┤╨╗╤П .NET Framework
+(C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation). ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+
+╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 18.03.2019 11:40:27.
+╨Я╤А╨╛╨╡╨║╤В "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_c177e.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+PrepareForBuild:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_c177e.dir\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_c177e.dir\Debug\cmTC_c177e.tlog\".
+InitializeBuildStatus:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_c177e.dir\Debug\cmTC_c177e.tlog\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c177e.dir\Debug\\" /Fd"cmTC_c177e.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+  ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.12.25831 ╨┤╨╗╤П x86
+  (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c177e.dir\Debug\\" /Fd"cmTC_c177e.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+  CheckSymbolExists.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_c177e.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_c177e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_c177e.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_c177e.dir\Debug\CheckSymbolExists.obj
+  cmTC_c177e.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_c177e.exe
+FinalizeBuildStatus:
+  ╨д╨░╨╣╨╗ "cmTC_c177e.dir\Debug\cmTC_c177e.tlog\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+  ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_c177e.dir\Debug\cmTC_c177e.tlog\cmTC_c177e.lastbuildstate".
+╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_c177e.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+
+╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+    ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+    ╨Ю╤И╨╕╨▒╨╛╨║: 0
+
+╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.40
+
+File C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strerror_s
+  return ((int*)(&strerror_s))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the _chsize_s exist passed with the following output:
+Change Dir: C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_ab755.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine ╨▓╨╡╤А╤Б╨╕╨╕ 15.5.180.51428 ╨┤╨╗╤П .NET Framework
+(C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation). ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+
+╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 18.03.2019 11:40:30.
+╨Я╤А╨╛╨╡╨║╤В "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_ab755.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+PrepareForBuild:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_ab755.dir\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_ab755.dir\Debug\cmTC_ab755.tlog\".
+InitializeBuildStatus:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_ab755.dir\Debug\cmTC_ab755.tlog\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ab755.dir\Debug\\" /Fd"cmTC_ab755.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+  ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.12.25831 ╨┤╨╗╤П x86
+  (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ab755.dir\Debug\\" /Fd"cmTC_ab755.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+  CheckSymbolExists.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_ab755.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_ab755.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_ab755.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_ab755.dir\Debug\CheckSymbolExists.obj
+  cmTC_ab755.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_ab755.exe
+FinalizeBuildStatus:
+  ╨д╨░╨╣╨╗ "cmTC_ab755.dir\Debug\cmTC_ab755.tlog\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+  ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_ab755.dir\Debug\cmTC_ab755.tlog\cmTC_ab755.lastbuildstate".
+╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_ab755.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+
+╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+    ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+    ╨Ю╤И╨╕╨▒╨╛╨║: 0
+
+╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.49
+
+File C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <io.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _chsize_s
+  return ((int*)(&_chsize_s))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C++ SOURCE FILE Test LLVM_HAS_ATOMICS succeeded with the following output:
+Change Dir: C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_6141c.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine ╨▓╨╡╤А╤Б╨╕╨╕ 15.5.180.51428 ╨┤╨╗╤П .NET Framework
+(C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation). ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+
+╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 18.03.2019 11:41:09.
+╨Я╤А╨╛╨╡╨║╤В "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_6141c.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+PrepareForBuild:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_6141c.dir\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_6141c.dir\Debug\cmTC_6141c.tlog\".
+InitializeBuildStatus:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_6141c.dir\Debug\cmTC_6141c.tlog\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D LLVM_HAS_ATOMICS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_6141c.dir\Debug\\" /Fd"cmTC_6141c.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\src.cxx
+  ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.12.25831 ╨┤╨╗╤П x86
+  (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D LLVM_HAS_ATOMICS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_6141c.dir\Debug\\" /Fd"cmTC_6141c.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\src.cxx
+  src.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_6141c.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_6141c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_6141c.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_6141c.dir\Debug\src.obj
+  cmTC_6141c.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_6141c.exe
+FinalizeBuildStatus:
+  ╨д╨░╨╣╨╗ "cmTC_6141c.dir\Debug\cmTC_6141c.tlog\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+  ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_6141c.dir\Debug\cmTC_6141c.tlog\cmTC_6141c.lastbuildstate".
+╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_6141c.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+
+╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+    ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+    ╨Ю╤И╨╕╨▒╨╛╨║: 0
+
+╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:04.57
+
+Source file was:
+
+#ifdef _MSC_VER
+#include <windows.h>
+#endif
+int main() {
+#ifdef _MSC_VER
+        volatile LONG val = 1;
+        MemoryBarrier();
+        InterlockedCompareExchange(&val, 0, 1);
+        InterlockedIncrement(&val);
+        InterlockedDecrement(&val);
+#else
+        volatile unsigned long val = 1;
+        __sync_synchronize();
+        __sync_val_compare_and_swap(&val, 1, 0);
+        __sync_add_and_fetch(&val, 1);
+        __sync_sub_and_fetch(&val, 1);
+#endif
+        return 0;
+      }
+
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_EHS_ succeeded with the following output:
+Change Dir: C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_574b5.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine ╨▓╨╡╤А╤Б╨╕╨╕ 15.5.180.51428 ╨┤╨╗╤П .NET Framework
+(C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation). ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+
+╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 18.03.2019 11:41:57.
+╨Я╤А╨╛╨╡╨║╤В "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_574b5.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+PrepareForBuild:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_574b5.dir\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_574b5.dir\Debug\cmTC_574b5.tlog\".
+InitializeBuildStatus:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_574b5.dir\Debug\cmTC_574b5.tlog\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W4 /WX- /diagnostics:classic /Od /Ob0 /Oi /Oy- /D WIN32 /D _WINDOWS /D HAVE_CXX_FLAG_EHS_ /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Zc:rvalueCast /Fo"cmTC_574b5.dir\Debug\\" /Fd"cmTC_574b5.dir\Debug\vc141.pdb" /Gd /TP /wd4141 /wd4146 /wd4180 /wd4244 /wd4258 /wd4267 /wd4291 /wd4345 /wd4351 /wd4355 /wd4456 /wd4457 /wd4458 /wd4459 /wd4503 /wd4624 /wd4722 /wd4800 /wd4100 /wd4127 /wd4512 /wd4505 /wd4610 /wd4510 /wd4702 /wd4245 /wd4706 /wd4310 /wd4701 /wd4703 /wd4389 /wd4611 /wd4805 /wd4204 /wd4577 /wd4091 /wd4592 /wd4319 /wd4709 /wd4324 /analyze- /errorReport:queue /we4238  /Zc:strictStrings -w14062 -EHs- -EHs- C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\src.cxx
+  ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.12.25831 ╨┤╨╗╤П x86
+  (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+  
+  cl /c /Zi /W4 /WX- /diagnostics:classic /Od /Ob0 /Oi /Oy- /D WIN32 /D _WINDOWS /D HAVE_CXX_FLAG_EHS_ /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Zc:rvalueCast /Fo"cmTC_574b5.dir\Debug\\" /Fd"cmTC_574b5.dir\Debug\vc141.pdb" /Gd /TP /wd4141 /wd4146 /wd4180 /wd4244 /wd4258 /wd4267 /wd4291 /wd4345 /wd4351 /wd4355 /wd4456 /wd4457 /wd4458 /wd4459 /wd4503 /wd4624 /wd4722 /wd4800 /wd4100 /wd4127 /wd4512 /wd4505 /wd4610 /wd4510 /wd4702 /wd4245 /wd4706 /wd4310 /wd4701 /wd4703 /wd4389 /wd4611 /wd4805 /wd4204 /wd4577 /wd4091 /wd4592 /wd4319 /wd4709 /wd4324 /analyze- /errorReport:queue /we4238  /Zc:strictStrings -w14062 -EHs- -EHs- C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\src.cxx
+  
+  src.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_574b5.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_574b5.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_574b5.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_574b5.dir\Debug\src.obj
+  cmTC_574b5.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_574b5.exe
+FinalizeBuildStatus:
+  ╨д╨░╨╣╨╗ "cmTC_574b5.dir\Debug\cmTC_574b5.tlog\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+  ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_574b5.dir\Debug\cmTC_574b5.tlog\cmTC_574b5.lastbuildstate".
+╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_574b5.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+
+╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+    ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+    ╨Ю╤И╨╕╨▒╨╛╨║: 0
+
+╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.64
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_EHA_ succeeded with the following output:
+Change Dir: C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_87bb7.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine ╨▓╨╡╤А╤Б╨╕╨╕ 15.5.180.51428 ╨┤╨╗╤П .NET Framework
+(C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation). ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+
+╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 18.03.2019 11:42:00.
+╨Я╤А╨╛╨╡╨║╤В "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_87bb7.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+PrepareForBuild:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_87bb7.dir\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\".
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_87bb7.dir\Debug\cmTC_87bb7.tlog\".
+InitializeBuildStatus:
+  ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_87bb7.dir\Debug\cmTC_87bb7.tlog\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W4 /WX- /diagnostics:classic /Od /Ob0 /Oi /Oy- /D WIN32 /D _WINDOWS /D HAVE_CXX_FLAG_EHA_ /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Zc:rvalueCast /Fo"cmTC_87bb7.dir\Debug\\" /Fd"cmTC_87bb7.dir\Debug\vc141.pdb" /Gd /TP /wd4141 /wd4146 /wd4180 /wd4244 /wd4258 /wd4267 /wd4291 /wd4345 /wd4351 /wd4355 /wd4456 /wd4457 /wd4458 /wd4459 /wd4503 /wd4624 /wd4722 /wd4800 /wd4100 /wd4127 /wd4512 /wd4505 /wd4610 /wd4510 /wd4702 /wd4245 /wd4706 /wd4310 /wd4701 /wd4703 /wd4389 /wd4611 /wd4805 /wd4204 /wd4577 /wd4091 /wd4592 /wd4319 /wd4709 /wd4324 /analyze- /errorReport:queue /we4238  /Zc:strictStrings -w14062 -EHs- -EHa- -EHa- C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\src.cxx
+  ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.12.25831 ╨┤╨╗╤П x86
+  (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+  
+  cl /c /Zi /W4 /WX- /diagnostics:classic /Od /Ob0 /Oi /Oy- /D WIN32 /D _WINDOWS /D HAVE_CXX_FLAG_EHA_ /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Zc:rvalueCast /Fo"cmTC_87bb7.dir\Debug\\" /Fd"cmTC_87bb7.dir\Debug\vc141.pdb" /Gd /TP /wd4141 /wd4146 /wd4180 /wd4244 /wd4258 /wd4267 /wd4291 /wd4345 /wd4351 /wd4355 /wd4456 /wd4457 /wd4458 /wd4459 /wd4503 /wd4624 /wd4722 /wd4800 /wd4100 /wd4127 /wd4512 /wd4505 /wd4610 /wd4510 /wd4702 /wd4245 /wd4706 /wd4310 /wd4701 /wd4703 /wd4389 /wd4611 /wd4805 /wd4204 /wd4577 /wd4091 /wd4592 /wd4319 /wd4709 /wd4324 /analyze- /errorReport:queue /we4238  /Zc:strictStrings -w14062 -EHs- -EHa- -EHa- C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\src.cxx
+  
+  src.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_87bb7.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_87bb7.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/tetsLLVM/llvm/mybuilddir/CMakeFiles/CMakeTmp/Debug/cmTC_87bb7.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_87bb7.dir\Debug\src.obj
+  cmTC_87bb7.vcxproj -> C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\Debug\cmTC_87bb7.exe
+FinalizeBuildStatus:
+  ╨д╨░╨╣╨╗ "cmTC_87bb7.dir\Debug\cmTC_87bb7.tlog\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+  ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_87bb7.dir\Debug\cmTC_87bb7.tlog\cmTC_87bb7.lastbuildstate".
+╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\tetsLLVM\llvm\mybuilddir\CMakeFiles\CMakeTmp\cmTC_87bb7.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+
+╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+    ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+    ╨Ю╤И╨╕╨▒╨╛╨║: 0
+
+╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.55
+
+Source file was:
+int main() { return 0; }
